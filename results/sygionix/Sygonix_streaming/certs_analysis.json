@@ -1,0 +1,44 @@
+[
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2018-10-31T05:30:48+00:00",
+    "valid_until": "2118-10-07T05:30:48+00:00",
+    "issuer_cn": "*.tuyacn.com",
+    "subject_cn": "*.tuyacn.com",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "10:76:A1:50:8A:07:57:AB:52:85:AB:F4:F5:CE:1D:F7:57:0F:4B:D1:D7:63:E2:D4:6D:D3:CF:4A:72:F4:1A:F3",
+    "found_in_packet_number": "26",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-09-21T00:00:00+00:00",
+    "valid_until": "2023-09-09T23:59:59+00:00",
+    "issuer_cn": "Amazon",
+    "subject_cn": "*.s3.eu-central-1.amazonaws.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.s3.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.dualstack.eu-central-1.amazonaws.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "09:BD:0B:14:CE:A6:2A:C4:5A:DA:89:87:92:69:0B:D3:EC:F0:5D:C8:4C:81:A9:13:B7:70:16:37:77:DD:4D:7D",
+    "found_in_packet_number": "484",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2019-05-25T07:55:57+00:00",
+    "valid_until": "2119-05-01T07:55:57+00:00",
+    "issuer_cn": "Not Found",
+    "subject_cn": "*.iot-dns.com",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "CC:DF:30:5E:3C:DA:73:B7:99:0A:16:3C:8D:93:47:A4:1A:17:9D:51:2E:4E:87:FA:87:2F:06:B3:BD:96:1E:40",
+    "found_in_packet_number": "11",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2018-10-31T05:30:48+00:00",
+    "valid_until": "2118-10-07T05:30:48+00:00",
+    "issuer_cn": "*.tuyacn.com",
+    "subject_cn": "*.tuyacn.com",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "10:76:A1:50:8A:07:57:AB:52:85:AB:F4:F5:CE:1D:F7:57:0F:4B:D1:D7:63:E2:D4:6D:D3:CF:4A:72:F4:1A:F3",
+    "found_in_packet_number": "38",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2024-08-02T00:00:00+00:00",
+    "valid_until": "2025-07-30T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "*.s3.eu-central-1.amazonaws.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.s3.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.dualstack.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-deprecated.eu-central-1.amazonaws.com')>",
+      "<DNSName(value='s3-deprecated.eu-central-1.amazonaws.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "51:CF:6D:94:41:F5:67:6A:FE:89:72:3A:64:79:5A:9B:F0:C0:74:36:1D:37:22:6B:36:1B:DB:C3:4C:BD:A8:01",
+    "found_in_packet_number": "557",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

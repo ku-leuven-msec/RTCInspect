@@ -1,0 +1,2344 @@
+{
+  "geoip_summary": {
+    "142.250.82.212": {
+      "ip": "142.250.82.212",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "stun_transactions": {
+    "6365745643647571426f6234": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976815.384772,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5a4c469ee3e2882be6c28b20ba74d1df6751b717",
+            "FINGERPRINT": "0xfaea9e57"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976815.39552,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "bbc205650410d1f7f3121def782e27f668b16bf6",
+            "FINGERPRINT": "0xaafef787"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "50383678556e5a7432764341": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976815.435616,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "9bc55b289a0616dbf42b85d14a5d38f82a1a4884",
+            "FINGERPRINT": "0x3bf2d836"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976815.440288,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "120605ea5087467eb6f0aaf987c661d5657db5f8",
+            "FINGERPRINT": "0x8543abd3"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "53554a75646559426b692f6b": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976815.498014,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "cff69679b9d91aa53215d95e8d1ad9114a2f11ab",
+            "FINGERPRINT": "0xd057ce8f"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976815.503056,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9c285a1efddf45aea2b5b7221fafae3e82b6bea3",
+            "FINGERPRINT": "0xb19a6ce4"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "6d4c2f4e637a707257666451": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976815.562281,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 19305,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f556bfab5d28995b51914905759cfb30dcbba8f8",
+            "FINGERPRINT": "0xabd9c711"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976815.575782,
+          "src_ip": "142.250.82.212",
+          "src_port": 19305,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "7553471b607fdcefeaeb93250b67905ff1eec945",
+            "FINGERPRINT": "0x82968d6f"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "364b535a6367443944513551": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976816.42092,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "b0a5b37e3dd9e26ac612804535ab183272a68ffa",
+            "FINGERPRINT": "0x203dec68"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976816.426483,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "f304055635149bb6ebbec7132935dcc798e8d4b7",
+            "FINGERPRINT": "0xae5ea4bd"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "516d39794f557031786f6236": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976817.514324,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "c996a40690e75aaace6b71972cd76ef7068e8400",
+            "FINGERPRINT": "0xbde3b6b7"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976817.518983,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9c758b7e9b27400c607373b78220b9f120a549be",
+            "FINGERPRINT": "0x19e44400"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "445a6d3066367655522f3171": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976820.217381,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "dbfa3a778204c21ca8a305942dd7eb507fe384cc",
+            "FINGERPRINT": "0xf858a3f2"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976820.222308,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "39213ee40b7a02a2c3224e949ca1acb02378ab41",
+            "FINGERPRINT": "0x03afd5cc"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "7776737151433969796c526e": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976822.936899,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "58fc39bad70b740272c4f0858dbbd2ddeec616bc",
+            "FINGERPRINT": "0x9b117fda"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976822.941766,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "c9cfc695fb8d0a07ca7b621e4f216aa83d5527f1",
+            "FINGERPRINT": "0xf7b17f3d"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "783867337838495867596a44": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976825.670537,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f3068bb49e4d6319d55b7014f7df32d22da73b8d",
+            "FINGERPRINT": "0xd1f01f5b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976825.675287,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "e6cc88da94a22539e03fc73101cdfc5393ef1ec4",
+            "FINGERPRINT": "0x9a2de17c"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "6a4a674372664f6931433677": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976828.24563,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "2aae6aef3f1dd813c71a71283827d8073cd4efc9",
+            "FINGERPRINT": "0x8575062e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976828.25672,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "ee1716f2d526f12f3b55ce986750f5ad5eaecc40",
+            "FINGERPRINT": "0x233e16b6"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "79643841756642434a716441": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976830.998678,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "12735106a595fc636baa486a2029841ae2509a62",
+            "FINGERPRINT": "0x0248c571"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976831.00304,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "4211d6a3942adaa92f41ca12bc0687cdfeee9ee2",
+            "FINGERPRINT": "0x339842ac"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "6c6373512f5854624965476c": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976833.779752,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5b882edd6df6f5859c88d6b714b825eb84d7b854",
+            "FINGERPRINT": "0xaa9a99cd"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976833.784189,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "5705fdd065ec2706a00ab12e729f7538beedb7a3",
+            "FINGERPRINT": "0x11a19f04"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "2b686b7035702f717878414f": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976836.279655,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "1d47d6f42fde142a50af493cbb26bcdf71381482",
+            "FINGERPRINT": "0x89a05ad9"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976836.284235,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "0e010d778cee12c0fb41d4375212921240980c82",
+            "FINGERPRINT": "0xa4b85be8"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "7273746e435878776c2b2f72": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976838.779365,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5dc833c560637f4244942a0321ad4fbbbd149ee1",
+            "FINGERPRINT": "0x4129c4da"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976838.784026,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9e7ff5a99ba8abee3b0e811f6faa74da4b8c15b3",
+            "FINGERPRINT": "0x1979c76a"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "6b5746376a6c434245794555": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976841.279529,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "10d45f32dc52f482b9abb27a5df91470764a8a00",
+            "FINGERPRINT": "0x4bc69f4e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976841.284098,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "cac075d91ebc06b5e287d1ff3ae52b1fe6c46cc9",
+            "FINGERPRINT": "0x5cc7b993"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "554a6462596e4b484f37714d": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976844.045364,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "fb0230fdbf58a6186ab2e8778ef0e4edb0c46251",
+            "FINGERPRINT": "0xcf20be9d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976844.050984,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "4288b834e3b8d76a81a3fcd99a673edbb6a70ed3",
+            "FINGERPRINT": "0x298f2317"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "717451614278577833436270": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976846.798213,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f989da80a05c80d459dbfea76b6fff574363e61d",
+            "FINGERPRINT": "0xece3f25b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976846.802745,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "267a3ca509e07babfaecec39a6409fde3fc512aa",
+            "FINGERPRINT": "0x376a10b6"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "58684d6757475a4344637335": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976849.499702,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "6cda7b9210baff0379d1a98c26676992ed3a49fd",
+            "FINGERPRINT": "0x59310d18"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976849.504744,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "a4d64da00e97050e0b85db21006dc85d55213cde",
+            "FINGERPRINT": "0xa5aa610e"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "644351794f7365376f447548": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976852.220174,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "86de335ee59636da34afca1a80529104cec542ed",
+            "FINGERPRINT": "0xd5ed7b60"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976852.225108,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "74367e26291c5ec81a1caae667df6296bf5d7efb",
+            "FINGERPRINT": "0xaa54016b"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "595a353754794e454b545633": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976854.719973,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "a4fb0a39006fea668459315fb9a597b858dc5b0c",
+            "FINGERPRINT": "0x8b4d4738"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976854.724631,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "8f343a6ade55100817240ea62df0a41fedf1c190",
+            "FINGERPRINT": "0x97969565"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "695a564964414b50652f4547": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976857.439924,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "a24e952bc7ae9a6fac570b37be7237cb3c23ac82",
+            "FINGERPRINT": "0xd436c0da"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976857.444421,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "aa39ed316bbabbcfcb732beb6b6d177071fbce6b",
+            "FINGERPRINT": "0x75e8741e"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    },
+    "7a7455433756565271666647": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.136",
+      "responder_ip": "142.250.82.212",
+      "exposed_reflexive_address": "193.190.225.247:62505",
+      "public_ip_disclosed": true,
+      "library_info": "Not detected",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1751976860.20506,
+          "src_ip": "192.168.1.136",
+          "src_port": 62505,
+          "dst_ip": "142.250.82.212",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": "",
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "3cc8900269b8a1b3f03c09a61839d9dd588b2035",
+            "FINGERPRINT": "0x9503bf27"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1751976860.209673,
+          "src_ip": "142.250.82.212",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.136",
+          "dst_port": 62505,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "e78a2caa9e5d6fcbfa739eb73520e2029adb960e",
+            "FINGERPRINT": "0x120a5caf"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ",
+        "ufrag_local": "9K6m",
+        "tie_breaker": 85061383157792196,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1845501695,
+        "priority_max": 1845501695
+      }
+    }
+  },
+  "ice_transactions": {
+    "6365745643647571426f6234": {
+      "txid": "6365745643647571426f6234",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976815.384772,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "6365745643647571426f6234",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5a4c469ee3e2882be6c28b20ba74d1df6751b717",
+            "FINGERPRINT": "0xfaea9e57"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976815.39552,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "6365745643647571426f6234",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "bbc205650410d1f7f3121def782e27f668b16bf6",
+            "FINGERPRINT": "0xaafef787"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "50383678556e5a7432764341": {
+      "txid": "50383678556e5a7432764341",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976815.435616,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "50383678556e5a7432764341",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "9bc55b289a0616dbf42b85d14a5d38f82a1a4884",
+            "FINGERPRINT": "0x3bf2d836"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976815.440288,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "50383678556e5a7432764341",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "120605ea5087467eb6f0aaf987c661d5657db5f8",
+            "FINGERPRINT": "0x8543abd3"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "53554a75646559426b692f6b": {
+      "txid": "53554a75646559426b692f6b",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976815.498014,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "53554a75646559426b692f6b",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "cff69679b9d91aa53215d95e8d1ad9114a2f11ab",
+            "FINGERPRINT": "0xd057ce8f"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976815.503056,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "53554a75646559426b692f6b",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9c285a1efddf45aea2b5b7221fafae3e82b6bea3",
+            "FINGERPRINT": "0xb19a6ce4"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "6d4c2f4e637a707257666451": {
+      "txid": "6d4c2f4e637a707257666451",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:19305",
+      "response_path": "142.250.82.212:19305 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976815.562281,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:19305",
+          "transaction_id": "6d4c2f4e637a707257666451",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f556bfab5d28995b51914905759cfb30dcbba8f8",
+            "FINGERPRINT": "0xabd9c711"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976815.575782,
+          "src": "142.250.82.212:19305",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "6d4c2f4e637a707257666451",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "7553471b607fdcefeaeb93250b67905ff1eec945",
+            "FINGERPRINT": "0x82968d6f"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "364b535a6367443944513551": {
+      "txid": "364b535a6367443944513551",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976816.42092,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "364b535a6367443944513551",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "b0a5b37e3dd9e26ac612804535ab183272a68ffa",
+            "FINGERPRINT": "0x203dec68"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976816.426483,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "364b535a6367443944513551",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "f304055635149bb6ebbec7132935dcc798e8d4b7",
+            "FINGERPRINT": "0xae5ea4bd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "516d39794f557031786f6236": {
+      "txid": "516d39794f557031786f6236",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976817.514324,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "516d39794f557031786f6236",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "c996a40690e75aaace6b71972cd76ef7068e8400",
+            "FINGERPRINT": "0xbde3b6b7"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976817.518983,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "516d39794f557031786f6236",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9c758b7e9b27400c607373b78220b9f120a549be",
+            "FINGERPRINT": "0x19e44400"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "445a6d3066367655522f3171": {
+      "txid": "445a6d3066367655522f3171",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976820.217381,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "445a6d3066367655522f3171",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "dbfa3a778204c21ca8a305942dd7eb507fe384cc",
+            "FINGERPRINT": "0xf858a3f2"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976820.222308,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "445a6d3066367655522f3171",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "39213ee40b7a02a2c3224e949ca1acb02378ab41",
+            "FINGERPRINT": "0x03afd5cc"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "7776737151433969796c526e": {
+      "txid": "7776737151433969796c526e",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976822.936899,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "7776737151433969796c526e",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "58fc39bad70b740272c4f0858dbbd2ddeec616bc",
+            "FINGERPRINT": "0x9b117fda"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976822.941766,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "7776737151433969796c526e",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "c9cfc695fb8d0a07ca7b621e4f216aa83d5527f1",
+            "FINGERPRINT": "0xf7b17f3d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "783867337838495867596a44": {
+      "txid": "783867337838495867596a44",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976825.670537,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "783867337838495867596a44",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f3068bb49e4d6319d55b7014f7df32d22da73b8d",
+            "FINGERPRINT": "0xd1f01f5b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976825.675287,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "783867337838495867596a44",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "e6cc88da94a22539e03fc73101cdfc5393ef1ec4",
+            "FINGERPRINT": "0x9a2de17c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "6a4a674372664f6931433677": {
+      "txid": "6a4a674372664f6931433677",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976828.24563,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "6a4a674372664f6931433677",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "2aae6aef3f1dd813c71a71283827d8073cd4efc9",
+            "FINGERPRINT": "0x8575062e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976828.25672,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "6a4a674372664f6931433677",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "ee1716f2d526f12f3b55ce986750f5ad5eaecc40",
+            "FINGERPRINT": "0x233e16b6"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "79643841756642434a716441": {
+      "txid": "79643841756642434a716441",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976830.998678,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "79643841756642434a716441",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "12735106a595fc636baa486a2029841ae2509a62",
+            "FINGERPRINT": "0x0248c571"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976831.00304,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "79643841756642434a716441",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "4211d6a3942adaa92f41ca12bc0687cdfeee9ee2",
+            "FINGERPRINT": "0x339842ac"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "6c6373512f5854624965476c": {
+      "txid": "6c6373512f5854624965476c",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976833.779752,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "6c6373512f5854624965476c",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5b882edd6df6f5859c88d6b714b825eb84d7b854",
+            "FINGERPRINT": "0xaa9a99cd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976833.784189,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "6c6373512f5854624965476c",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "5705fdd065ec2706a00ab12e729f7538beedb7a3",
+            "FINGERPRINT": "0x11a19f04"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "2b686b7035702f717878414f": {
+      "txid": "2b686b7035702f717878414f",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976836.279655,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "2b686b7035702f717878414f",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "1d47d6f42fde142a50af493cbb26bcdf71381482",
+            "FINGERPRINT": "0x89a05ad9"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976836.284235,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "2b686b7035702f717878414f",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "0e010d778cee12c0fb41d4375212921240980c82",
+            "FINGERPRINT": "0xa4b85be8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "7273746e435878776c2b2f72": {
+      "txid": "7273746e435878776c2b2f72",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976838.779365,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "7273746e435878776c2b2f72",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "5dc833c560637f4244942a0321ad4fbbbd149ee1",
+            "FINGERPRINT": "0x4129c4da"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976838.784026,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "7273746e435878776c2b2f72",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "9e7ff5a99ba8abee3b0e811f6faa74da4b8c15b3",
+            "FINGERPRINT": "0x1979c76a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "6b5746376a6c434245794555": {
+      "txid": "6b5746376a6c434245794555",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976841.279529,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "6b5746376a6c434245794555",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "10d45f32dc52f482b9abb27a5df91470764a8a00",
+            "FINGERPRINT": "0x4bc69f4e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976841.284098,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "6b5746376a6c434245794555",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "cac075d91ebc06b5e287d1ff3ae52b1fe6c46cc9",
+            "FINGERPRINT": "0x5cc7b993"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "554a6462596e4b484f37714d": {
+      "txid": "554a6462596e4b484f37714d",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976844.045364,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "554a6462596e4b484f37714d",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "fb0230fdbf58a6186ab2e8778ef0e4edb0c46251",
+            "FINGERPRINT": "0xcf20be9d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976844.050984,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "554a6462596e4b484f37714d",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "4288b834e3b8d76a81a3fcd99a673edbb6a70ed3",
+            "FINGERPRINT": "0x298f2317"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "717451614278577833436270": {
+      "txid": "717451614278577833436270",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976846.798213,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "717451614278577833436270",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "f989da80a05c80d459dbfea76b6fff574363e61d",
+            "FINGERPRINT": "0xece3f25b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976846.802745,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "717451614278577833436270",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "267a3ca509e07babfaecec39a6409fde3fc512aa",
+            "FINGERPRINT": "0x376a10b6"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "58684d6757475a4344637335": {
+      "txid": "58684d6757475a4344637335",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976849.499702,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "58684d6757475a4344637335",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "6cda7b9210baff0379d1a98c26676992ed3a49fd",
+            "FINGERPRINT": "0x59310d18"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976849.504744,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "58684d6757475a4344637335",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "a4d64da00e97050e0b85db21006dc85d55213cde",
+            "FINGERPRINT": "0xa5aa610e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "644351794f7365376f447548": {
+      "txid": "644351794f7365376f447548",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976852.220174,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "644351794f7365376f447548",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "86de335ee59636da34afca1a80529104cec542ed",
+            "FINGERPRINT": "0xd5ed7b60"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976852.225108,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "644351794f7365376f447548",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "74367e26291c5ec81a1caae667df6296bf5d7efb",
+            "FINGERPRINT": "0xaa54016b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "595a353754794e454b545633": {
+      "txid": "595a353754794e454b545633",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976854.719973,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "595a353754794e454b545633",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "a4fb0a39006fea668459315fb9a597b858dc5b0c",
+            "FINGERPRINT": "0x8b4d4738"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976854.724631,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "595a353754794e454b545633",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "8f343a6ade55100817240ea62df0a41fedf1c190",
+            "FINGERPRINT": "0x97969565"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "695a564964414b50652f4547": {
+      "txid": "695a564964414b50652f4547",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976857.439924,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "695a564964414b50652f4547",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "a24e952bc7ae9a6fac570b37be7237cb3c23ac82",
+            "FINGERPRINT": "0xd436c0da"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976857.444421,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "695a564964414b50652f4547",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "aa39ed316bbabbcfcb732beb6b6d177071fbce6b",
+            "FINGERPRINT": "0x75e8741e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "7a7455433756565271666647": {
+      "txid": "7a7455433756565271666647",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.136:62505 \u2192 142.250.82.212:3478",
+      "response_path": "142.250.82.212:3478 \u2192 192.168.1.136:62505",
+      "messages": [
+        {
+          "timestamp": 1751976860.20506,
+          "src": "192.168.1.136:62505",
+          "dst": "142.250.82.212:3478",
+          "transaction_id": "7a7455433756565271666647",
+          "message_type": "Binding Request",
+          "username": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+          "attributes": {
+            "USERNAME": "GfZfvjmHmB3CiAoKAAiKYigCIAMQ:9K6m",
+            "Unknown(0xc057)": "000003e7",
+            "ICE-CONTROLLING": 85061383157792196,
+            "USE-CANDIDATE": true,
+            "PRIORITY": 1845501695,
+            "MESSAGE-INTEGRITY": "3cc8900269b8a1b3f03c09a61839d9dd588b2035",
+            "FINGERPRINT": "0x9503bf27"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1751976860.209673,
+          "src": "142.250.82.212:3478",
+          "dst": "192.168.1.136:62505",
+          "transaction_id": "7a7455433756565271666647",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:62505",
+            "MESSAGE-INTEGRITY": "e78a2caa9e5d6fcbfa739eb73520e2029adb960e",
+            "FINGERPRINT": "0x120a5caf"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "Unknown",
+          "library_version": "Unknown"
+        }
+      ]
+    }
+  }
+}

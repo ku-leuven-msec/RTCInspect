@@ -1,0 +1,43 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "TCP:192.168.1.111:51117-52.223.23.226:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:51117-52.223.23.226:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 456 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.52)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "P\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:108.128.214.160:8557-192.168.1.111:50672",
+      "protocol": "TCP",
+      "endpoints": "108.128.214.160:8557-192.168.1.111:50672",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 357 bytes)",
+        "Medium entropy (7.79)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0016\u0003\u0003\u0000?\u0001\u0000\u0000;\u0003\u0003Y\u00a6\u00c6\u00e5\u00f7\u00ae;n\u00a0\u000f\u009e\u000f\u00a1\u00d5\u00c5\u00ca;\u00b7\u0098\u00bf\u00e8C\u00fc\u0012\u0099\u00b2\u00a2\u00f7\t\u00d51\u00ea\u0000\u0000\u0004\u0000<\u0000\u009c\u0001\u0000\u0000\u000e\u0000\r\u0000\n\u0000\b\u0006\u0001\u0005\u0001\u0004\u0001\u0002\u0001\u0016\u0003\u0003\u0000J\u0002\u0000\u0000F\u0003\u0003\u00ed(\u00f7\u00d7Ma_\u00efH\u00e3\u00a0Z\u00db\b\u00d9\u0095\u00a3\u000bu\u0002\u0011\u00f0\u0099\u00c6\u0004\u00c3\u000f\u00f8g\u00e3\u00dd\" @\u0012\u00a4\u00e8c\u00d1+\u00cc k\u009c\u00d1\u00a3\u00c8f?\u001e\u00a8M\u001a\u00d1_\u00f5_\u0001\u00c7=eY\u00b0\u000bJ\u0000<\u0000\u0016\u0003\u0003\u0013\u00ca\u000b\u0000\u0013\u00c6\u0000\u0013\u00c3\u0000\u0006F0\u0082\u0006B0\u0082\u0005*\u00a0\u0003\u0002\u0001\u0002\u0002\u0010\u0005\u00a0\u008e4[n\u00bar\u0080\u00d9\u009a\u00e3\u0087\u00d1\u00e2\u00da0\r\u0006\t*\u0086H",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    }
+  ]
+}

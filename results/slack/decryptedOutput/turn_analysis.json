@@ -1,0 +1,324 @@
+{
+  "geoip_summary": {
+    "99.77.157.55": {
+      "ip": "99.77.157.55",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "turn_transactions": {
+    "37623861386d6d59376d7578": [
+      {
+        "timestamp": 1752060935.330823,
+        "src": "192.168.1.125:61009",
+        "dst": "99.77.157.55:22466",
+        "message_type": "Allocate Request",
+        "transaction_id": "37623861386d6d59376d7578",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300082112a44237623861386d6d59376d75780019000411000000",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1752060935.339749,
+        "src": "99.77.157.55:22466",
+        "dst": "192.168.1.125:61009",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "37623861386d6d59376d7578",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300502112a44237623861386d6d59376d75780009001000000401556e617574686f72697a65640015001064643266393439366339396233353436001400146d312e6577332e6170702e6368696d652e617773802200044e6f6e65802800045c02c135",
+        "credentials": {
+          "realm": "m1.ew3.app.chime.aws",
+          "nonce": "dd2f9496c99b3546"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorized"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "7838646d5944322b32644e36": [
+      {
+        "timestamp": 1752060935.340159,
+        "src": "192.168.1.125:61009",
+        "dst": "99.77.157.55:22466",
+        "message_type": "Allocate Request",
+        "transaction_id": "7838646d5944322b32644e36",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300802112a4427838646d5944322b32644e3600190004110000000006002f313735323036313233343a64336637353561362d356362382d313166302d613937322d30363334373638646263623100001400146d312e6577332e6170702e6368696d652e6177730015001064643266393439366339396233353436000800143c89ff31a2c347baca68c6e0d627cfe3f1b00a65",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "1752061234:d3f755a6-5cb8-11f0-a972-0634768dbcb1",
+          "realm": "m1.ew3.app.chime.aws",
+          "nonce": "dd2f9496c99b3546"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1752060935.34885,
+        "src": "99.77.157.55:22466",
+        "dst": "192.168.1.125:61009",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "7838646d5944322b32644e36",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010300502112a4427838646d5944322b32644e36001600080001f7632b13922a002000080001cf43e0ac45b5000d0004000002588010000400008583802200044e6f6e65000800146062d84b4d3cf98402f638ff4b9637c7c6d2c4638028000455686952",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "10.1.54.104:54897",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:61009",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:61009",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "44746c70522f4b7037723666": [
+      {
+        "timestamp": 1752060935.381919,
+        "src": "192.168.1.125:61009",
+        "dst": "99.77.157.55:22466",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "44746c70522f4b7037723666",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000800842112a44244746c70522f4b7037723666001200080001638c2b13e4660006002f313735323036313233343a64336637353561362d356362382d313166302d613937322d30363334373638646263623100001400146d312e6577332e6170702e6368696d652e6177730015001064643266393439366339396233353436000800144802ccff1cea37a5872d98c71b368541acc215ad",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "10.1.64.36:17054"
+        },
+        "credentials": {
+          "username": "1752061234:d3f755a6-5cb8-11f0-a972-0634768dbcb1",
+          "realm": "m1.ew3.app.chime.aws",
+          "nonce": "dd2f9496c99b3546"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1752060935.38966,
+        "src": "99.77.157.55:22466",
+        "dst": "192.168.1.125:61009",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "44746c70522f4b7037723666",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010800282112a44244746c70522f4b7037723666802200044e6f6e6500080014cd9fb4c0510e4ca9492e5c0686b8d8cd6445b1cf8028000498f890e4",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "512f6d784245594836625a45": [
+      {
+        "timestamp": 1752060935.390774,
+        "src": "192.168.1.125:61009",
+        "dst": "99.77.157.55:22466",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "512f6d784245594836625a45",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0009008c2112a442512f6d784245594836625a45000c000440000000001200080001638c2b13e4660006002f313735323036313233343a64336637353561362d356362382d313166302d613937322d30363334373638646263623100001400146d312e6577332e6170702e6368696d652e6177730015001064643266393439366339396233353436000800149cc0df761930b7de6c7113cd8d7d751f633ad429",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "10.1.64.36:17054",
+          "CHANNEL-NUMBER": {
+            "channel": 16384,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "1752061234:d3f755a6-5cb8-11f0-a972-0634768dbcb1",
+          "realm": "m1.ew3.app.chime.aws",
+          "nonce": "dd2f9496c99b3546"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1752060935.399815,
+        "src": "99.77.157.55:22466",
+        "dst": "192.168.1.125:61009",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "512f6d784245594836625a45",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010900282112a442512f6d784245594836625a45802200044e6f6e6500080014453ede9a67e9e128bcb8658379bac81c4efd2bae80280004a82b8c63",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ]
+  },
+  "turn_allocations": {
+    "192.168.1.125:61009|99.77.157.55:22466": {
+      "client": "192.168.1.125:61009",
+      "server": "99.77.157.55:22466",
+      "relayed_address": "10.1.54.104:54897",
+      "requested_transport": null,
+      "lifetime": 600,
+      "allocated": true,
+      "refresh_count": 0,
+      "first_seen": 1752060935.330823,
+      "last_seen": 1752060935.399815,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "10.1.64.36:17054"
+      ],
+      "channels": {
+        "16384": "10.1.64.36:17054"
+      },
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorized"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2344 @@
+[
+  {
+    "protocol": "DTLS",
+    "client_endpoint": "18.200.70.75:62428",
+    "server_endpoint": "192.168.1.218:44000",
+    "total_bytes": 3667,
+    "client_hello": {
+      "version": "DTLS 1.2 (0xfefd)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+        "Unknown (0x0039)",
+        "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+        "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+        "Unknown (0xc019)",
+        "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+        "Unknown (0x0033)",
+        "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+        "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+        "Unknown (0xc018)",
+        "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDH_anon_WITH_RC4_128_MD5",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+        "Unknown (0x0013)",
+        "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+          "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_256_CBC_SHA256",
+          "TLS_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+          "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDH_anon_WITH_RC4_128_MD5",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_RSA_WITH_3DES_EDE_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": true,
+      "validity_period_ok": true,
+      "valid_from": "2023-03-12T10:17:14+00:00",
+      "valid_until": "2023-04-12T10:17:14+00:00",
+      "issuer_cn": "WebRTC",
+      "subject_cn": "WebRTC",
+      "subject_alternative_names": [],
+      "key_exchange_algorithm": "ecdsa-with-SHA256",
+      "fingerprint": "66:2A:46:0E:CC:E6:2A:88:11:F8:E7:10:3F:B3:E3:07:4D:8C:2B:77:A5:DB:48:42:1C:C4:CC:6F:9C:5F:E6:07"
+    }
+  },
+  {
+    "protocol": "DTLS",
+    "client_endpoint": "18.200.70.75:33895",
+    "server_endpoint": "192.168.1.218:49304",
+    "total_bytes": 3668,
+    "client_hello": {
+      "version": "DTLS 1.2 (0xfefd)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+        "Unknown (0x0039)",
+        "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+        "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+        "Unknown (0xc019)",
+        "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+        "Unknown (0x0033)",
+        "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+        "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+        "Unknown (0xc018)",
+        "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDH_anon_WITH_RC4_128_MD5",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+        "Unknown (0x0013)",
+        "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+        "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+          "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+          "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_256_CBC_SHA256",
+          "TLS_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+          "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+          "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDH_anon_WITH_RC4_128_MD5",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+          "TLS_RSA_WITH_3DES_EDE_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": true,
+      "validity_period_ok": true,
+      "valid_from": "2023-03-12T10:17:14+00:00",
+      "valid_until": "2023-04-12T10:17:14+00:00",
+      "issuer_cn": "WebRTC",
+      "subject_cn": "WebRTC",
+      "subject_alternative_names": [],
+      "key_exchange_algorithm": "ecdsa-with-SHA256",
+      "fingerprint": "66:2A:46:0E:CC:E6:2A:88:11:F8:E7:10:3F:B3:E3:07:4D:8C:2B:77:A5:DB:48:42:1C:C4:CC:6F:9C:5F:E6:07"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:50938",
+    "server_endpoint": "54.156.211.246:443",
+    "total_bytes": 14410,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:52391",
+    "server_endpoint": "52.223.23.226:443",
+    "total_bytes": 427504,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:54107",
+    "server_endpoint": "18.200.70.75:8557",
+    "total_bytes": 8067,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-01-17T00:00:00+00:00",
+      "valid_until": "2023-12-18T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com",
+      "subject_alternative_names": [
+        "<DNSName(value='eu-west-1.prod.rms.ring.devices.a2z.com')>",
+        "<DNSName(value='*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "8F:45:B1:C9:FC:2F:34:7C:A8:66:2E:A7:3F:49:00:3C:0C:76:BD:31:73:72:33:DE:1B:FF:88:C8:CD:72:1C:BF"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:45990",
+    "server_endpoint": "3.33.210.71:443",
+    "total_bytes": 41437,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:50093",
+    "server_endpoint": "54.156.211.246:443",
+    "total_bytes": 14380,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:50991",
+    "server_endpoint": "52.223.23.226:443",
+    "total_bytes": 253096,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:61799",
+    "server_endpoint": "35.170.112.211:443",
+    "total_bytes": 114655,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:58140",
+    "server_endpoint": "18.200.70.75:8557",
+    "total_bytes": 9466,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-01-17T00:00:00+00:00",
+      "valid_until": "2023-12-18T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com",
+      "subject_alternative_names": [
+        "<DNSName(value='eu-west-1.prod.rms.ring.devices.a2z.com')>",
+        "<DNSName(value='*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "8F:45:B1:C9:FC:2F:34:7C:A8:66:2E:A7:3F:49:00:3C:0C:76:BD:31:73:72:33:DE:1B:FF:88:C8:CD:72:1C:BF"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47524",
+    "server_endpoint": "35.71.159.71:443",
+    "total_bytes": 32050,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {}
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:45994",
+    "server_endpoint": "3.33.210.71:443",
+    "total_bytes": 1425,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {}
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:45998",
+    "server_endpoint": "3.33.210.71:443",
+    "total_bytes": 4684,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {}
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:39554",
+    "server_endpoint": "52.19.206.175:443",
+    "total_bytes": 33002,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-02-14T00:00:00+00:00",
+      "valid_until": "2023-10-13T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "api.prod.signalling.ring.devices.a2z.com",
+      "subject_alternative_names": [
+        "<DNSName(value='api.prod.signalling.ring.devices.a2z.com')>",
+        "<DNSName(value='api.556689414634.eu-west-1.prod.signalling.ring.devices.a2z.com')>",
+        "<DNSName(value='api.eu-west-1.prod.signalling.ring.devices.a2z.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "CE:97:D6:49:94:AA:50:2B:59:C1:2A:03:E0:5A:C9:F7:8D:95:5A:D6:72:A8:A0:23:36:3C:45:D4:4A:71:8D:A4"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41162",
+    "server_endpoint": "35.173.209.252:443",
+    "total_bytes": 7183,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41914",
+    "server_endpoint": "54.71.203.200:443",
+    "total_bytes": 7262,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-02-09T00:00:00+00:00",
+      "valid_until": "2023-07-08T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "*.mobile.crashtracking.prod.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.mobile.crashtracking.prod.ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "65:69:4A:F1:D9:0A:AA:71:3B:A6:E8:26:5E:DD:B2:99:FA:D3:7B:57:6B:F4:2F:EF:91:B1:0D:E7:98:F0:69:A0"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:53990",
+    "server_endpoint": "54.156.211.246:443",
+    "total_bytes": 16039,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:37676",
+    "server_endpoint": "54.77.229.153:443",
+    "total_bytes": 7380,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-02-23T00:00:00+00:00",
+      "valid_until": "2024-03-19T23:59:59+00:00",
+      "issuer_cn": "GeoTrust RSA CA 2018",
+      "subject_cn": "events.mapbox.com",
+      "subject_alternative_names": [
+        "<DNSName(value='events.mapbox.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "FE:7B:F9:FB:B9:F5:66:20:63:F0:48:3D:F8:FD:EE:7D:F8:A1:0E:EC:C7:EF:93:A8:BD:01:1C:DA:C9:74:9A:1E"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:37678",
+    "server_endpoint": "54.77.229.153:443",
+    "total_bytes": 5080,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-02-23T00:00:00+00:00",
+      "valid_until": "2024-03-19T23:59:59+00:00",
+      "issuer_cn": "GeoTrust RSA CA 2018",
+      "subject_cn": "events.mapbox.com",
+      "subject_alternative_names": [
+        "<DNSName(value='events.mapbox.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "FE:7B:F9:FB:B9:F5:66:20:63:F0:48:3D:F8:FD:EE:7D:F8:A1:0E:EC:C7:EF:93:A8:BD:01:1C:DA:C9:74:9A:1E"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47160",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 55235,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47162",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 5162,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47164",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 5096,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41206",
+    "server_endpoint": "52.218.105.83:443",
+    "total_bytes": 59475,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41208",
+    "server_endpoint": "52.218.105.83:443",
+    "total_bytes": 961518,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:52621",
+    "server_endpoint": "52.223.23.226:443",
+    "total_bytes": 403000,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:42680",
+    "server_endpoint": "3.5.69.112:443",
+    "total_bytes": 209334,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:42682",
+    "server_endpoint": "3.5.69.112:443",
+    "total_bytes": 32875,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:42684",
+    "server_endpoint": "3.5.69.112:443",
+    "total_bytes": 4629,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:42686",
+    "server_endpoint": "3.5.69.112:443",
+    "total_bytes": 894361,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-09-21T00:00:00+00:00",
+      "valid_until": "2023-08-30T23:59:59+00:00",
+      "issuer_cn": "Amazon",
+      "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+      "subject_alternative_names": [
+        "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+        "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:60265",
+    "server_endpoint": "18.200.70.75:8557",
+    "total_bytes": 7992,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-01-17T00:00:00+00:00",
+      "valid_until": "2023-12-18T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com",
+      "subject_alternative_names": [
+        "<DNSName(value='eu-west-1.prod.rms.ring.devices.a2z.com')>",
+        "<DNSName(value='*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "8F:45:B1:C9:FC:2F:34:7C:A8:66:2E:A7:3F:49:00:3C:0C:76:BD:31:73:72:33:DE:1B:FF:88:C8:CD:72:1C:BF"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:49390",
+    "server_endpoint": "142.251.36.42:443",
+    "total_bytes": 10376,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {}
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47180",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 17082,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47184",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 5096,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47182",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 8049,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47186",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 26647,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47192",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 9905,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41196",
+    "server_endpoint": "35.173.209.252:443",
+    "total_bytes": 10832,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47464",
+    "server_endpoint": "18.235.200.139:443",
+    "total_bytes": 9214,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-10-20T00:00:00+00:00",
+      "valid_until": "2023-11-18T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "50:E8:83:BF:82:82:1B:A9:26:C1:5C:A9:5D:72:90:A7:45:73:3D:CB:A4:DB:B6:34:2A:F4:40:AB:BA:7D:86:70"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47194",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 5169,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:47196",
+    "server_endpoint": "15.197.206.173:443",
+    "total_bytes": 5228,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:41206",
+    "server_endpoint": "35.173.209.252:443",
+    "total_bytes": 7619,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:46646",
+    "server_endpoint": "40.70.161.102:443",
+    "total_bytes": 6256,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_256_GCM_SHA384",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-01-23T13:49:37+00:00",
+      "valid_until": "2024-01-18T13:49:37+00:00",
+      "issuer_cn": "Microsoft Azure TLS Issuing CA 05",
+      "subject_cn": "*.appcenter.ms",
+      "subject_alternative_names": [
+        "<DNSName(value='*.appcenter.ms')>",
+        "<DNSName(value='appcenter.ms')>",
+        "<DNSName(value='codepush.teams.microsoft.com')>"
+      ],
+      "key_exchange_algorithm": "sha384WithRSAEncryption",
+      "fingerprint": "68:0E:BD:B1:C4:5D:35:A1:74:EB:13:2B:BA:EF:0B:46:55:9C:51:AD:95:E8:85:3B:5D:94:02:53:CE:EC:A5:D3"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.218:40574",
+    "server_endpoint": "176.34.81.102:443",
+    "total_bytes": 8303,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-02-14T00:00:00+00:00",
+      "valid_until": "2023-10-13T23:59:59+00:00",
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "subject_cn": "api.prod.signalling.ring.devices.a2z.com",
+      "subject_alternative_names": [
+        "<DNSName(value='api.prod.signalling.ring.devices.a2z.com')>",
+        "<DNSName(value='api.556689414634.eu-west-1.prod.signalling.ring.devices.a2z.com')>",
+        "<DNSName(value='api.eu-west-1.prod.signalling.ring.devices.a2z.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "CE:97:D6:49:94:AA:50:2B:59:C1:2A:03:E0:5A:C9:F7:8D:95:5A:D6:72:A8:A0:23:36:3C:45:D4:4A:71:8D:A4"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.111:62931",
+    "server_endpoint": "54.156.211.246:443",
+    "total_bytes": 4258,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2022-08-24T00:00:00+00:00",
+      "valid_until": "2023-09-24T23:59:59+00:00",
+      "issuer_cn": "DigiCert SHA2 Secure Server CA",
+      "subject_cn": "*.ring.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.ring.com')>",
+        "<DNSName(value='ring.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31"
+    }
+  }
+]

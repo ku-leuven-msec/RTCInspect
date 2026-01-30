@@ -1,0 +1,17 @@
+{
+  "identified_media_stream": {
+    "session_id": "TCP:192.168.1.198:37490-3.64.70.158:443",
+    "protocol": "TCP",
+    "total_packets": 259,
+    "total_data_volume_mb": 0.15
+  },
+  "encryption_analysis": {
+    "average_payload_entropy": 7.8475,
+    "encryption_grade": "Very High (Strongly indicates strong encryption or compression)",
+    "analysis_note": "Entropy calculated on 50 media-only packets, ignoring initial setup phase."
+  },
+  "extra_info": {
+    "protocol_identification": "Generic TCP Stream",
+    "notes": "This analysis identifies the conversation with the highest data volume. The 'Encryption Grade' is based on the randomness (entropy) of the steady-state media payload, excluding initial handshake packets."
+  }
+}

@@ -1,0 +1,1752 @@
+{
+  "geoip_summary": {
+    "138.2.128.124": {
+      "ip": "138.2.128.124",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    },
+    "144.24.187.227": {
+      "ip": "144.24.187.227",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "turn_transactions": {
+    "d8030000f0e0c12a281e3406": [
+      {
+        "timestamp": 1758716901.0585032,
+        "src": "192.168.1.66:54886",
+        "dst": "138.2.128.124:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000f0e0c12a281e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300202112a442d8030000f0e0c12a281e3406001900041100000000310004000000018022000c706a6e6174682d322e332e34",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716901.0698047,
+        "src": "138.2.128.124:34782",
+        "dst": "192.168.1.66:54886",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "d8030000f0e0c12a281e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300602112a442d8030000f0e0c12a281e34060009001000000401556e617574686f726973656400150010356232666137343435633766643663350014000d6d79636f6d70616e792e6f72676172738022001d4369747269782d332e322e352e3220274d61727368616c20576573742722000c",
+        "credentials": {
+          "realm": "mycompany.org",
+          "nonce": "5b2fa7445c7fd6c5"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorised"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000c28ba30f291e3406": [
+      {
+        "timestamp": 1758716901.0755424,
+        "src": "192.168.1.66:54886",
+        "dst": "138.2.128.124:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000c28ba30f291e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300782112a442d8030000c28ba30f291e3406001900041100000000310004000000018022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f726700000000150010356232666137343435633766643663350008001402769fb3b001116d0a62dc26850dd2645e1a996f",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "5b2fa7445c7fd6c5"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716901.0865448,
+        "src": "138.2.128.124:34782",
+        "dst": "192.168.1.66:54886",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "d8030000c28ba30f291e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442d8030000c28ba30f291e3406001600080001ef432bfca554002000080001a21ee0ac45b5000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c20576573742765737400080014958b7529605152d677972a8359cb51a1bf797d19",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "10.238.1.22:52817",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:33548",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:33548",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d803000094dfc0252a1e3406": [
+      {
+        "timestamp": 1758716912.0899782,
+        "src": "192.168.1.66:54886",
+        "dst": "138.2.128.124:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d803000094dfc0252a1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400702112a442d803000094dfc0252a1e3406000d0004000000008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103562326661373434356337666436633500080014ac0dc51170bed7dc9e0198c70257905602332fc6",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "5b2fa7445c7fd6c5"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716912.102665,
+        "src": "138.2.128.124:34782",
+        "dst": "192.168.1.66:54886",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d803000094dfc0252a1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d803000094dfc0252a1e3406000d0004000000008022001d4369747269782d332e322e352e3220274d61727368616c205765737427782d33",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000a06d75672b1e3406": [
+      {
+        "timestamp": 1758716912.094822,
+        "src": "192.168.1.66:42020",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000a06d75672b1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300202112a442d8030000a06d75672b1e3406001900041100000000310004000000018022000c706a6e6174682d322e332e34",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716912.106091,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:42020",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "d8030000a06d75672b1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300602112a442d8030000a06d75672b1e34060009001000000401556e617574686f726973656400150010336635653261366664363539316233640014000d6d79636f6d70616e792e6f72676172738022001d4369747269782d332e322e352e3220274d61727368616c205765737427152138",
+        "credentials": {
+          "realm": "mycompany.org",
+          "nonce": "3f5e2a6fd6591b3d"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorised"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d803000051b6c7432c1e3406": [
+      {
+        "timestamp": 1758716912.1172276,
+        "src": "192.168.1.66:42020",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d803000051b6c7432c1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300782112a442d803000051b6c7432c1e3406001900041100000000310004000000018022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103366356532613666643635393162336400080014be20a9a0c16c9da41cd7f9e480e3d70c4c879fba",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "3f5e2a6fd6591b3d"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716912.134651,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:42020",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "d803000051b6c7432c1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442d803000051b6c7432c1e3406001600080001dda5b10a1fa10020000800018536e0ac45b5000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c2057657374271eec4d00080014c67876b97eeb0594bee8d4a6b128aeb13c907328",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "144.24.187.227:64695",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:42020",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:42020",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000555f897a2d1e3406": [
+      {
+        "timestamp": 1758716928.1052291,
+        "src": "192.168.1.66:37453",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000555f897a2d1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300702112a442d8030000555f897a2d1e3406001900041100000000310004000000000035000400000000003400043b67aafc0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762356239646130613800008022000c706a6e6174682d322e332e34",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.1165085,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:37453",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "d8030000555f897a2d1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300602112a442d8030000555f897a2d1e34060009001000000401556e617574686f726973656400150010656435306162353263623630663662660014000d6d79636f6d70616e792e6f72676c6a758022001d4369747269782d332e322e352e3220274d61727368616c20576573742767aafd",
+        "credentials": {
+          "realm": "mycompany.org",
+          "nonce": "ed50ab52cb60f6bf"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorised"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300004cdf15612e1e3406": [
+      {
+        "timestamp": 1758716928.1116123,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d80300004cdf15612e1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300702112a442d80300004cdf15612e1e3406001900041100000000310004000000000035000400000000003400043b67aafe0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762353832336663613800008022000c706a6e6174682d322e332e34",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.1245952,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "d80300004cdf15612e1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300602112a442d80300004cdf15612e1e34060009001000000401556e617574686f726973656400150010343534346332663338633332393164640014000d6d79636f6d70616e792e6f72673030308022001d4369747269782d332e322e352e3220274d61727368616c205765737427364326",
+        "credentials": {
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorised"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000cefbbd002f1e3406": [
+      {
+        "timestamp": 1758716928.1447809,
+        "src": "192.168.1.66:37453",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000cefbbd002f1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300c82112a442d8030000cefbbd002f1e3406001900041100000000310004000000000035000400000000003400043b67aafc0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762356239646130613800008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f72670000000015001065643530616235326362363066366266000800145f220c8d0a011823553a340869c7be08e6d8bbc0",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "ed50ab52cb60f6bf"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.1564605,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:37453",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "d8030000cefbbd002f1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442d8030000cefbbd002f1e3406001600080001dad5b10a1fa1002000080001d3f0e0ac45b5000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c205765737427ee0d8c0008001413c5a63208eff2b5f69cb5183ed554f5c1f6d1b1",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "144.24.187.227:64455",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:62178",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:62178",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d803000093885d15301e3406": [
+      {
+        "timestamp": 1758716928.1497324,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d803000093885d15301e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300c82112a442d803000093885d15301e3406001900041100000000310004000000000035000400000000003400043b67aafe0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762353832336663613800008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f72670000000015001034353434633266333863333239316464000800144abb5fc68fd99792a5f6d481224e3a9453e9426c",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.1608794,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "d803000093885d15301e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442d803000093885d15301e3406001600080001e88eb10a1fa10020000800018848e0ac45b5000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c205765737427697472000800149004911968cf1a25bdd3d3b4c4fa005609da8125",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "144.24.187.227:51612",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:43354",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:43354",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300008ca3324c311e3406": [
+      {
+        "timestamp": 1758716928.2405264,
+        "src": "192.168.1.66:37453",
+        "dst": "144.24.187.227:34782",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "d80300008ca3324c311e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0008008c2112a442d80300008ca3324c311e3406001200080001c4cd4c9e80ab001200080001b1ea455021ba001200080001fc32b10a1fa18022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f726700000000150010656435306162353263623630663662660008001448bc5e5940e4dec09cd2e002eb55523aada26d71",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "144.24.187.227:56608"
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "ed50ab52cb60f6bf"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.2516975,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:37453",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "d80300008ca3324c311e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a442d80300008ca3324c311e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427616c200008001465a274d4f1561cd222f4f24518e85461f6db29b6",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300004e2fd65b331e3406": [
+      {
+        "timestamp": 1758716928.249349,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "d80300004e2fd65b331e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0008008c2112a442d80300004e2fd65b331e3406001200080001c5774c9e80ab001200080001e073455021ba001200080001c5afb10a1fa18022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f72670000000015001034353434633266333863333239316464000800145774e0bc39c91e5c52dcc42d4dbddd867738e021",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "144.24.187.227:58557"
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716928.260602,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "d80300004e2fd65b331e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a442d80300004e2fd65b331e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427616c2000080014ecd98fa070346d65c7492cd413677329a4e1e72d",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d803000033d7891b441e3406": [
+      {
+        "timestamp": 1758716929.4239821,
+        "src": "192.168.1.66:37453",
+        "dst": "144.24.187.227:34782",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "d803000033d7891b441e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0009007c2112a442d803000033d7891b441e3406000c000440000000001200080001c48f4c9e80ab8022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f726700000000150010656435306162353263623630663662660008001404a2348f5b2196c7445c52f59441a4e2219c7cc9",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "109.140.36.233:58781",
+          "CHANNEL-NUMBER": {
+            "channel": 16384,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "ed50ab52cb60f6bf"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716929.4346728,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:37453",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "d803000033d7891b441e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0109003c2112a442d803000033d7891b441e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427616c2000080014c29dfe172ca934afc6124643da894c9a887c959a",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000bef15d14451e3406": [
+      {
+        "timestamp": 1758716929.4307127,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "d8030000bef15d14451e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0009007c2112a442d8030000bef15d14451e3406000c000440000000001200080001c7364c9e80ab8022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103435343463326633386333323931646400080014332e95973c29c57687b0938885d99b10fb6beebb",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "109.140.36.233:58916",
+          "CHANNEL-NUMBER": {
+            "channel": 16384,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716929.4426053,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "d8030000bef15d14451e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0109003c2112a442d8030000bef15d14451e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427dc000000080014094a96f08c6247b87619baf5aa65b5bce7a9d839",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300009e287069461e3406": [
+      {
+        "timestamp": 1758716937.142948,
+        "src": "192.168.1.66:42020",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d80300009e287069461e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400682112a442d80300009e287069461e34068022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f72670000000015001033663565326136666436353931623364000800145d5b39913dfb456869a260366aa7ae5568a7ab46",
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "3f5e2a6fd6591b3d"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716937.1541038,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:42020",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d80300009e287069461e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d80300009e287069461e3406000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c205765737427782d33",
+        "attrs_view": {
+          "LIFETIME": 600
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000a7c7a666471e3406": [
+      {
+        "timestamp": 1758716948.5617423,
+        "src": "192.168.1.66:32861",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d8030000a7c7a666471e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300702112a442d8030000a7c7a666471e3406001900041100000000310004000000000035000400000000003400043b67aaff0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762663231616538613800008022000c706a6e6174682d322e332e34",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716948.5731473,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:32861",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "d8030000a7c7a666471e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300602112a442d8030000a7c7a666471e34060009001000000401556e617574686f726973656400150010376231643231346332613165666337360014000d6d79636f6d70616e792e6f72676172738022001d4369747269782d332e322e352e3220274d61727368616c20576573742767aaff",
+        "credentials": {
+          "realm": "mycompany.org",
+          "nonce": "7b1d214c2a1efc76"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorised"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d803000090158337481e3406": [
+      {
+        "timestamp": 1758716948.5765808,
+        "src": "192.168.1.66:32861",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Allocate Request",
+        "transaction_id": "d803000090158337481e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300c82112a442d803000090158337481e3406001900041100000000310004000000000035000400000000003400043b67aaff0033003a703270635f5f5f5f66646930756b6575657a63766b6a657033636278626c6a75336e646f3171776230786234303030303762663231616538613800008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103762316432313463326131656663373600080014e1f3552ad574ad144ee59caa4772ee5dd4d885c8",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "7b1d214c2a1efc76"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716948.5880125,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:32861",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "d803000090158337481e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442d803000090158337481e3406001600080001dbd0b10a1fa1002000080001dfd2e0ac45b5000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c20576573742720f69200080014518057c8e884b1a7cb2da93e98814829a31dbae0",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "144.24.187.227:64194",
+          "XOR-MAPPED-ADDRESS": "193.190.225.247:65216",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "193.190.225.247:65216",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300008aeb2429491e3406": [
+      {
+        "timestamp": 1758716948.6830218,
+        "src": "192.168.1.66:32861",
+        "dst": "144.24.187.227:34782",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "d80300008aeb2429491e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0008008c2112a442d80300008aeb2429491e3406001200080001c66c4c9e80ab001200080001bf5e455021ba001200080001dd3ab10a1fa18022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f726700000000150010376231643231346332613165666337360008001420b50dfe357153d4e26a4c413692500878e3adc3",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "144.24.187.227:64552"
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "7b1d214c2a1efc76"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716948.693905,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:32861",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "d80300008aeb2429491e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a442d80300008aeb2429491e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427616c20000800142cd5690aacb7271041f04d58a40bd444b49ec941",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000ad598a64521e3406": [
+      {
+        "timestamp": 1758716949.3689213,
+        "src": "192.168.1.66:37453",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d8030000ad598a64521e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400702112a442d8030000ad598a64521e3406000d0004000000008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500106564353061623532636236306636626600080014e48d788fb66752ed102507e3fcdbaec588f9be3a",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "ed50ab52cb60f6bf"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716949.3795156,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:37453",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d8030000ad598a64521e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d8030000ad598a64521e3406000d0004000000008022001d4369747269782d332e322e352e3220274d61727368616c20576573742714000d",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000c6682143541e3406": [
+      {
+        "timestamp": 1758716949.8157792,
+        "src": "192.168.1.66:32861",
+        "dst": "144.24.187.227:34782",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "d8030000c6682143541e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0009007c2112a442d8030000c6682143541e3406000c000440000000001200080001c7d54c9e80ab8022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103762316432313463326131656663373600080014ecfd55e0b7c4e5c22ee39f1260418f8ddb552ba2",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "109.140.36.233:59079",
+          "CHANNEL-NUMBER": {
+            "channel": 16384,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "7b1d214c2a1efc76"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716949.826628,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:32861",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "d8030000c6682143541e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0109003c2112a442d8030000c6682143541e34068022001d4369747269782d332e322e352e3220274d61727368616c205765737427616c2000080014ccc73b425a842f773cfbf5289bfba18be8c43e09",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300002f3a7858551e3406": [
+      {
+        "timestamp": 1758716953.1747773,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d80300002f3a7858551e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400682112a442d80300002f3a7858551e34068022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103435343463326633386333323931646400080014e09ebc7e9ee55b1e7d3777517391f0a95c088cdd",
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716953.1854644,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d80300002f3a7858551e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d80300002f3a7858551e3406000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c20576573742714000d",
+        "attrs_view": {
+          "LIFETIME": 600
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d80300002693cd5a561e3406": [
+      {
+        "timestamp": 1758716962.1586492,
+        "src": "192.168.1.66:42020",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d80300002693cd5a561e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400682112a442d80300002693cd5a561e34068022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103366356532613666643635393162336400080014b7d9f69f577728c7aeb9b0028a274972ea2609d8",
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "3f5e2a6fd6591b3d"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716962.1691847,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:42020",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d80300002693cd5a561e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d80300002693cd5a561e3406000d0004000002588022001d4369747269782d332e322e352e3220274d61727368616c2057657374276a6e61",
+        "attrs_view": {
+          "LIFETIME": 600
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000ce62e841581e3406": [
+      {
+        "timestamp": 1758716965.5418396,
+        "src": "192.168.1.66:43354",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d8030000ce62e841581e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400702112a442d8030000ce62e841581e3406000d0004000000008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f726700000000150010343534346332663338633332393164640008001486cee4648d9c4eae90a75fac71f12dc25ddd942d",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "4544c2f38c3291dd"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716965.5534225,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:43354",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d8030000ce62e841581e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d8030000ce62e841581e3406000d0004000000008022001d4369747269782d332e322e352e3220274d61727368616c205765737427697472",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "d8030000077236315a1e3406": [
+      {
+        "timestamp": 1758716965.8249805,
+        "src": "192.168.1.66:32861",
+        "dst": "144.24.187.227:34782",
+        "message_type": "Refresh Request",
+        "transaction_id": "d8030000077236315a1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "pjnath",
+        "library_version": "2.3.4",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400702112a442d8030000077236315a1e3406000d0004000000008022000c706a6e6174682d322e332e34000600144214443e2c3c411f382330153b3e1835413643260014000d6d79636f6d70616e792e6f7267000000001500103762316432313463326131656663373600080014348018a265916eb6b62055df2899d5493f25cc62",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "credentials": {
+          "username": "B\u0014D>,<A\u001f8#0\u0015;>\u00185A6C&",
+          "realm": "mycompany.org",
+          "nonce": "7b1d214c2a1efc76"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1758716965.8358643,
+        "src": "144.24.187.227:34782",
+        "dst": "192.168.1.66:32861",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "d8030000077236315a1e3406",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Citrix",
+        "library_version": "3.2.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0104002c2112a442d8030000077236315a1e3406000d0004000000008022001d4369747269782d332e322e352e3220274d61727368616c205765737427697472",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ]
+  },
+  "turn_allocations": {
+    "192.168.1.66:54886|138.2.128.124:34782": {
+      "client": "192.168.1.66:54886",
+      "server": "138.2.128.124:34782",
+      "relayed_address": "10.238.1.22:52817",
+      "requested_transport": null,
+      "lifetime": 0,
+      "allocated": true,
+      "refresh_count": 1,
+      "first_seen": 1758716901.0585032,
+      "last_seen": 1758716912.102665,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorised"
+        }
+      ]
+    },
+    "192.168.1.66:42020|144.24.187.227:34782": {
+      "client": "192.168.1.66:42020",
+      "server": "144.24.187.227:34782",
+      "relayed_address": "144.24.187.227:64695",
+      "requested_transport": null,
+      "lifetime": 600,
+      "allocated": true,
+      "refresh_count": 2,
+      "first_seen": 1758716912.094822,
+      "last_seen": 1758716962.1691847,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorised"
+        }
+      ]
+    },
+    "192.168.1.66:37453|144.24.187.227:34782": {
+      "client": "192.168.1.66:37453",
+      "server": "144.24.187.227:34782",
+      "relayed_address": "144.24.187.227:64455",
+      "requested_transport": null,
+      "lifetime": 0,
+      "allocated": true,
+      "refresh_count": 1,
+      "first_seen": 1758716928.1052291,
+      "last_seen": 1758716949.3795156,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "144.24.187.227:56608"
+      ],
+      "channels": {
+        "16384": "109.140.36.233:58781"
+      },
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorised"
+        }
+      ]
+    },
+    "192.168.1.66:43354|144.24.187.227:34782": {
+      "client": "192.168.1.66:43354",
+      "server": "144.24.187.227:34782",
+      "relayed_address": "144.24.187.227:51612",
+      "requested_transport": null,
+      "lifetime": 0,
+      "allocated": true,
+      "refresh_count": 2,
+      "first_seen": 1758716928.1116123,
+      "last_seen": 1758716965.5534225,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "144.24.187.227:58557"
+      ],
+      "channels": {
+        "16384": "109.140.36.233:58916"
+      },
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorised"
+        }
+      ]
+    },
+    "192.168.1.66:32861|144.24.187.227:34782": {
+      "client": "192.168.1.66:32861",
+      "server": "144.24.187.227:34782",
+      "relayed_address": "144.24.187.227:64194",
+      "requested_transport": null,
+      "lifetime": 0,
+      "allocated": true,
+      "refresh_count": 1,
+      "first_seen": 1758716948.5617423,
+      "last_seen": 1758716965.8358643,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "144.24.187.227:64552"
+      ],
+      "channels": {
+        "16384": "109.140.36.233:59079"
+      },
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorised"
+        }
+      ]
+    }
+  }
+}

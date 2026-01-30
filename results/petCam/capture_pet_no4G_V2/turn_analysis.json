@@ -1,0 +1,212 @@
+{
+  "geoip_summary": {
+    "139.159.209.247": {
+      "ip": "139.159.209.247",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "turn_transactions": {
+    "6d5355714844455275755572": [
+      {
+        "timestamp": 1724762000.295573,
+        "src": "10.199.138.61:49571",
+        "dst": "139.159.209.247:5000",
+        "message_type": "Allocate Request",
+        "transaction_id": "6d5355714844455275755572",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300382112a4426d53557148444552757555720006000c617263736f66744c6f674f6e86000000860100008022000a636c6f73656c695032500000000d0004000003840019000411000000",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 900
+        },
+        "credentials": {
+          "username": "arcsoftLogOn"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1724762001.50488,
+        "src": "10.199.138.61:49571",
+        "dst": "139.159.209.247:5000",
+        "message_type": "Allocate Request",
+        "transaction_id": "6d5355714844455275755572",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300382112a4426d53557148444552757555720006000c617263736f66744c6f674f6e86000000860100008022000a636c6f73656c695032500000000d0004000003840019000411000000",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 900
+        },
+        "credentials": {
+          "username": "arcsoftLogOn"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1724762001.506513,
+        "src": "10.199.138.61:49571",
+        "dst": "139.159.209.247:5000",
+        "message_type": "Allocate Request",
+        "transaction_id": "6d5355714844455275755572",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300382112a4426d53557148444552757555720006000c617263736f66744c6f674f6e86000000860100008022000a636c6f73656c695032500000000d0004000003840019000411000000",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 900
+        },
+        "credentials": {
+          "username": "arcsoftLogOn"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "787252716964717669787256": [
+      {
+        "timestamp": 1724762001.506571,
+        "src": "192.168.200.101:45577",
+        "dst": "139.159.209.247:5000",
+        "message_type": "Allocate Request",
+        "transaction_id": "787252716964717669787256",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300382112a4427872527169647176697872560006000c617263736f66744c6f674f6e86000000860100008022000a636c6f73656c695032500000000d0004000003840019000411000000",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 900
+        },
+        "credentials": {
+          "username": "arcsoftLogOn"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ]
+  },
+  "turn_allocations": {
+    "10.199.138.61:49571|139.159.209.247:5000": {
+      "client": "10.199.138.61:49571",
+      "server": "139.159.209.247:5000",
+      "relayed_address": null,
+      "requested_transport": null,
+      "lifetime": null,
+      "allocated": false,
+      "refresh_count": 0,
+      "first_seen": 1724762000.295573,
+      "last_seen": 1724762001.506513,
+      "auth_modes": [
+        "None"
+      ],
+      "oauth_used": false,
+      "permissions": [],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": []
+    },
+    "192.168.200.101:45577|139.159.209.247:5000": {
+      "client": "192.168.200.101:45577",
+      "server": "139.159.209.247:5000",
+      "relayed_address": null,
+      "requested_transport": null,
+      "lifetime": null,
+      "allocated": false,
+      "refresh_count": 0,
+      "first_seen": 1724762001.506571,
+      "last_seen": 1724762001.506571,
+      "auth_modes": [
+        "None"
+      ],
+      "oauth_used": false,
+      "permissions": [],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": []
+    }
+  }
+}

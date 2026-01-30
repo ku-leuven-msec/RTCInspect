@@ -1,0 +1,34 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "TCP:192.168.1.39:44425-3.74.204.42:1443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.39:44425-3.74.204.42:1443",
+      "likelihood_score": 10,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 28 bytes)",
+        "Contains likely Unix timestamps",
+        "Contains long ID-like strings",
+        "Medium entropy (6.89)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "bff4c8c70ec19f72db3o1816995558066oj9FO9m",
+          "bff4c8c70ec19f72db3o",
+          "bff4c8c70ec19f72db3o1816995558066oj9FO9m",
+          "bff4c8c70ec19f72db3o",
+          "bff4c8c70ec19f72db3o1816995558066oj9FO9m",
+          "bff4c8c70ec19f72db3o",
+          "bff4c8c70ec19f72db3o1816995558066oj9FO9m",
+          "bff4c8c70ec19f72db3o"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u00f4\u0000\u00018\u0000\u0001\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0010\u0015\u00dew\u0094\u009a\u00a6\u000e_\u00e4\u00fa2mS\u00c2\u00e3\u008e\u0000\u0003\u0000(bff4c8c70ec19f72db3o1816995558066oj9FO9m\u0000\u0004\u0000!1699555806:bff4c8c70ec19f72db3o18\u0000\u0000\u0000\u0000\u0007\u0000\u00a0(\u0093\u00f1`;g\u0081\u00ac\u0089u\u008e>\u00d1`H\u0003*\u0015\u000ej\u0098u\u0001\u00c1]\u00b4\u001cm\u00cd\u0012\u00ad\u0002|\u0088\u00ac\u00e2\u00ccN\u0085\u008e`\u008f\u0019\u008d\u00b1q\u000erI\u00ca\u00bdo\u00d8'\u00e6\u00af]\u00e0#\u0007N\u00f5\u00f6 \u0092N\u00a5C\u008dN\u00a4\u00b3\u00bd\u00f4#D\u00ab\u001e\u0007\u00d9",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    }
+  ]
+}

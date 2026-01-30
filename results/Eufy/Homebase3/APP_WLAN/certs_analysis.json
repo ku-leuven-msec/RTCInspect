@@ -1,0 +1,19 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2024-09-12T15:00:25+00:00",
+    "valid_until": "2025-10-14T15:00:25+00:00",
+    "issuer_cn": "Go Daddy Secure Certificate Authority - G2",
+    "subject_cn": "*.eufylife.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.eufylife.com')>",
+      "<DNSName(value='eufylife.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "2D:9E:4B:01:35:7B:09:C8:91:B8:0E:4E:85:37:C9:70:61:E0:CA:2D:FD:7C:B8:AC:46:84:3D:FB:15:BD:00:64",
+    "found_in_packet_number": "4677",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

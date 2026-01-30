@@ -1,0 +1,17 @@
+{
+  "identified_media_stream": {
+    "session_id": "UDP:144.24.187.227:34782-192.168.1.66:43354",
+    "protocol": "UDP",
+    "total_packets": 5460,
+    "total_data_volume_mb": 3.36
+  },
+  "encryption_analysis": {
+    "average_payload_entropy": 7.2569,
+    "encryption_grade": "High (Likely encrypted or compressed)",
+    "analysis_note": "Entropy calculated on 50 media-only packets, ignoring initial setup phase."
+  },
+  "extra_info": {
+    "protocol_identification": "Generic UDP Stream",
+    "notes": "This analysis identifies the conversation with the highest data volume. The 'Encryption Grade' is based on the randomness (entropy) of the steady-state media payload, excluding initial handshake packets."
+  }
+}

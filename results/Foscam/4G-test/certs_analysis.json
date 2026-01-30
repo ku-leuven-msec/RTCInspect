@@ -1,0 +1,32 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-03-04T00:00:00+00:00",
+    "valid_until": "2026-04-02T23:59:59+00:00",
+    "issuer_cn": "TrustAsia TLS Pro RSA CA 2025",
+    "subject_cn": "*.ivyiot.io",
+    "subject_alternative_names": [
+      "<DNSName(value='*.ivyiot.io')>"
+    ],
+    "signature_algorithm": "sha384WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "07:1F:79:01:C4:E1:90:10:4D:DE:FE:3E:81:2F:69:CD:3D:1E:97:C2:05:5A:66:94:AC:3F:F9:CE:E5:E2:37:5F",
+    "found_in_packet_number": "14",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2021-11-02T11:16:53+00:00",
+    "valid_until": "2071-10-21T11:16:53+00:00",
+    "issuer_cn": "security-iot-mqtt.ivyiot.io",
+    "subject_cn": "security-iot-mqtt",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "F6:E3:9B:3A:21:A8:1E:ED:34:A6:E4:20:93:2B:C3:16:2B:A4:3F:93:91:F7:FD:12:B7:01:BD:A7:72:6D:5F:62",
+    "found_in_packet_number": "63",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

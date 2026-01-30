@@ -1,0 +1,473 @@
+{
+  "geoip_summary": {
+    "18.156.18.155": {
+      "ip": "18.156.18.155",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "turn_transactions": {
+    "1cdc16d79a18d3cdb987f899": [
+      {
+        "timestamp": 1672824113.002733,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "1cdc16d79a18d3cdb987f899",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300202112a4421cdc16d79a18d3cdb987f8990019000411000000001a0000000d000400000e108022000876322e31322e3237",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 3600
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.0178094,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "1cdc16d79a18d3cdb987f899",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "011300402112a4421cdc16d79a18d3cdb987f8990009001000000401556e617574686f72697a656400150010393138316563623038623735313764390014000a7477696c696f2e636f6d7ec8802200044e6f6e65",
+        "credentials": {
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorized"
+        },
+        "transaction_authentication_type": "None",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "72e0fdd55618da0891d8dae3": [
+      {
+        "timestamp": 1672824113.1096075,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "72e0fdd55618da0891d8dae3",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300a82112a44272e0fdd55618da0891d8dae30019000411000000001a0000000d000400000e100014000a7477696c696f2e636f6d0000000600403236376336306166316334663865396262383564623266646231386264663961323232326634623439366539393535643232343362363432353836303964613700150010393138316563623038623735313764398022000876322e31322e3237000800145c73aa67fac49d374e396553030b2bdbf28e0df380280004c3fd4897",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 3600
+        },
+        "credentials": {
+          "username": "267c60af1c4f8e9bb85db2fdb18bdf9a2222f4b496e9955d2243b64258609da7",
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.2195354,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "72e0fdd55618da0891d8dae3",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010300482112a44272e0fdd55618da0891d8dae300160008000110ba338eb6d9002000080001bc2ce0ac45b7000d000400000e10802200044e6f6e65000800143c8ddf1d3e7f2949638c3d0f3a28788dc0f9b8f1802800044ffc90f4",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "18.156.18.155:12712",
+          "XOR-MAPPED-ADDRESS": "193.190.225.245:40254",
+          "LIFETIME": 3600
+        },
+        "reflexive_address_observed": "193.190.225.245:40254",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "2493ff358fe5496035c04000": [
+      {
+        "timestamp": 1672824113.3056939,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "2493ff358fe5496035c04000",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000900a82112a4422493ff358fe5496035c04000000c0004400000000012000800018ef12b7c0c128022000876322e31322e32370014000a7477696c696f2e636f6d00000006004032363763363061663163346638653962623835646232666462313862646639613232323266346234393665393935356432323433623634323538363039646137001500103931383165636230386237353137643900080014c85ac5a55873a747df9044ea9f9b59a021742497802800043cf8e1f2",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "10.110.168.80:45027",
+          "CHANNEL-NUMBER": {
+            "channel": 16384,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "267c60af1c4f8e9bb85db2fdb18bdf9a2222f4b496e9955d2243b64258609da7",
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.320205,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "ChannelBind Error Response",
+        "transaction_id": "2493ff358fe5496035c04000",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0119003c2112a4422493ff358fe5496035c040000009001000000403466f7262696464656e204950802200044e6f6e65000800141676bbfab1834aa4934bb961eb084892ec0445ab802800040d8dcb3a",
+        "error": {
+          "code": 403,
+          "reason": "Forbidden IP"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "311c3018458f009623aa4001": [
+      {
+        "timestamp": 1672824113.3056946,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "311c3018458f009623aa4001",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000900a82112a442311c3018458f009623aa4001000c0004400100000012000800018ef1e0ac45b08022000876322e31322e32370014000a7477696c696f2e636f6d00000006004032363763363061663163346638653962623835646232666462313862646639613232323266346234393665393935356432323433623634323538363039646137001500103931383165636230386237353137643900080014ca79ff76f7e5cd05ffcec047634612faee1003fe80280004b910ab85",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "193.190.225.242:45027",
+          "CHANNEL-NUMBER": {
+            "channel": 16385,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "267c60af1c4f8e9bb85db2fdb18bdf9a2222f4b496e9955d2243b64258609da7",
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.3202055,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "311c3018458f009623aa4001",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010900282112a442311c3018458f009623aa4001802200044e6f6e650008001417cde5139841abe7ff52d9914de4e8b9451895418028000488571847",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "a0289e74c46b2783d62a4002": [
+      {
+        "timestamp": 1672824113.3056948,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "ChannelBind Request",
+        "transaction_id": "a0289e74c46b2783d62a4002",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000900a82112a442a0289e74c46b2783d62a4002000c00044002000000120008000199cbe0ac45b08022000876322e31322e32370014000a7477696c696f2e636f6d00000006004032363763363061663163346638653962623835646232666462313862646639613232323266346234393665393935356432323433623634323538363039646137001500103931383165636230386237353137643900080014f9310a8e87e00565ef43a1c5a7d57cea7f27883f80280004de4114fd",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "193.190.225.242:47321",
+          "CHANNEL-NUMBER": {
+            "channel": 16386,
+            "rsv": 0
+          }
+        },
+        "credentials": {
+          "username": "267c60af1c4f8e9bb85db2fdb18bdf9a2222f4b496e9955d2243b64258609da7",
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.3202055,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "ChannelBind Success Response",
+        "transaction_id": "a0289e74c46b2783d62a4002",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010900282112a442a0289e74c46b2783d62a4002802200044e6f6e6500080014197e0b0252f62ade0d785521527cb4da5946cff780280004deb85d97",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "35aac5e174ede083f7ae377b": [
+      {
+        "timestamp": 1672824113.8707044,
+        "src": "10.129.179.30:40254",
+        "dst": "18.156.18.155:3478",
+        "message_type": "Refresh Request",
+        "transaction_id": "35aac5e174ede083f7ae377b",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0004009c2112a44235aac5e174ede083f7ae377b000d0004000000000014000a7477696c696f2e636f6d0000000600403236376336306166316334663865396262383564623266646231386264663961323232326634623439366539393535643232343362363432353836303964613700150010393138316563623038623735313764398022000876322e31322e323700080014c0f2cf6f61dab01aa1c89ef0e471f8e6862cc27e802800046659ea7f",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "credentials": {
+          "username": "267c60af1c4f8e9bb85db2fdb18bdf9a2222f4b496e9955d2243b64258609da7",
+          "realm": "twilio.com",
+          "nonce": "9181ecb08b7517d9"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1672824113.885151,
+        "src": "18.156.18.155:3478",
+        "dst": "10.129.179.30:40254",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "35aac5e174ede083f7ae377b",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010400302112a44235aac5e174ede083f7ae377b000d000400000000802200044e6f6e65000800144f1ea01b099f7e3b7aca0490f857e7641ab38e3280280004ec4d2824",
+        "attrs_view": {
+          "LIFETIME": 0
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ]
+  },
+  "turn_allocations": {
+    "10.129.179.30:40254|18.156.18.155:3478": {
+      "client": "10.129.179.30:40254",
+      "server": "18.156.18.155:3478",
+      "relayed_address": "18.156.18.155:12712",
+      "requested_transport": null,
+      "lifetime": 0,
+      "allocated": true,
+      "refresh_count": 1,
+      "first_seen": 1672824113.002733,
+      "last_seen": 1672824113.885151,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [],
+      "channels": {
+        "16384": "10.110.168.80:45027",
+        "16385": "193.190.225.242:45027",
+        "16386": "193.190.225.242:47321"
+      },
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorized"
+        },
+        {
+          "code": 403,
+          "reason": "Forbidden IP"
+        }
+      ]
+    }
+  }
+}

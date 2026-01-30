@@ -1,0 +1,93 @@
+[
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2023-01-03T09:21:51+00:00",
+    "valid_until": "2023-02-03T09:21:51+00:00",
+    "issuer_cn": "WebRTC",
+    "subject_cn": "WebRTC",
+    "subject_alternative_names": [],
+    "signature_algorithm": "ecdsa-with-SHA256",
+    "public_key_algorithm": "ECPublicKey",
+    "fingerprint": "1C:FD:D1:E2:E2:5B:BC:82:3E:5D:1F:F0:D9:51:CC:6D:18:EF:62:66:B9:4E:A3:46:F1:A3:84:65:94:F6:6F:BB",
+    "found_in_packet_number": "224",
+    "found_in_packet_summary": "DTLS Packet"
+  },
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2023-01-03T09:21:52+00:00",
+    "valid_until": "2024-01-04T09:21:52+00:00",
+    "issuer_cn": "WebRTC",
+    "subject_cn": "WebRTC",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha1WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "4B:C8:AD:A9:54:A4:A7:33:B5:B2:F3:7D:53:7A:DE:52:33:0A:64:0C:7C:3F:3E:6C:24:E1:DC:C5:B5:C0:E5:3F",
+    "found_in_packet_number": "225",
+    "found_in_packet_summary": "DTLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-07-05T00:00:00+00:00",
+    "valid_until": "2023-08-03T23:59:59+00:00",
+    "issuer_cn": "Amazon",
+    "subject_cn": "trace.svc.ui.com",
+    "subject_alternative_names": [
+      "<DNSName(value='trace.svc.ui.com')>",
+      "<DNSName(value='*.trace.svc.ui.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "AE:4E:8C:10:CC:B9:5D:63:DE:AE:69:67:22:0C:B7:57:26:B1:8F:E6:B0:03:9E:B1:70:7E:2E:DE:F0:9E:9B:47",
+    "found_in_packet_number": "469",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-12-07T22:18:12+00:00",
+    "valid_until": "2023-12-02T22:18:12+00:00",
+    "issuer_cn": "Microsoft Azure TLS Issuing CA 06",
+    "subject_cn": "*.events.data.microsoft.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.events.data.microsoft.com')>",
+      "<DNSName(value='events.data.microsoft.com')>",
+      "<DNSName(value='*.pipe.aria.microsoft.com')>",
+      "<DNSName(value='pipe.skype.com')>",
+      "<DNSName(value='*.pipe.skype.com')>",
+      "<DNSName(value='*.mobile.events.data.microsoft.com')>",
+      "<DNSName(value='mobile.events.data.microsoft.com')>",
+      "<DNSName(value='*.events.data.msn.com')>",
+      "<DNSName(value='events.data.msn.com')>",
+      "<DNSName(value='*.events.data.msn.cn')>",
+      "<DNSName(value='events.data.msn.cn')>",
+      "<DNSName(value='oca.microsoft.com')>",
+      "<DNSName(value='watson.microsoft.com')>",
+      "<DNSName(value='*.vortex.data.microsoft.com')>",
+      "<DNSName(value='vortex.data.microsoft.com')>"
+    ],
+    "signature_algorithm": "sha384WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "76:65:DA:B6:4E:37:EB:1C:6C:0B:9E:D7:A2:9E:9E:86:01:AE:95:78:20:96:57:4D:42:BC:8C:BA:E7:70:95:EF",
+    "found_in_packet_number": "2577",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-06-30T17:59:23+00:00",
+    "valid_until": "2023-09-30T17:59:23+00:00",
+    "issuer_cn": "Microsoft Secure Server CA 2011",
+    "subject_cn": "settings-win.data.microsoft.com",
+    "subject_alternative_names": [
+      "<DNSName(value='settings-win.data.microsoft.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "8F:4C:B8:3B:F5:F7:36:D3:F9:A1:11:92:16:EC:46:9E:D2:27:0A:9C:69:72:F8:46:42:4C:E2:95:D1:C8:C7:68",
+    "found_in_packet_number": "4186",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "UDP:144.24.187.227:34782-192.168.1.66:37453": {
+    "summary": {
+      "detection_method": "Keyword/Pattern-Based",
+      "how_is_signaling_done": "Proprietary (SDP/JSON based)",
+      "presence_of_authentication": "No auth detected",
+      "is_cleartext_or_encrypted": "Cleartext",
+      "servers_contacted": "144.24.187.227",
+      "connection_type": "Client-Server (LAN to WAN)",
+      "geo_location": {
+        "ip": "144.24.187.227",
+        "error": {
+          "type": "auth",
+          "status": 403,
+          "message": "Invalid or unknown token"
+        }
+      }
+    },
+    "important_info": {
+      "ice-ufrag": "4de6516b",
+      "ice-pwd": "18343523",
+      "candidate": "Sc0a80142 1 UDP 1694498815 193.190.225.247 31901 typ srflx"
+    },
+    "packets": [
+      {
+        "timestamp": 1758716928.2375634,
+        "src_port": 34782,
+        "dst_port": 37453,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0010\u0002\u0001\ufffd!\u0012\ufffdB\u0006{\u0000\u0000\u001a\ufffd\u0001\u0019S\ufffd\ufffd\t\u00006\u0001bv=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:16431c15\na=ice-pwd:6e88195f\nm=audio 56608 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:S644285f8 1 UDP 1694498815 109.140.36.233 58847 typ srflx\na=candidate:H644285f8 1 UDP 2130706431 100.66.133.248 37112 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 56608 typ relay\n\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4\u0000\u0006\u0000:p2pc____fdi0ukeuezcvkjep3cbxblju3ndo1qwb0xb400007b5b9da0a8\u0000\u0000\u0000\u0014\u0000\rmycompany.org\u0000\u0000\u0000\u0000\u0015\u0000\u0010952c44606e9667c1"
+      },
+      {
+        "timestamp": 1758716928.2411513,
+        "src_port": 37453,
+        "dst_port": 34782,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0011\u0002\u0001x!\u0012\ufffdB\u0006{\u0000\u0000\u001a\ufffd\u0001\u0019S\ufffd\ufffd\t\u00006\u0001av=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:4de6516b\na=ice-pwd:18343523\nm=audio 64455 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:Sc0a80142 1 UDP 1694498815 193.190.225.247 31901 typ srflx\na=candidate:Hc0a80142 1 UDP 2130706431 192.168.1.66 38521 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 64455 typ relay\n\u0000\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4"
+      }
+    ]
+  },
+  "UDP:144.24.187.227:34782-192.168.1.66:43354": {
+    "summary": {
+      "detection_method": "Keyword/Pattern-Based",
+      "how_is_signaling_done": "Proprietary (SDP/JSON based)",
+      "presence_of_authentication": "No auth detected",
+      "is_cleartext_or_encrypted": "Cleartext",
+      "servers_contacted": "144.24.187.227",
+      "connection_type": "Client-Server (LAN to WAN)",
+      "geo_location": {
+        "ip": "144.24.187.227",
+        "error": {
+          "type": "auth",
+          "status": 403,
+          "message": "Invalid or unknown token"
+        }
+      }
+    },
+    "important_info": {
+      "ice-ufrag": "5912f10d",
+      "ice-pwd": "59850e8f",
+      "candidate": "Sc0a80142 1 UDP 1694498815 193.190.225.247 42906 typ srflx"
+    },
+    "packets": [
+      {
+        "timestamp": 1758716928.2453651,
+        "src_port": 34782,
+        "dst_port": 43354,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0010\u0002\u0001\ufffd!\u0012\ufffdB\u0006{\u0000\u0000j\u0609(U\ufffd\ufffd\t\u00006\u0001bv=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:3b635598\na=ice-pwd:4f16be77\nm=audio 58557 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:S644285f8 1 UDP 1694498815 109.140.36.233 58469 typ srflx\na=candidate:H644285f8 1 UDP 2130706431 100.66.133.248 49505 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 58557 typ relay\n\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4\u0000\u0006\u0000:p2pc____fdi0ukeuezcvkjep3cbxblju3ndo1qwb0xb400007b5823fca8\u0000\u0000\u0000\u0014\u0000\rmycompany.org\u0000\u0000\u0000\u0000\u0015\u0000\u00101d4e4e5147da4295\u0000"
+      },
+      {
+        "timestamp": 1758716928.2499433,
+        "src_port": 43354,
+        "dst_port": 34782,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0011\u0002\u0001x!\u0012\ufffdB\u0006{\u0000\u0000j\u0609(U\ufffd\ufffd\t\u00006\u0001av=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:5912f10d\na=ice-pwd:59850e8f\nm=audio 51612 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:Sc0a80142 1 UDP 1694498815 193.190.225.247 42906 typ srflx\na=candidate:Hc0a80142 1 UDP 2130706431 192.168.1.66 42906 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 51612 typ relay\n\u0000\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4"
+      }
+    ]
+  },
+  "UDP:144.24.187.227:34782-192.168.1.66:32861": {
+    "summary": {
+      "detection_method": "Keyword/Pattern-Based",
+      "how_is_signaling_done": "Proprietary (SDP/JSON based)",
+      "presence_of_authentication": "No auth detected",
+      "is_cleartext_or_encrypted": "Cleartext",
+      "servers_contacted": "144.24.187.227",
+      "connection_type": "Client-Server (LAN to WAN)",
+      "geo_location": {
+        "ip": "144.24.187.227",
+        "error": {
+          "type": "auth",
+          "status": 403,
+          "message": "Invalid or unknown token"
+        }
+      }
+    },
+    "important_info": {
+      "ice-ufrag": "233f72b0",
+      "ice-pwd": "330b8734",
+      "candidate": "Sc0a80142 1 UDP 1694498815 193.190.225.247 37361 typ srflx"
+    },
+    "packets": [
+      {
+        "timestamp": 1758716948.6791844,
+        "src_port": 34782,
+        "dst_port": 32861,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0010\u0002\u0001\ufffd!\u0012\ufffdB\u0006{\u0000\u0000\ufffd|4q\ufffd\ufffd\t\u00006\u0001bv=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:52ea1a03\na=ice-pwd:237e6b3a\nm=audio 64552 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:S644285f8 1 UDP 1694498815 109.140.36.233 59262 typ srflx\na=candidate:H644285f8 1 UDP 2130706431 100.66.133.248 40524 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 64552 typ relay\n\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4\u0000\u0006\u0000:p2pc____fdi0ukeuezcvkjep3cbxblju3ndo1qwb0xb400007bf21ae8a8\u0000\u0000\u0000\u0014\u0000\rmycompany.org\u0000\u0000\u0000\u0000\u0015\u0000\u00109cc32ac9a404aa4d\u0000"
+      },
+      {
+        "timestamp": 1758716948.6832721,
+        "src_port": 32861,
+        "dst_port": 34782,
+        "transport_proto": "UDP",
+        "proto_hits": [
+          "SDP"
+        ],
+        "payload_snippet": "\u0011\u0002\u0001x!\u0012\ufffdB\u0006{\u0000\u0000\ufffd|4q\ufffd\ufffd\t\u00006\u0001av=0\no=- 3414953978 3414953978 IN IP4 localhost\ns=ice\nt=0 0\na=ice-ufrag:233f72b0\na=ice-pwd:330b8734\nm=audio 64194 RTP/AVP 0\nc=IN IP4 144.24.187.227\na=candidate:Sc0a80142 1 UDP 1694498815 193.190.225.247 37361 typ srflx\na=candidate:Hc0a80142 1 UDP 2130706431 192.168.1.66 37361 typ host\na=candidate:R9018bbe3 1 UDP 16777215 144.24.187.227 64194 typ relay\n\u0000\u0000\u0000\ufffd\"\u0000\fpjnath-2.3.4"
+      }
+    ]
+  }
+}

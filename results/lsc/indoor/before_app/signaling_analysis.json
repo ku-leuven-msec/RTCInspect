@@ -1,0 +1,20 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "TCP:18.184.31.90:8883-192.168.1.194:45826",
+      "protocol": "TCP",
+      "endpoints": "18.184.31.90:8883-192.168.1.194:45826",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 69 bytes)",
+        "Medium entropy (7.73)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0017\u0003\u0003\u0000@\u00a8\u00b9\u0007\u00c9G\u0087p\u0007a\u00c0\u00aa\u0093\u00fd{1S\u00cb\u00bf\u00d7r\u0010\u00997\u0006 Y\u00fb\u00a5B\u0088\u0096\u00eb-P Y\\\u00d9\u0098\u00d1\u00e4_\u008eR\u0083\u001fW\f\u0006\u00e0\u00f6\u00e4,\u00e6sW<\u00e2\u0081\u007f\u00bfi\u0013G\u0017\u0003\u0003\u0000@]\u008ba\u00bd\u00ea\u00af\n\u00df_W\u00d3\u00ef\u001c\u00d1$\u00e3\u00adMS\u001b\u0013\u0081\u00b0g\u0006\u00ca\u0002\u007f\u0081\u00ff1\u00bc\u00d2\u0011\u00c1&\u007f\u000b\u00de\r\u0097\u00e1>\u0092s+\u0004\u009f\u008d\u00de\u0099;\u00e7\u00bd+\u00a8\u00f8\u00f6@\u007f\u00eaR\u00a1\u00a3\u0017\u0003\u0003\u0000@\u00a1\u00b1\u00a0\u00c4\u00d3S=\u00d6j\u0004&\u0011\u00f4\u00d0j\u008a2\u00ed\u001a\u00da_\u00f1\u00fc\u0002\u00e3*\u0015\u00e6%\u00b005\u00c1?f\u00d9\u0012\u0082Yt\u00c4o4\u009e\u00a7u\u00d7\u0016\u00e0 r\u001b\r\u00a1\u000e3.",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    }
+  ]
+}

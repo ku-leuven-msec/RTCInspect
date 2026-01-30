@@ -1,0 +1,176 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-08-24T00:00:00+00:00",
+    "valid_until": "2023-09-24T23:59:59+00:00",
+    "issuer_cn": "DigiCert SHA2 Secure Server CA",
+    "subject_cn": "*.ring.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.ring.com')>",
+      "<DNSName(value='ring.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "1E:75:00:C5:C1:7B:FA:A5:8A:78:3C:38:45:67:AA:0A:D2:1A:F5:7C:85:6A:D0:27:D5:8B:29:55:FB:DF:8C:31",
+    "found_in_packet_number": "17",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-01-17T00:00:00+00:00",
+    "valid_until": "2023-12-18T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com",
+    "subject_alternative_names": [
+      "<DNSName(value='eu-west-1.prod.rms.ring.devices.a2z.com')>",
+      "<DNSName(value='*.688489872635.eu-west-1.prod.rms.ring.devices.a2z.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "8F:45:B1:C9:FC:2F:34:7C:A8:66:2E:A7:3F:49:00:3C:0C:76:BD:31:73:72:33:DE:1B:FF:88:C8:CD:72:1C:BF",
+    "found_in_packet_number": "689",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-02-14T00:00:00+00:00",
+    "valid_until": "2023-10-13T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "api.prod.signalling.ring.devices.a2z.com",
+    "subject_alternative_names": [
+      "<DNSName(value='api.prod.signalling.ring.devices.a2z.com')>",
+      "<DNSName(value='api.556689414634.eu-west-1.prod.signalling.ring.devices.a2z.com')>",
+      "<DNSName(value='api.eu-west-1.prod.signalling.ring.devices.a2z.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "CE:97:D6:49:94:AA:50:2B:59:C1:2A:03:E0:5A:C9:F7:8D:95:5A:D6:72:A8:A0:23:36:3C:45:D4:4A:71:8D:A4",
+    "found_in_packet_number": "6114",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-02-09T00:00:00+00:00",
+    "valid_until": "2023-07-08T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "*.mobile.crashtracking.prod.ring.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.mobile.crashtracking.prod.ring.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "65:69:4A:F1:D9:0A:AA:71:3B:A6:E8:26:5E:DD:B2:99:FA:D3:7B:57:6B:F4:2F:EF:91:B1:0D:E7:98:F0:69:A0",
+    "found_in_packet_number": "6224",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2023-03-12T10:17:14+00:00",
+    "valid_until": "2023-04-12T10:17:14+00:00",
+    "issuer_cn": "WebRTC",
+    "subject_cn": "WebRTC",
+    "subject_alternative_names": [],
+    "signature_algorithm": "ecdsa-with-SHA256",
+    "public_key_algorithm": "ECPublicKey",
+    "fingerprint": "66:2A:46:0E:CC:E6:2A:88:11:F8:E7:10:3F:B3:E3:07:4D:8C:2B:77:A5:DB:48:42:1C:C4:CC:6F:9C:5F:E6:07",
+    "found_in_packet_number": "6324",
+    "found_in_packet_summary": "DTLS Packet"
+  },
+  {
+    "self_signed": true,
+    "validity_period_ok": true,
+    "valid_from": "2023-03-13T05:38:52+00:00",
+    "valid_until": "2024-03-12T05:38:52+00:00",
+    "issuer_cn": "sAFx8F34",
+    "subject_cn": "sAFx8F34",
+    "subject_alternative_names": [],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "64:3A:3B:AA:BB:AB:F5:C1:32:BF:BC:67:EF:E5:2B:A3:F6:E7:74:3E:81:C9:53:E6:93:BC:EE:56:E2:99:CF:79",
+    "found_in_packet_number": "6344",
+    "found_in_packet_summary": "DTLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-02-23T00:00:00+00:00",
+    "valid_until": "2024-03-19T23:59:59+00:00",
+    "issuer_cn": "GeoTrust RSA CA 2018",
+    "subject_cn": "events.mapbox.com",
+    "subject_alternative_names": [
+      "<DNSName(value='events.mapbox.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "FE:7B:F9:FB:B9:F5:66:20:63:F0:48:3D:F8:FD:EE:7D:F8:A1:0E:EC:C7:EF:93:A8:BD:01:1C:DA:C9:74:9A:1E",
+    "found_in_packet_number": "11792",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-09-21T00:00:00+00:00",
+    "valid_until": "2023-08-30T23:59:59+00:00",
+    "issuer_cn": "Amazon",
+    "subject_cn": "*.s3-eu-west-1.amazonaws.com",
+    "subject_alternative_names": [
+      "<DNSName(value='s3-eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-eu-west-1.amazonaws.com')>",
+      "<DNSName(value='s3.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='s3.dualstack.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.dualstack.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-control.dualstack.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='s3-control.dualstack.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.eu-west-1.amazonaws.com')>",
+      "<DNSName(value='*.s3-accesspoint.dualstack.eu-west-1.amazonaws.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "EF:C5:DF:AE:E9:CE:56:9D:0C:B6:1D:EC:00:12:48:9E:1C:E8:87:97:43:1A:41:9C:72:B4:08:54:4A:C0:C5:B2",
+    "found_in_packet_number": "11970",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2022-10-20T00:00:00+00:00",
+    "valid_until": "2023-11-18T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "*.ring.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.ring.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "50:E8:83:BF:82:82:1B:A9:26:C1:5C:A9:5D:72:90:A7:45:73:3D:CB:A4:DB:B6:34:2A:F4:40:AB:BA:7D:86:70",
+    "found_in_packet_number": "20613",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-01-23T13:49:37+00:00",
+    "valid_until": "2024-01-18T13:49:37+00:00",
+    "issuer_cn": "Microsoft Azure TLS Issuing CA 05",
+    "subject_cn": "*.appcenter.ms",
+    "subject_alternative_names": [
+      "<DNSName(value='*.appcenter.ms')>",
+      "<DNSName(value='appcenter.ms')>",
+      "<DNSName(value='codepush.teams.microsoft.com')>"
+    ],
+    "signature_algorithm": "sha384WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "68:0E:BD:B1:C4:5D:35:A1:74:EB:13:2B:BA:EF:0B:46:55:9C:51:AD:95:E8:85:3B:5D:94:02:53:CE:EC:A5:D3",
+    "found_in_packet_number": "21697",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

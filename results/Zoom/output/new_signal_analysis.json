@@ -1,0 +1,41 @@
+{
+  "WS:192.168.1.125:56375-170.114.15.219:443": {
+    "detection_method": "Decrypted WebSocket",
+    "important_info": {
+      "token": "OPElLnT_PeB2Cm8oNq24WfrzkoTjwOEGdfnt6sZQoJU.AG.O0FJ1bg25yVvrXiIUUnoFsBv-7prfPqeRIpdaoFW3ItGKCefuikCsx7JYShyU6RblXsK3aia6kjlf5giP9x_a4_wq35nLtvLkpNvGn3quzN5DDg09QWsidxzPOWAk5DfHiYkNUIiFjR59FObKMbVopELaRLPSW53-JcMrYzlVnQXOuDM6jEdBhvLO3QNd2C0UaUJOvr2CpHYjNog43zyNZrNrWX-RAN7DVQfaqW8MfA5d6x8ikyhKfKv0_o_qUnwhns.2HuLBltyr1vEhb99JXTksQ.X8FhQrzvZclbF67X"
+    },
+    "packets_with_info": [
+      {
+        "packet_number": "4765",
+        "protocol": "WebSocket",
+        "payload_snippet": "{\"type\":\"login\",\"user\":\"ubqz_00etiq_uxoo58zf_q\",\"token\":\"OPElLnT_PeB2Cm8oNq24WfrzkoTjwOEGdfnt6sZQoJU.AG.O0FJ1bg25yVvrXiIUUnoFsBv-7prfPqeRIpdaoFW3ItGKCefuikCsx7JYShyU6RblXsK3aia6kjlf5giP9x_a4_wq35nLtvLkpNvGn3quzN5DDg09QWsidxzPOWAk5DfHiYkNUIiFjR59FObKMbVopELaRLPSW53-JcMrYzlVnQXOuDM6jEdBhvLO3QNd2C0UaUJOvr2CpHYjNog43zyNZrNrWX-RAN7DVQfaqW8MfA5d6x8ikyhKfKv0_o_qUnwhns.2HuLBltyr1vEhb99JXTksQ.X8FhQrzvZclbF67X\",\"id\":\"77a83446-a25f-47be-b499-e3264464c794:web-zpns\",\"option\":\"1536\",\"resource\":\"ZoomChat_pc_pw"
+      }
+    ]
+  },
+  "WS:170.114.15.219:443-192.168.1.125:56375": {
+    "detection_method": "Decrypted WebSocket",
+    "important_info": {
+      "account": "sRD15KOdQQCLtWxaOBqVOQ"
+    },
+    "packets_with_info": [
+      {
+        "packet_number": "4776",
+        "protocol": "WebSocket",
+        "payload_snippet": "{\"mail\":\"cortom2025@gmail.com\",\"platform\":\"browser\",\"user\":\"ubqz_00etiq_uxoo58zf_q\",\"track\":\"9800260521\",\"type\":\"login-ack\",\"option\":\"1536\",\"worker\":0,\"deviceid\":\"device_id\",\"version\":\"1.11.0.2642\",\"ping\":40,\"resource\":\"ZoomChat_pc_pwa\",\"session\":9914990011027,\"account\":\"sRD15KOdQQCLtWxaOBqVOQ\",\"id\":\"77a83446-a25f-47be-b499-e3264464c794:web-zpns\",\"result\":0}"
+      }
+    ]
+  },
+  "HTTP2:170.114.52.103:443-192.168.1.125:56378": {
+    "detection_method": "Decrypted HTTP/2",
+    "important_info": {
+      "token": "eyJhbGciOiJFUzI1NiIsImsiOiJNNFJxUXY0QSIsInN2IjoiMDAwMDAxIiwidGt2IjoiMi4wIiwidHlwIjoiSldUIn0.eyJhaWQiOiJSVG82Ykw3bVZQSk9LTWdHUWVaZkpBc3lqQjc2dmx6aWsyeDN4RFdLZzBlRTNjYktzT0FieExRMThoa3NIakdNYllVY3cxWT0iLCJhdWQiOlsibHlueC13ZWJzb2NrZXQiXSwiY29uZklkIjoiUlRvNlY4aVcwc0ptL2FwVXQ1dXFMRVRqVkZPRkxlNUhqbnRwSzhBb3B3PT0iLCJlZnMiOiJHbVlJK2NrbkdBUDJFWCtqOFJmS2VNemJzSVNjVWxQSXpaRlhLb3Jua1VsQVlETXJqT0JTQzkxTGZKc0JXTTZLRVZXNkk0dVVZU2g4R2NzOVNOSVZHOGhHcjdQaGdnR3V2Y2xUWVNzZEMydVlmNmVLR1FvRVlaU3ppaTNSRnAwTFdtc0Fud1F2cEE9PSIsImV4cCI6MTc1MTk3ODIyNiwiaWF0IjoxNzUxOTc4MTk2LCJpc3MiOiJseW54LXdlYnNvY2tldCIsImp0aSI6IjAxSlpOMEtGUkhZSERGV0g3NUZSWFkyREFLIiwib3R0Ijp0cnVlLCJwbXMiOlsiVXNlcjpCYXNlIiwiRG9jczpPdXRNZWV0aW5nRW5hYmxlZCJdLCJwcm9kdWN0SWQiOjAsInNpZCI6InVzMDRfMjRmMGE3ZGQzZjRiMGJmZmYxMzJlZiIsInRrdiI6IjIuMCIsInR5cCI6ImpvaW5fd2Vic29ja2V0IiwidWlkIjoiUlRvNkxXWEEzQ0d4TVFTcEZhY3pRbytnL04xMHY3V1Z1ZFlPWjBuNWJENnIyRUpmYWFjSlNtY0RBdlJ3MmZFTk83MFFxazg9In0.W7hcQ6vjIdLeVaUEyK_R3bb4T0M9E2fzmp_iAc2gRAkuUcbhdi_zxc2UzJfBp7apAu-yV4wbJ2mPbKEExpKO7A"
+    },
+    "packets_with_info": [
+      {
+        "packet_number": "5174",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"eyJhbGciOiJFUzI1NiIsImsiOiJNNFJxUXY0QSIsInN2IjoiMDAwMDAxIiwidGt2IjoiMi4wIiwidHlwIjoiSldUIn0.eyJhaWQiOiJSVG82Ykw3bVZQSk9LTWdHUWVaZkpBc3lqQjc2dmx6aWsyeDN4RFdLZzBlRTNjYktzT0FieExRMThoa3NIakdNYllVY3cxWT0iLCJhdWQiOlsibHlueC13ZWJzb2NrZXQiXSwiY29uZklkIjoiUlRvNlY4aVcwc0ptL2FwVXQ1dXFMRVRqVkZPRkxlNUhqbnRwSzhBb3B3PT0iLCJlZnMiOiJHbVlJK2NrbkdBUDJFWCtqOFJmS2VNemJzSVNjVWxQSXpaRlhLb3Jua1VsQVlETXJqT0JTQzkxTGZKc0JXTTZLRVZXNkk0dVVZU2g4R2NzOVNOSVZHOGhHcjdQaGdnR3V2Y2xUWVNzZEMydVlmNmVLR1FvRVlaU3ppaTNSRnAwTF"
+      }
+    ]
+  }
+}

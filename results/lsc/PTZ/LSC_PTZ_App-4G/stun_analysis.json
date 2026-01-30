@@ -1,0 +1,3791 @@
+{
+  "geoip_summary": {
+    "192.168.1.39": {
+      "ip": "192.168.1.39",
+      "error": {
+        "type": "non_public_or_invalid",
+        "message": "Non-public or invalid IP"
+      }
+    },
+    "178.145.222.81": {
+      "ip": "178.145.222.81",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    },
+    "3.126.77.24": {
+      "ip": "3.126.77.24",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "stun_transactions": {
+    "e6351364cc53341c97757d92": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "3.126.77.24",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "Coturn-4.5.1.3 'dan Eider'",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.2130384,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "3.126.77.24",
+          "dst_port": 3478,
+          "message_type": "Binding Request",
+          "attributes": {
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "FINGERPRINT": "0x7ad804a9"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.2277706,
+          "src_ip": "3.126.77.24",
+          "src_port": 3478,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "MAPPED-ADDRESS": "193.190.225.246:35004",
+            "RESPONSE-ORIGIN": "00010d96037e4d18",
+            "OTHER-ADDRESS": "00010d9712c4e1ae",
+            "SOFTWARE": "Coturn-4.5.1.3 'dan Eider'",
+            "FINGERPRINT": "0x844a6d85"
+          },
+          "fingerprint_valid": true
+        }
+      ]
+    },
+    "41595554df927a37e1e7f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.2851312,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "c81aa2f66db4f11b692b04cba21f1d0987713fbd",
+            "FINGERPRINT": "0x0b2c7b56"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3085785,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "c81aa2f66db4f11b692b04cba21f1d0987713fbd",
+            "FINGERPRINT": "0x0b2c7b56"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3395944,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "684e88ef4d6ad110f7cc8e88ed433a6c4db67edf",
+            "FINGERPRINT": "0x332c36c0"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3621957,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "684e88ef4d6ad110f7cc8e88ed433a6c4db67edf",
+            "FINGERPRINT": "0x332c36c0"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955542626ee31e2e7f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "35.207.88.129",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.2860036,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.309155,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3429196,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4265225,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.5991702,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.931869,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519609.5626822,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519610.8516443,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.4175944,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.415011,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.4230561,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.4649527,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "35.207.88.129",
+          "dst_port": 62734,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "4159555476e5a778f2e7f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.3465881,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "3c22e3dbee8ff2ec82a3882962629c5738909339",
+            "FINGERPRINT": "0x6c9c0dc8"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3690703,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "3c22e3dbee8ff2ec82a3882962629c5738909339",
+            "FINGERPRINT": "0x6c9c0dc8"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4095578,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "8c0df6669b0a1552f7b49eb662c1cff28bea2e60",
+            "FINGERPRINT": "0x36737853"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4162767,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "8c0df6669b0a1552f7b49eb662c1cff28bea2e60",
+            "FINGERPRINT": "0x36737853"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554a1ad603f28188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.3471286,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.349561,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3621953,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.3682075,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4089959,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4167936,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "4159555401d0e10130188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.409558,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4095583,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4194036,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4207792,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4596553,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.46125,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554701aea4af6e7f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519608.4255733,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.443687,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4724054,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.4790435,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.486305,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519608.5385845,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955544cdf642737188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519613.439065,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0a158590f48ad0676bb3436fbfa76cec73286f01",
+            "FINGERPRINT": "0xd628255d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.4412305,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9c33af55892614905ea2db0847ca38f9996ec3bc",
+            "FINGERPRINT": "0xd7af9d6c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.4516072,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0a158590f48ad0676bb3436fbfa76cec73286f01",
+            "FINGERPRINT": "0xd628255d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.453583,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9c33af55892614905ea2db0847ca38f9996ec3bc",
+            "FINGERPRINT": "0xd7af9d6c"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554f70cfb7b04e8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519613.4426677,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "47795e493d578ab575c79d06d620d25784ff4023",
+            "FINGERPRINT": "0x97db46a1"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.4703684,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "47795e493d578ab575c79d06d620d25784ff4023",
+            "FINGERPRINT": "0x97db46a1"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.4914203,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d9d40280e3ecec75dceb0e3c2e2a01dafe308e7e",
+            "FINGERPRINT": "0xa267ceb8"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519613.5111642,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d9d40280e3ecec75dceb0e3c2e2a01dafe308e7e",
+            "FINGERPRINT": "0xa267ceb8"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "4159555460eaac4939188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519618.4541318,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "1c08095ecc06aad7d2836d45578cd13c66d74ea7",
+            "FINGERPRINT": "0x69d7be70"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.4580562,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "34cc3908bf5834863c8f126609a6d12417b3814e",
+            "FINGERPRINT": "0x0bba6c0c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.4715855,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "1c08095ecc06aad7d2836d45578cd13c66d74ea7",
+            "FINGERPRINT": "0x69d7be70"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.4736958,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "34cc3908bf5834863c8f126609a6d12417b3814e",
+            "FINGERPRINT": "0x0bba6c0c"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554c60a820a07e8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519618.459573,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "9b763a5b0dae3d7fd0e7b8e1091b46ed5f9ca623",
+            "FINGERPRINT": "0xf64d7831"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.4804146,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "9b763a5b0dae3d7fd0e7b8e1091b46ed5f9ca623",
+            "FINGERPRINT": "0xf64d7831"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.4916365,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "0444b23c38ce717dbe52db38d3c0998752f11d8a",
+            "FINGERPRINT": "0xe02ad537"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519618.511439,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "0444b23c38ce717dbe52db38d3c0998752f11d8a",
+            "FINGERPRINT": "0xe02ad537"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "4159555483e970183b188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519623.4714298,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "4a17415ace20b93d2d83db1b7fb560db952eda48",
+            "FINGERPRINT": "0xecfbb70c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.474238,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1d1b25af633dfa493464531c402acae1329ed482",
+            "FINGERPRINT": "0xb71cdb54"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.4784741,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "4a17415ace20b93d2d83db1b7fb560db952eda48",
+            "FINGERPRINT": "0xecfbb70c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.480647,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1d1b25af633dfa493464531c402acae1329ed482",
+            "FINGERPRINT": "0xb71cdb54"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955549cf360600ae8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519623.4760447,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "609bb13a905221a64812bc20ec5acbbcb3e3d645",
+            "FINGERPRINT": "0x8a086944"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.506779,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "609bb13a905221a64812bc20ec5acbbcb3e3d645",
+            "FINGERPRINT": "0x8a086944"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.5117266,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "a724c7140085424adf11cc8ce192601dd892367c",
+            "FINGERPRINT": "0xf344baa6"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519623.5519507,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "a724c7140085424adf11cc8ce192601dd892367c",
+            "FINGERPRINT": "0xf344baa6"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554435504580de8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519628.4895334,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "87f5214687ee3f2f4135d54fda700708486c1c2b",
+            "FINGERPRINT": "0x01097da9"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5183878,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "87f5214687ee3f2f4135d54fda700708486c1c2b",
+            "FINGERPRINT": "0x01097da9"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5311837,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d09bdf2fb629e6514463e1ae0d0e3de62ce45694",
+            "FINGERPRINT": "0xc716c127"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5518231,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d09bdf2fb629e6514463e1ae0d0e3de62ce45694",
+            "FINGERPRINT": "0xc716c127"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554d8552f503d188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519628.4917796,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0645730fed49fdbdeda1a30c78630c11e71ba5bf",
+            "FINGERPRINT": "0x71ee7c64"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5048428,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "c84480e5afbcc9e658079abe47a6e658827ed74d",
+            "FINGERPRINT": "0xc7a08d1c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5113435,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0645730fed49fdbdeda1a30c78630c11e71ba5bf",
+            "FINGERPRINT": "0x71ee7c64"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519628.5193796,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "c84480e5afbcc9e658079abe47a6e658827ed74d",
+            "FINGERPRINT": "0xc7a08d1c"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955543988c7453e188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519633.4912415,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0f462d18ba2f616ad512c6788acb92f28e5a92cc",
+            "FINGERPRINT": "0x0c4d2dcd"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.49376,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "eacee4051d189864bde26a7621e3b7c68589d9eb",
+            "FINGERPRINT": "0x1635a1c8"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.5116632,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0f462d18ba2f616ad512c6788acb92f28e5a92cc",
+            "FINGERPRINT": "0x0c4d2dcd"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.5187428,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "eacee4051d189864bde26a7621e3b7c68589d9eb",
+            "FINGERPRINT": "0x1635a1c8"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "41595554162d2c5a0ee8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519633.499509,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "d4f3a8dedd77070e636b98a53d05db9243af1686",
+            "FINGERPRINT": "0xf736c278"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.5192838,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "d4f3a8dedd77070e636b98a53d05db9243af1686",
+            "FINGERPRINT": "0xf736c278"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.5314252,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "80cbe466cdf15ac1c79be4ef3c9cc5d15a44869c",
+            "FINGERPRINT": "0x4549fe37"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519633.5518649,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "80cbe466cdf15ac1c79be4ef3c9cc5d15a44869c",
+            "FINGERPRINT": "0x4549fe37"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955548a10943a3f188863": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "178.145.222.81",
+      "responder_ip": "192.168.1.39",
+      "exposed_reflexive_address": "178.145.222.81:40960",
+      "public_ip_disclosed": true,
+      "library_info": "tuya_p2p_sdk_v3.3.5\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519638.511408,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "29c14f5ab8ea47ad3dbc726acbca4e59f35f108b",
+            "FINGERPRINT": "0xd002b2e3"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.5173378,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9455299136742b35250dd38bb8590239dc9e5580",
+            "FINGERPRINT": "0x15febb59"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.5315092,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "29c14f5ab8ea47ad3dbc726acbca4e59f35f108b",
+            "FINGERPRINT": "0xd002b2e3"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.5401566,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9455299136742b35250dd38bb8590239dc9e5580",
+            "FINGERPRINT": "0x15febb59"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "2bNU",
+        "ufrag_local": "f8aY",
+        "tie_breaker": 18446744069721562562,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "415955540822846f0fe8f068": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.39",
+      "responder_ip": "178.145.222.81",
+      "exposed_reflexive_address": "193.190.225.246:35004",
+      "public_ip_disclosed": true,
+      "library_info": "3.5.2\u0000\u0000\u0000",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1699519638.5173957,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "b8ead2fef1a0c83d832704c32920a69c122bbbec",
+            "FINGERPRINT": "0x52e33474"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.541535,
+          "src_ip": "192.168.1.39",
+          "src_port": 35004,
+          "dst_ip": "178.145.222.81",
+          "dst_port": 40960,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "b8ead2fef1a0c83d832704c32920a69c122bbbec",
+            "FINGERPRINT": "0x52e33474"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.5513232,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "3c652c794dcf0abbba2f11dbd694860d304021de",
+            "FINGERPRINT": "0x38f5e48d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1699519638.5716987,
+          "src_ip": "178.145.222.81",
+          "src_port": 40960,
+          "dst_ip": "192.168.1.39",
+          "dst_port": 35004,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "3c652c794dcf0abbba2f11dbd694860d304021de",
+            "FINGERPRINT": "0x38f5e48d"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "f8aY",
+        "ufrag_local": "2bNU",
+        "tie_breaker": 18446744070942269761,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    }
+  },
+  "ice_transactions": {
+    "41595554df927a37e1e7f068": {
+      "txid": "41595554df927a37e1e7f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519608.2851312,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554df927a37e1e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "c81aa2f66db4f11b692b04cba21f1d0987713fbd",
+            "FINGERPRINT": "0x0b2c7b56"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3085785,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554df927a37e1e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "c81aa2f66db4f11b692b04cba21f1d0987713fbd",
+            "FINGERPRINT": "0x0b2c7b56"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3395944,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554df927a37e1e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "684e88ef4d6ad110f7cc8e88ed433a6c4db67edf",
+            "FINGERPRINT": "0x332c36c0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3621957,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554df927a37e1e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "684e88ef4d6ad110f7cc8e88ed433a6c4db67edf",
+            "FINGERPRINT": "0x332c36c0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955542626ee31e2e7f068": {
+      "txid": "415955542626ee31e2e7f068",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlling",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.39:35004 \u2192 35.207.88.129:62734",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1699519608.2860036,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.309155,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3429196,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4265225,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.5991702,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.931869,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519609.5626822,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519610.8516443,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.4175944,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.415011,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.4230561,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.4649527,
+          "src": "192.168.1.39:35004",
+          "dst": "35.207.88.129:62734",
+          "transaction_id": "415955542626ee31e2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "170f994ef73e28fad50e5f2ad66643dbeb502d52",
+            "FINGERPRINT": "0x4a610d7b"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "4159555476e5a778f2e7f068": {
+      "txid": "4159555476e5a778f2e7f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519608.3465881,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555476e5a778f2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "3c22e3dbee8ff2ec82a3882962629c5738909339",
+            "FINGERPRINT": "0x6c9c0dc8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3690703,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555476e5a778f2e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "3c22e3dbee8ff2ec82a3882962629c5738909339",
+            "FINGERPRINT": "0x6c9c0dc8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4095578,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555476e5a778f2e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "8c0df6669b0a1552f7b49eb662c1cff28bea2e60",
+            "FINGERPRINT": "0x36737853"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4162767,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555476e5a778f2e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "8c0df6669b0a1552f7b49eb662c1cff28bea2e60",
+            "FINGERPRINT": "0x36737853"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554a1ad603f28188863": {
+      "txid": "41595554a1ad603f28188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519608.3471286,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.349561,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3621953,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.3682075,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4089959,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "d3f0dad0d56d26f441b961203d41a7930d22a469",
+            "FINGERPRINT": "0xbc165a66"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4167936,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554a1ad603f28188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1f35c9accb78a8a000408ba7e076e564a1a2a655",
+            "FINGERPRINT": "0x6eaebde0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "4159555401d0e10130188863": {
+      "txid": "4159555401d0e10130188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519608.409558,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4095583,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4194036,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4207792,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4596553,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "c2ff3114bfe10fa153dd1bcf153d76b61b750ecf",
+            "FINGERPRINT": "0x158f8002"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.46125,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555401d0e10130188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "4f743bead38561251510d55ad19a0c82a2fbf58e",
+            "FINGERPRINT": "0xdcb0e86a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554701aea4af6e7f068": {
+      "txid": "41595554701aea4af6e7f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519608.4255733,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.443687,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4724054,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.4790435,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.486305,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "33418bf8e5f544ac588f0209e2909df47bd6f911",
+            "FINGERPRINT": "0xf38c917e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519608.5385845,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554701aea4af6e7f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "cc0337edfb74f332d6db4e494a01dc3164b2ca78",
+            "FINGERPRINT": "0xfc237bfd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955544cdf642737188863": {
+      "txid": "415955544cdf642737188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519613.439065,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955544cdf642737188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0a158590f48ad0676bb3436fbfa76cec73286f01",
+            "FINGERPRINT": "0xd628255d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.4412305,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955544cdf642737188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9c33af55892614905ea2db0847ca38f9996ec3bc",
+            "FINGERPRINT": "0xd7af9d6c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.4516072,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955544cdf642737188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0a158590f48ad0676bb3436fbfa76cec73286f01",
+            "FINGERPRINT": "0xd628255d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.453583,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955544cdf642737188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9c33af55892614905ea2db0847ca38f9996ec3bc",
+            "FINGERPRINT": "0xd7af9d6c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554f70cfb7b04e8f068": {
+      "txid": "41595554f70cfb7b04e8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519613.4426677,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554f70cfb7b04e8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "47795e493d578ab575c79d06d620d25784ff4023",
+            "FINGERPRINT": "0x97db46a1"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.4703684,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554f70cfb7b04e8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "47795e493d578ab575c79d06d620d25784ff4023",
+            "FINGERPRINT": "0x97db46a1"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.4914203,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554f70cfb7b04e8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d9d40280e3ecec75dceb0e3c2e2a01dafe308e7e",
+            "FINGERPRINT": "0xa267ceb8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519613.5111642,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554f70cfb7b04e8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d9d40280e3ecec75dceb0e3c2e2a01dafe308e7e",
+            "FINGERPRINT": "0xa267ceb8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "4159555460eaac4939188863": {
+      "txid": "4159555460eaac4939188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519618.4541318,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555460eaac4939188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "1c08095ecc06aad7d2836d45578cd13c66d74ea7",
+            "FINGERPRINT": "0x69d7be70"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.4580562,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555460eaac4939188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "34cc3908bf5834863c8f126609a6d12417b3814e",
+            "FINGERPRINT": "0x0bba6c0c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.4715855,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555460eaac4939188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "1c08095ecc06aad7d2836d45578cd13c66d74ea7",
+            "FINGERPRINT": "0x69d7be70"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.4736958,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555460eaac4939188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "34cc3908bf5834863c8f126609a6d12417b3814e",
+            "FINGERPRINT": "0x0bba6c0c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554c60a820a07e8f068": {
+      "txid": "41595554c60a820a07e8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519618.459573,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554c60a820a07e8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "9b763a5b0dae3d7fd0e7b8e1091b46ed5f9ca623",
+            "FINGERPRINT": "0xf64d7831"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.4804146,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554c60a820a07e8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "9b763a5b0dae3d7fd0e7b8e1091b46ed5f9ca623",
+            "FINGERPRINT": "0xf64d7831"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.4916365,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554c60a820a07e8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "0444b23c38ce717dbe52db38d3c0998752f11d8a",
+            "FINGERPRINT": "0xe02ad537"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519618.511439,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554c60a820a07e8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "0444b23c38ce717dbe52db38d3c0998752f11d8a",
+            "FINGERPRINT": "0xe02ad537"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "4159555483e970183b188863": {
+      "txid": "4159555483e970183b188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519623.4714298,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555483e970183b188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "4a17415ace20b93d2d83db1b7fb560db952eda48",
+            "FINGERPRINT": "0xecfbb70c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.474238,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555483e970183b188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1d1b25af633dfa493464531c402acae1329ed482",
+            "FINGERPRINT": "0xb71cdb54"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.4784741,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "4159555483e970183b188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "4a17415ace20b93d2d83db1b7fb560db952eda48",
+            "FINGERPRINT": "0xecfbb70c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.480647,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "4159555483e970183b188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "1d1b25af633dfa493464531c402acae1329ed482",
+            "FINGERPRINT": "0xb71cdb54"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955549cf360600ae8f068": {
+      "txid": "415955549cf360600ae8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519623.4760447,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955549cf360600ae8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "609bb13a905221a64812bc20ec5acbbcb3e3d645",
+            "FINGERPRINT": "0x8a086944"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.506779,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955549cf360600ae8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "609bb13a905221a64812bc20ec5acbbcb3e3d645",
+            "FINGERPRINT": "0x8a086944"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.5117266,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955549cf360600ae8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "a724c7140085424adf11cc8ce192601dd892367c",
+            "FINGERPRINT": "0xf344baa6"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519623.5519507,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955549cf360600ae8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "a724c7140085424adf11cc8ce192601dd892367c",
+            "FINGERPRINT": "0xf344baa6"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554435504580de8f068": {
+      "txid": "41595554435504580de8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519628.4895334,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554435504580de8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "87f5214687ee3f2f4135d54fda700708486c1c2b",
+            "FINGERPRINT": "0x01097da9"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5183878,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554435504580de8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "87f5214687ee3f2f4135d54fda700708486c1c2b",
+            "FINGERPRINT": "0x01097da9"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5311837,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554435504580de8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d09bdf2fb629e6514463e1ae0d0e3de62ce45694",
+            "FINGERPRINT": "0xc716c127"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5518231,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554435504580de8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "d09bdf2fb629e6514463e1ae0d0e3de62ce45694",
+            "FINGERPRINT": "0xc716c127"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554d8552f503d188863": {
+      "txid": "41595554d8552f503d188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519628.4917796,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554d8552f503d188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0645730fed49fdbdeda1a30c78630c11e71ba5bf",
+            "FINGERPRINT": "0x71ee7c64"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5048428,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554d8552f503d188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "c84480e5afbcc9e658079abe47a6e658827ed74d",
+            "FINGERPRINT": "0xc7a08d1c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5113435,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554d8552f503d188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0645730fed49fdbdeda1a30c78630c11e71ba5bf",
+            "FINGERPRINT": "0x71ee7c64"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519628.5193796,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554d8552f503d188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "c84480e5afbcc9e658079abe47a6e658827ed74d",
+            "FINGERPRINT": "0xc7a08d1c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955543988c7453e188863": {
+      "txid": "415955543988c7453e188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519633.4912415,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955543988c7453e188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0f462d18ba2f616ad512c6788acb92f28e5a92cc",
+            "FINGERPRINT": "0x0c4d2dcd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.49376,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955543988c7453e188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "eacee4051d189864bde26a7621e3b7c68589d9eb",
+            "FINGERPRINT": "0x1635a1c8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.5116632,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955543988c7453e188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "0f462d18ba2f616ad512c6788acb92f28e5a92cc",
+            "FINGERPRINT": "0x0c4d2dcd"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.5187428,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955543988c7453e188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "eacee4051d189864bde26a7621e3b7c68589d9eb",
+            "FINGERPRINT": "0x1635a1c8"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "41595554162d2c5a0ee8f068": {
+      "txid": "41595554162d2c5a0ee8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519633.499509,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554162d2c5a0ee8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "d4f3a8dedd77070e636b98a53d05db9243af1686",
+            "FINGERPRINT": "0xf736c278"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.5192838,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "41595554162d2c5a0ee8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "d4f3a8dedd77070e636b98a53d05db9243af1686",
+            "FINGERPRINT": "0xf736c278"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.5314252,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554162d2c5a0ee8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "80cbe466cdf15ac1c79be4ef3c9cc5d15a44869c",
+            "FINGERPRINT": "0x4549fe37"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519633.5518649,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "41595554162d2c5a0ee8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "80cbe466cdf15ac1c79be4ef3c9cc5d15a44869c",
+            "FINGERPRINT": "0x4549fe37"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955548a10943a3f188863": {
+      "txid": "415955548a10943a3f188863",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "response_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "messages": [
+        {
+          "timestamp": 1699519638.511408,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955548a10943a3f188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "29c14f5ab8ea47ad3dbc726acbca4e59f35f108b",
+            "FINGERPRINT": "0xd002b2e3"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.5173378,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955548a10943a3f188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9455299136742b35250dd38bb8590239dc9e5580",
+            "FINGERPRINT": "0x15febb59"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.5315092,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955548a10943a3f188863",
+          "message_type": "Binding Request",
+          "username": "2bNU:f8aY",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 18446744069721562562,
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "USERNAME": "2bNU:f8aY",
+            "MESSAGE-INTEGRITY": "29c14f5ab8ea47ad3dbc726acbca4e59f35f108b",
+            "FINGERPRINT": "0xd002b2e3"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.5401566,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955548a10943a3f188863",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "178.145.222.81:40960",
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "MESSAGE-INTEGRITY": "9455299136742b35250dd38bb8590239dc9e5580",
+            "FINGERPRINT": "0x15febb59"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    },
+    "415955540822846f0fe8f068": {
+      "txid": "415955540822846f0fe8f068",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.39:35004 \u2192 178.145.222.81:40960",
+      "response_path": "178.145.222.81:40960 \u2192 192.168.1.39:35004",
+      "messages": [
+        {
+          "timestamp": 1699519638.5173957,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955540822846f0fe8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "b8ead2fef1a0c83d832704c32920a69c122bbbec",
+            "FINGERPRINT": "0x52e33474"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.541535,
+          "src": "192.168.1.39:35004",
+          "dst": "178.145.222.81:40960",
+          "transaction_id": "415955540822846f0fe8f068",
+          "message_type": "Binding Request",
+          "username": "f8aY:2bNU",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 18446744070942269761,
+            "SOFTWARE": "tuya_p2p_sdk_v3.3.5\u0000",
+            "USERNAME": "f8aY:2bNU",
+            "MESSAGE-INTEGRITY": "b8ead2fef1a0c83d832704c32920a69c122bbbec",
+            "FINGERPRINT": "0x52e33474"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "tuya_p2p_sdk_v3.3.5\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.5513232,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955540822846f0fe8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "3c652c794dcf0abbba2f11dbd694860d304021de",
+            "FINGERPRINT": "0x38f5e48d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        },
+        {
+          "timestamp": 1699519638.5716987,
+          "src": "178.145.222.81:40960",
+          "dst": "192.168.1.39:35004",
+          "transaction_id": "415955540822846f0fe8f068",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.246:35004",
+            "SOFTWARE": "3.5.2\u0000\u0000\u0000",
+            "MESSAGE-INTEGRITY": "3c652c794dcf0abbba2f11dbd694860d304021de",
+            "FINGERPRINT": "0x38f5e48d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "3.5.2\u0000\u0000\u0000",
+          "library_version": "Unknown"
+        }
+      ]
+    }
+  }
+}

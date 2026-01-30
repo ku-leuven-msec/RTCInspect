@@ -1,0 +1,175 @@
+{
+  "geoip_summary": {
+    "99.77.157.55": {
+      "ip": "99.77.157.55",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "stun_transactions": {
+    "4e6c703355463233777a656a": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.125",
+      "responder_ip": "99.77.157.55",
+      "exposed_reflexive_address": "193.190.225.247:61009",
+      "public_ip_disclosed": true,
+      "library_info": "None",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1752060935.283839,
+          "src_ip": "192.168.1.125",
+          "src_port": 61009,
+          "dst_ip": "99.77.157.55",
+          "dst_port": 22466,
+          "message_type": "Binding Request",
+          "attributes": {}
+        },
+        {
+          "timestamp": 1752060935.292661,
+          "src_ip": "99.77.157.55",
+          "src_port": 22466,
+          "dst_ip": "192.168.1.125",
+          "dst_port": 61009,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:61009",
+            "MAPPED-ADDRESS": "193.190.225.247:61009",
+            "RESPONSE-ORIGIN": "00010d960a013668",
+            "OTHER-ADDRESS": "00010d977f010203",
+            "SOFTWARE": "None",
+            "FINGERPRINT": "0x7eae5fcb"
+          },
+          "fingerprint_valid": true
+        }
+      ]
+    },
+    "4e744c4f617868464c783031": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.125",
+      "responder_ip": "99.77.157.55",
+      "exposed_reflexive_address": "193.190.225.247:61009",
+      "public_ip_disclosed": true,
+      "library_info": "None",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1752060945.298881,
+          "src_ip": "192.168.1.125",
+          "src_port": 61009,
+          "dst_ip": "99.77.157.55",
+          "dst_port": 22466,
+          "message_type": "Binding Request",
+          "attributes": {}
+        },
+        {
+          "timestamp": 1752060945.306738,
+          "src_ip": "99.77.157.55",
+          "src_port": 22466,
+          "dst_ip": "192.168.1.125",
+          "dst_port": 61009,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:61009",
+            "MAPPED-ADDRESS": "193.190.225.247:61009",
+            "RESPONSE-ORIGIN": "00010d960a013668",
+            "OTHER-ADDRESS": "00010d977f010203",
+            "SOFTWARE": "None",
+            "FINGERPRINT": "0x78badfc0"
+          },
+          "fingerprint_valid": true
+        }
+      ]
+    },
+    "365752536f6e593533345163": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.125",
+      "responder_ip": "99.77.157.55",
+      "exposed_reflexive_address": "193.190.225.247:61009",
+      "public_ip_disclosed": true,
+      "library_info": "None",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1752060955.329967,
+          "src_ip": "192.168.1.125",
+          "src_port": 61009,
+          "dst_ip": "99.77.157.55",
+          "dst_port": 22466,
+          "message_type": "Binding Request",
+          "attributes": {}
+        },
+        {
+          "timestamp": 1752060955.337796,
+          "src_ip": "99.77.157.55",
+          "src_port": 22466,
+          "dst_ip": "192.168.1.125",
+          "dst_port": 61009,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:61009",
+            "MAPPED-ADDRESS": "193.190.225.247:61009",
+            "RESPONSE-ORIGIN": "00010d960a013668",
+            "OTHER-ADDRESS": "00010d977f010203",
+            "SOFTWARE": "None",
+            "FINGERPRINT": "0x60c76ea6"
+          },
+          "fingerprint_valid": true
+        }
+      ]
+    },
+    "3141716e7269685256343569": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.125",
+      "responder_ip": "99.77.157.55",
+      "exposed_reflexive_address": "193.190.225.247:61009",
+      "public_ip_disclosed": true,
+      "library_info": "None",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1752060965.345463,
+          "src_ip": "192.168.1.125",
+          "src_port": 61009,
+          "dst_ip": "99.77.157.55",
+          "dst_port": 22466,
+          "message_type": "Binding Request",
+          "attributes": {}
+        },
+        {
+          "timestamp": 1752060965.353226,
+          "src_ip": "99.77.157.55",
+          "src_port": 22466,
+          "dst_ip": "192.168.1.125",
+          "dst_port": 61009,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:61009",
+            "MAPPED-ADDRESS": "193.190.225.247:61009",
+            "RESPONSE-ORIGIN": "00010d960a013668",
+            "OTHER-ADDRESS": "00010d977f010203",
+            "SOFTWARE": "None",
+            "FINGERPRINT": "0x15f398de"
+          },
+          "fingerprint_valid": true
+        }
+      ]
+    }
+  },
+  "ice_transactions": {}
+}

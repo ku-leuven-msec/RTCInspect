@@ -1,0 +1,75 @@
+{
+  "HTTP2:192.168.1.125:50258-3.67.35.217:443": {
+    "detection_method": "Decrypted HTTP/2",
+    "important_info": {
+      "token": "xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2"
+    },
+    "packets_with_info": [
+      {
+        "packet_number": "6271",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"user_id\":\"U094P45K63G\",\"permissions\":[\"CREATE_PUBLIC_CHANNEL\",\"CREATE_PRIVATE_CHANNEL\"]}"
+      },
+      {
+        "packet_number": "6529",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"channel_ids\":[\"D094P46BG0N\"]}"
+      },
+      {
+        "packet_number": "6549",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"check_interaction\":true,\"include_profile_only_users\":true,\"updated_ids\":{\"U094P45K63G\":1752059022,\"U095670PRFT\":1752059022,\"USLACKBOT\":0}}"
+      },
+      {
+        "packet_number": "6700",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"channel\":\"D094P46BG0N\",\"as_admin\":false}"
+      },
+      {
+        "packet_number": "6702",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"user_id\":\"U094P45K63G\",\"permissions\":[\"MANAGE_CHANNEL_PERMISSIONS\",\"CAN_AT_CHANNEL\",\"CAN_AT_EVERYONE\",\"ARCHIVE_CHANNEL\"]}"
+      },
+      {
+        "packet_number": "6734",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"channel_ids\":[\"C0956710JFK\",\"C09567125MX\",\"D094P465WNS\"]}"
+      },
+      {
+        "packet_number": "6749",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"user_id\":\"U094P45K63G\",\"permissions\":[\"READ_AUDIT_LOGS\",\"ARCHIVE_CHANNEL\",\"UNARCHIVE_CHANNEL\",\"CONVERT_TO_PRIVATE\",\"CONVERT_MPDM_TO_PRIVATE\",\"RENAME_CHANNEL\",\"ASSIGN_CHANNEL_MANAGER\",\"DELETE_CHANNEL\",\"SET_CHANNEL_PURPOSE\",\"SET_CHANNEL_TOPIC\",\"MANAGE_CHANNEL_PERMISSIONS\",\"REMOVE_FROM_CHANNEL\",\"REMOVE_FROM_PRIVATE_CHANNEL\",\"INVITE_TO_CHANNEL\",\"INVITE_EXTERNAL_TO_CHANNEL\",\"MAN"
+      },
+      {
+        "packet_number": "6838",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"channel_ids\":[\"D094P46BG0N\"]}"
+      },
+      {
+        "packet_number": "7900",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"check_interaction\":true,\"include_profile_only_users\":true,\"updated_ids\":{\"U095670PRFT\":1752059022}}"
+      },
+      {
+        "packet_number": "8303",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"user_id\":\"U094P45K63G\",\"permissions\":[\"CREATE_PUBLIC_CHANNEL\",\"EDIT_PROFILE_PHOTO\"]}"
+      },
+      {
+        "packet_number": "8313",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"user_id\":\"U094P45K63G\",\"permissions\":[\"MANAGE_CHANNEL_PERMISSIONS\",\"CAN_AT_CHANNEL\",\"CAN_AT_EVERYONE\",\"ARCHIVE_CHANNEL\"]}"
+      },
+      {
+        "packet_number": "8675",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"check_interaction\":true,\"include_profile_only_users\":true,\"updated_ids\":{\"U094P45K63G\":1752059022}}"
+      },
+      {
+        "packet_number": "11660",
+        "protocol": "HTTP/2",
+        "payload_snippet": "{\"token\":\"xoxc-9176238754113-9159141652118-9169023268565-3a872acabf60addef69139c69f440eac75d060b0f9e907fdd6b92679588751a2\",\"check_interaction\":true,\"include_profile_only_users\":true,\"updated_ids\":{\"U094P45K63G\":1752060935}}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.1.39:38394",
+    "server_endpoint": "3.75.117.56:443",
+    "total_bytes": 7278,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+      "is_encryption_strong": false
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-09-24T10:06:24+00:00",
+      "valid_until": "2024-09-23T10:05:03+00:00",
+      "issuer_cn": "Go Daddy Secure Certificate Authority - G2",
+      "subject_cn": "*.iotbing.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.iotbing.com')>",
+        "<DNSName(value='iotbing.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "48:82:0A:3B:E5:B1:B1:F7:ED:94:85:4C:71:02:83:E7:52:3A:2B:ED:1D:CA:61:AF:B3:5E:D9:FE:BB:E1:A8:98"
+    }
+  }
+]

@@ -1,0 +1,743 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "TCP:192.168.1.218:37678-54.77.229.153:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:37678-54.77.229.153:443",
+      "likelihood_score": 10,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 398 bytes)",
+        "Contains likely Unix timestamps",
+        "Contains long ID-like strings",
+        "Medium entropy (7.52)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "w^\u00dd\u0090\u0018\u00ce\u00e4\u00bb\u0098\u00e99G\u001d\u00fa\u00a0EV\u00d0\u00e3\u00c8P\u00a0\u00f9Zq0q0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000\t\f\u000e#\u00f8H65q\u00a7\u00a8|o\u009a\u00b5\u00fd\u00c7NqCQ\u00bf\u00f9\u0012\t\u00e2\u00ca\u00aao_\u00d6\u00b9\u00c0\u009f\u0092:\u00d1\u00cc\u00ed?\u00c3\r*(\u0010\u001f6\u000e7$\u0084\u00d1\u0099\u00013\u0086,4\u000e\u00c14WF\u00ad\u0097&\u0019\u0099g\u0015\u00e3\u00c2\u00a5\u00de\u0003\u00b5\u000b\u0088\u00cfP~\r\u00ba\u00c1s\u00f1\u0092\u00d1\u00c8\u000f\u00a01,RD\u001f:\u0004\u0094\u0098&\u00d6?\u00d3\u0012\u00f1z!7\u00e8\u0017\u00a9\u00de\u00ee\u001c\u0004lns$\u00c0\u00ae\u000b\u00b7\u008d\u00eb\u00199\u00f2\u00bc\u00ad\u00f6\u00e7\u001d9\u00cbr\u0084\u001a\u0004\u00feX6a\u00c6\u00c8\u00b0\u00dc\\j\u00df\u0000\u00c3",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:37676-54.77.229.153:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:37676-54.77.229.153:443",
+      "likelihood_score": 10,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 431 bytes)",
+        "Contains likely Unix timestamps",
+        "Contains long ID-like strings",
+        "Medium entropy (7.57)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "w^\u00dd\u0090\u0018\u00ce\u00e4\u00bb\u0098\u00e99G\u001d\u00fa\u00a0EV\u00d0\u00e3\u00c8P\u00a0\u00f9Zq0q0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000\t\f\u000e#\u00f8H65q\u00a7\u00a8|o\u009a\u00b5\u00fd\u00c7NqCQ\u00bf\u00f9\u0012\t\u00e2\u00ca\u00aao_\u00d6\u00b9\u00c0\u009f\u0092:\u00d1\u00cc\u00ed?\u00c3\r*(\u0010\u001f6\u000e7$\u0084\u00d1\u0099\u00013\u0086,4\u000e\u00c14WF\u00ad\u0097&\u0019\u0099g\u0015\u00e3\u00c2\u00a5\u00de\u0003\u00b5\u000b\u0088\u00cfP~\r\u00ba\u00c1s\u00f1\u0092\u00d1\u00c8\u000f\u00a01,RD\u001f:\u0004\u0094\u0098&\u00d6?\u00d3\u0012\u00f1z!7\u00e8\u0017\u00a9\u00de\u00ee\u001c\u0004lns$\u00c0\u00ae\u000b\u00b7\u008d\u00eb\u00199\u00f2\u00bc\u00ad\u00f6\u00e7\u001d9\u00cbr\u0084\u001a\u0004\u00feX6a\u00c6\u00c8\u00b0\u00dc\\j\u00df\u0000\u00c3",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:52391-52.223.23.226:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:52391-52.223.23.226:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 456 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.51)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "P\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:50991-52.223.23.226:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:50991-52.223.23.226:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 434 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.50)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR\u00a8\u0096F\u00d0\u00ac%\u00894\u00d9`\u00fe\u00ad",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:61799-35.170.112.211:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:61799-35.170.112.211:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 434 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.50)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR\u00a8\u0096F\u00d0\u00ac%\u00894\u00d9`\u00fe\u00ad",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:41162-35.173.209.252:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:41162-35.173.209.252:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 353 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.48)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47162",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47162",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 435 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.49)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47164",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47164",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 464 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.52)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u0003\u0000G0E\u0002!\u0000\u00ef\u0011\u0096\u0003O\u00dd\u0000\u00ef\u00d6\u007f\u00ff\u00c6\u0001\u00fd\u00ec\u00ebj\u0000baE\u00ac\u001c\u0091\u00e1`\u00d31\"\u00c8CP\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:52621-52.223.23.226:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:52621-52.223.23.226:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 432 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.49)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR\u00a8\u0096F\u00d0\u00ac%\u00894\u00d9`\u00fe\u00ad",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47182",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47182",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 458 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.52)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u0003\u0000G0E\u0002!\u0000\u00ef\u0011\u0096\u0003O\u00dd\u0000\u00ef\u00d6\u007f\u00ff\u00c6\u0001\u00fd\u00ec\u00ebj\u0000baE\u00ac\u001c\u0091\u00e1`\u00d31\"\u00c8CP\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47184",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47184",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 464 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.51)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u0003\u0000G0E\u0002!\u0000\u00ef\u0011\u0096\u0003O\u00dd\u0000\u00ef\u00d6\u007f\u00ff\u00c6\u0001\u00fd\u00ec\u00ebj\u0000baE\u00ac\u001c\u0091\u00e1`\u00d31\"\u00c8CP\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:41196-35.173.209.252:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:41196-35.173.209.252:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 573 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.47)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47192",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47192",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 443 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.49)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47196",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47196",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 464 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.52)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u0003\u0000G0E\u0002!\u0000\u00ef\u0011\u0096\u0003O\u00dd\u0000\u00ef\u00d6\u007f\u00ff\u00c6\u0001\u00fd\u00ec\u00ebj\u0000baE\u00ac\u001c\u0091\u00e1`\u00d31\"\u00c8CP\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:46646-40.70.161.102:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:46646-40.70.161.102:443",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 952 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (7.60)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/pkiops/crl/Microsoft",
+          "com/pkiops/Docs/Reposito",
+          "com/DigiCertGlobalRootG2",
+          "com/DigiCertGlobalRootG2",
+          "com/DigiCertGlobalRootG2"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": ".\u0086\u00b6\u00af\u00df8x0\u000e\u0006\u0003U\u001d\u000f\u0001\u0001\u00ff\u0004\u0004\u0003\u0002\u0004\u00b00E\u0006\u0003U\u001d\u0011\u0004>0<\u0082\u000e*.appcenter.ms\u0082\fappcenter.ms\u0082\u001ccodepush.teams.microsoft.com0\f\u0006\u0003U\u001d\u0013\u0001\u0001\u00ff\u0004\u00020\u00000d\u0006\u0003U\u001d\u001f\u0004]0[0Y\u00a0W\u00a0U\u0086Shttp://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20TLS%20Issuing%20C",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:50938-54.156.211.246:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:50938-54.156.211.246:443",
+      "likelihood_score": 7,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 670 bytes)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR\u00a8\u0096F\u00d0\u00ac%\u00894\u00d9`\u00fe\u00ad",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:53990-54.156.211.246:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:53990-54.156.211.246:443",
+      "likelihood_score": 7,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 946 bytes)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR\u00a8\u0096F\u00d0\u00ac%\u00894\u00d9`\u00fe\u00ad",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47180",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47180",
+      "likelihood_score": 7,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 652 bytes)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:18.200.70.75:8557-192.168.1.111:54107",
+      "protocol": "TCP",
+      "endpoints": "18.200.70.75:8557-192.168.1.111:54107",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 504 bytes)",
+        "Medium entropy (7.74)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0016\u0003\u0003\u0000?\u0001\u0000\u0000;\u0003\u0003\b\u00d4\u00c3\u00af\u00e7\u00f5h|c\u00e9\u00db\u00cc\u0089\u0000\u0014Fg\u008c\u00b8_\u0089\nq\t;\u00c5\u000e\u0083\u008cs\u00de\u001c\u0000\u0000\u0004\u0000<\u0000\u009c\u0001\u0000\u0000\u000e\u0000\r\u0000\n\u0000\b\u0006\u0001\u0005\u0001\u0004\u0001\u0002\u0001\u0016\u0003\u0003\u0000J\u0002\u0000\u0000F\u0003\u0003\u0087\u0097\u0017\u0005\u00d5!\bP\u00aag\u00c9\u008c\u00d5W\u00fe\u00fd\u00a5\u00d7\u00cc\u00f9\u00f8=wN*\u00db\u00bd\u00d0\u0096\u00de~\u0087 9\u00a8\r[\u00f4\u0095\u00fa\u001a5\u008eK\u0080[\u0089\u0019q\u001c\u00d2\u00a9\u00bc4V\u00f3\u00eb\u00b1\u008b\"z\u00ae\u00ca\u00a0\u0087\u0000<\u0000\u0016\u0003\u0003\u0013\u00c8\u000b\u0000\u0013\u00c4\u0000\u0013\u00c1\u0000\u0006D0\u0082\u0006@0\u0082\u0005(\u00a0\u0003\u0002\u0001\u0002\u0002\u0010\r`\u00a1\u0089CB\u008b\u00f0\u00c1\u00b2\u001a\u00e6zM\u009c\u00b50\r\u0006\t*\u0086H",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:50093-54.156.211.246:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:50093-54.156.211.246:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 43 bytes)",
+        "Medium entropy (6.51)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "A\u0004\u00f9\u0002\u0000\u00bft\u00b7\u00fe\u00db\u00b7)S\u00c9\u00e8\u00f2S*N\u00a6\\y\u0088\u00b1\bm\u000e\u00c2\t\u00cc\u001c\u009c\u0013\u0014\u00a8\u00ecI\u00e8\u00c4\u00dc\u00a6_\u0007\u00da\u001b\u00a1\u00cf:\u00e5O\u0089\u00c4\u0015\u008ejn[\u00aa\u00c1\u000b\u0098\u009fsVK%\u0098\u0006\u0019\u00c87[F$\u00f6\u00e8S\u00e3\u00c9\u0007\u00f4\u00d8U\u00eb\u00a9\t\u00ac\u00bdH\u00fam,\u009e\u0006.\u00d3\u0092\u001b[#[\u00d8<\u00dao\u00dc\u00a4\u0002w\u00a7\u0016\u007f,\u0087\u00c4bv\u000e\u00dc\u0011\u00fc1\u008d\t\u0082\u00c9\r\u00c9\u00d8\u00cd",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:18.200.70.75:8557-192.168.1.111:58140",
+      "protocol": "TCP",
+      "endpoints": "18.200.70.75:8557-192.168.1.111:58140",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 419 bytes)",
+        "Medium entropy (7.78)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0016\u0003\u0003\u0000?\u0001\u0000\u0000;\u0003\u0003\u00934\u001e\u00ef\u00aeeD\u00efm\u00f3-l\u00b4\u00ac\u0096\u008b\u00f3\u00ca\u0096X\u008b\u0014\u00de3\u0018TF:\u00c3Y\u00f9\u00e5\u0000\u0000\u0004\u0000<\u0000\u009c\u0001\u0000\u0000\u000e\u0000\r\u0000\n\u0000\b\u0006\u0001\u0005\u0001\u0004\u0001\u0002\u0001\u0016\u0003\u0003\u0000J\u0002\u0000\u0000F\u0003\u00038\u00f1)\u00da\u00fe\u00a43\u00f6\n.\u008e\u00e4]\u0092\u00e1,\u00f4}\u000b\fQ\u00b8\u00cd&\u00a7G\u00f2\u0081\u00dd\u00f6\u008e\u0019 \u0011\u00f9\u0080[\u00a9\u00f4\u00cb\u00ec\u0016\u00d0@\u008d\u00f5\u00ab\u0085B\u00dfSGX\u00be|\u00eb\u0093\u0002)\u00da.\u008e\u0082\u000eM\u0000<\u0000\u0016\u0003\u0003\u0013\u00c8\u000b\u0000\u0013\u00c4\u0000\u0013\u00c1\u0000\u0006D0\u0082\u0006@0\u0082\u0005(\u00a0\u0003\u0002\u0001\u0002\u0002\u0010\r`\u00a1\u0089CB\u008b\u00f0\u00c1\u00b2\u001a\u00e6zM\u009c\u00b50\r\u0006\t*\u0086H",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:41854-54.71.203.200:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:41854-54.71.203.200:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.02)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002\u00cc\u00ae\u0096\u00f9\u00134N\u008b\u00c9_\u00a9\u00cf\u00f5\u0085\u0084\u00feO\u00a9",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:45994-3.33.210.71:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:45994-3.33.210.71:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 26 bytes)",
+        "Medium entropy (5.95)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u00b4\u0098\u0099\u00d4&\u0092\fx\\\u0089($\u0089\u00c7)\u00dep\u00afb\u00fd\u00cf\u0013\u0088\u0016\u00ff\u00b1\u00a5\u00ad\u00c8\u0090\u00fe/\u007f\u001e\u00ceF+3g>0\u000b\u008dv\u00d1cl\u008d\u0094\u001d\u00d3y\u00be\u001eZ\u00aa\u0000\u0000\u0000\u0000\u0000\u0004y\u009cD\u00a1X\u00de\u00c5\u009d\u00bd\u00b4\u00828h\u0083\\+p\u0080",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:45998-3.33.210.71:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:45998-3.33.210.71:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 26 bytes)",
+        "Medium entropy (6.12)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "^\u00ca\u00db\u00a0\u00b9\u00ff\u00dfH\u009c\u008c\u00bc\u0098?E\u00a8\u00d3\u00de\u00d4\u0094\u00f8\u000b#\t\u00a3\u0095v\u0092\u009e\u00f7n\u00ca\u00e4\u00b8\u00e8\u00f5\u0001\u00a2V\u00f6j\u00e6\u0085\u00b3\u00a2\u00ea\u001b\u0096\u00b0,\u00bc\u00a6\u00e9\u00c3\u0088\u0096\u00aa\u0000\u0000\u0000\u0000\u0000\nN|gA*\u000f\u00c0?\u0087\u00a4[\u00fa\u001e\u00ca\u0001\u001ak\u0015\u0000\u0000\u0000\u0000\u0000\bv\u0093\u00c6s\u000be\u00ea\nN\u00bf\u009a\u0019\u00b2\u000e\u00eapa\u00e5",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:41914-54.71.203.200:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:41914-54.71.203.200:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 651 bytes)",
+        "Medium entropy (7.47)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u00e8\u00d9NC\u00b4\u00985\u00e6\u00f0\u0003a\u00fd\fU\u00ed\u00aa\u0013\u0019`>Z\u0094\u00935\u00c1\u00a0\u00bb`n\u0092\u00ab\u008av-\u001f\u00f4\u00d1lE\u00c1\u0002\u001e\u0097\u00d6pg\u00d1\u0010i\u00fc\u00b6\u00e1Ty\u0012\u00c9+\u00a4\u00d4\u0099\u001d\u001e\u00d8\u00c2OA\u00b8a\u00b4\u00ac\u0082\u009f^\u00f1\u00c8\u00d7FA[\u00b2\u00e2\u0087\u00cbjyV\u0090II\u00ebq!\u00b87\u008d@<\u00b8\u00e0\u00f2\u0000x\u00ff\u00aea\u0007\u009a\u00d0\u0087\u00e1\u0000t\n\u00b91\u00a7~\u00f3`\u0082\u0099i1\u009eX\u0016G\u0097\u00a9\u00dbw\u00bc\u00a2\u00c6\u0098\u00e5W\u00c8\u001d\u0093\u00a2\u0017\u00d2\u00dch\u0090\u00a62\u0083\u009f*\u00b2\u00acoq+\u00de+\u00d1\u00e7\u00cb\u008f\u0017\u00d5\u0002\u00ea\u0017\u00dc\u0017\u00c8\u008a\u00b9\u0000\u0004b0\u0082\u0004^0\u0082\u0003F\u00a0\u0003\u0002\u0001\u0002\u0002\u0013\u0007s\u00128\u000b\u009df\u0088\u00a3",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47160",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47160",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000Iq\u00f3\u001a\u00bb\u00cea\u00dc\u0090Zt&~(\u00a0\u0088&\u0083\u0092\u00bcI!\u00b6\u00afN\u00de\b\u0099\u0012:\u0004t\u0019\u0095U\u00e5\u00f7r\u00c6\u009dl\u0006u\u00a7\u0086\u008c\u0018 ]%\u00bb\u001b\u0013T\u0006\u00cd_\u0000\u00c6\u00ea\u00a8L\u0095\u009cc\u00a5\u009fRw\u007f\u00d3\u00a1\u00f9\\\u00dc\u00e2)GoE\u00f2\u00df]\u00c61/\u00df\u00b1Q\u00c6\u00d5\\\u00a4\u00d1G\u00df\u00eaR",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:42684-3.5.69.112:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:42684-3.5.69.112:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 599 bytes)",
+        "Medium entropy (7.49)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "=\u009c\u001e>\u0018j\u00b4g)]\u00cf\u00b1\f$\u00ca\u0085\u00864\u00eb\u00dc\u0082\u008a\u0000\u0000\u0001\u0083a\u00c2\u0017\u00ab\u0000\u0000\u0004\u0003\u0000H0F\u0002!\u0000\u00e0D\u001cO\u00b7)\u0080\u0099\u00c9\u00bd\u00035\u00bd\u0091'\u007fV\u007f\u0006\u00c8\u0094o\u00c5\u009e1'S\u0016R\u00b2\u0004M\u0002!\u0000\u0082\u00c5\u0011\u0011\u00cd\u0019\u00b3p\u007f\u00c0\u009f}\u0013\u00e9\u000bb\u00b6+*\u009f\u00985\u0013r\u00df\u00b6\u00ba\u00e9\u008c\u00ed\u00c1\u00b9\u0000v\u00005\u00cf\u0019\u001b\u00bf\u00b1lW\u00bf\u000f\u00adLmB\u00cb\u00bb\u00b6' &Q\u00ea?\u00e1*\u00ef\u00a8\u0003\u00c3;\u00d6L\u0000\u0000\u0001\u0083a\u00c2\u0017\u0094\u0000\u0000\u0004\u0003\u0000G0E\u0002 /\u00a8K\u00ab\u000f\u0096\u00fc\u00b3\u00f1\u00ed\u00deL\u00a0W\u00d9\u00b2$=\u001c:\u008d!\u00fa\u0083\u00aa\u00d3\u00f1\u00ddk\u00b6P\"\u0002!\u0000\u00ce\u00c1\u00cc\u00b5",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:46860-34.226.171.172:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:46860-34.226.171.172:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.10)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002`\u0082\u00f9\u00e4\u008d\u00d2J\u00dd\u00ebd\u00b6\u0085\u00ed\u0088H\u00b7\u0011\u00ff",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:46856-34.226.171.172:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:46856-34.226.171.172:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.10)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002\u00e2\u00a5\u00c8\u0017E\u00b8u\u0012\u00a1\u00f4\u00e4%\u00aad\u00e8\u00b7\u00a4\u00cb",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:46858-34.226.171.172:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:46858-34.226.171.172:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.02)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002\u000b\u00ce\u00a7kg\u008d\u00f2\u00eb\u008f|YK\u00a5\u00a7\u00fb\u00c3\u00f3V",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:46866-34.226.171.172:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:46866-34.226.171.172:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.10)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002\u00fb\u00c0\u00ca<\u0099\u0004\u00c8\u00986%\u008c\u00d4\u0014v\u00db\u00ea0\u009a",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:18.142.40.49:443-192.168.1.218:47160",
+      "protocol": "TCP",
+      "endpoints": "18.142.40.49:443-192.168.1.218:47160",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 24 bytes)",
+        "Medium entropy (4.10)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0000\u0000\u0000\u0000\u0002\u0092\u00dc\u001f\u00d0@\u00b4?\u00a1\u00ac\u0010\u00f2\u00ec\u0087\u00e0m\u008a\u001c.",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:18.200.70.75:8557-192.168.1.111:60265",
+      "protocol": "TCP",
+      "endpoints": "18.200.70.75:8557-192.168.1.111:60265",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 535 bytes)",
+        "Medium entropy (7.74)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u0016\u0003\u0003\u0000?\u0001\u0000\u0000;\u0003\u0003i\u00b0\u008eW\u00d1\u0082J\u00e7b\u00ac\u00a2g=\u00f8\u00c7\u001f\u00ee\u00d0\u00b5*Z\u00df\u00b6\u00ab\u00f0'C\u0080\u00c7\u00f7\u00fbM\u0000\u0000\u0004\u0000<\u0000\u009c\u0001\u0000\u0000\u000e\u0000\r\u0000\n\u0000\b\u0006\u0001\u0005\u0001\u0004\u0001\u0002\u0001\u0016\u0003\u0003\u0000J\u0002\u0000\u0000F\u0003\u0003\u009c\u00d9\u00ca\u00d0m\n\u00e5\u00a6>\u0089\u00b0\u0090\u0082\b\u009a\u00fd\u00bf\u008f\u008c \u00c1\u009f\u0084TS5\u00a9(g\u0003\u00e4\u00a2 \u0096\u00d6&\u00e58\u00e2\u008d\u00a9\u00dc\u0011=\u00bd\u000e\u00b2\u00cf5ep\u00db\u0006%\u00f6\u000b\u00d2u\u0010\u00fb\u0015\u00a7\u000e\u001a\u00be\u0000<\u0000\u0016\u0003\u0003\u0013\u00c8\u000b\u0000\u0013\u00c4\u0000\u0013\u00c1\u0000\u0006D0\u0082\u0006@0\u0082\u0005(\u00a0\u0003\u0002\u0001\u0002\u0002\u0010\r`\u00a1\u0089CB\u008b\u00f0\u00c1\u00b2\u001a\u00e6zM\u009c\u00b50\r\u0006\t*\u0086H",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47186",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47186",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA",
+          "com/DigiCertGlobalRootCA"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0004\u0003\u0000G0E\u0002!\u0000\u00ef\u0011\u0096\u0003O\u00dd\u0000\u00ef\u00d6\u007f\u00ff\u00c6\u0001\u00fd\u00ec\u00ebj\u0000baE\u00ac\u001c\u0091\u00e1`\u00d31\"\u00c8CP\u0002 \u0013q\f\u00caD\u00a59?\u00d20Ek8\u0010\u00e2n\u0098\u00ee\"\u00e7oK\u00d8\u0087\u00c3\u00ff\u001f%Ogq\u00de\u0000v\u0000\u00b7>\u00fb$\u00df\u009cM\u00bau\u00f29\u00c5\u00baX\u00f4l]\u00fcB\u00cfz\u009f5\u00c4\u009e\u001d\t\u0081%\u00ed\u00b4\u0099\u0000\u0000\u0001\u0082\u00d0\u00e3\u0011\u0092\u0000\u0000\u0004\u0003\u0000G0E\u0002 B\u0095\u00f6=\u00b0\u00d4\u0099\u0019\u00b9\u00bfNA\u0085,/\u00e7Z\u0004Uv\u00eb\u00d3\u008c=y\u0095\u0083Z\u0001\u00a4\u00fd\u00b6\u0002!\u0000\u00c6B\u00da\u0011+5(\u00ad\u0012\u00e6wot\u0006\u00ae\u00b0\u00db\u00a2\u0095\u0017\u00b2P\u00e4\u00aa\u009cY!\r\u00e3=f\u00e20\r\u0006\t*",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:18.235.200.139:443-192.168.1.218:47464",
+      "protocol": "TCP",
+      "endpoints": "18.235.200.139:443-192.168.1.218:47464",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 767 bytes)",
+        "Medium entropy (7.39)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "arfield Technologies, Inc.1;09\u0006\u0003U\u0004\u0003\u00132Starfield Services Root Certificate Authority - G20\u001e\u0017\r150525120000Z\u0017\r371231010000Z091\u000b0\t\u0006\u0003U\u0004\u0006\u0013\u0002US1\u000f0\r\u0006\u0003U\u0004\n\u0013\u0006Amazon1\u00190\u0017\u0006\u0003U\u0004\u0003\u0013\u0010Amazon Root CA 10\u0082\u0001\"0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u0001\u0005\u0000\u0003\u0082\u0001",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:15.197.206.173:443-192.168.1.218:47194",
+      "protocol": "TCP",
+      "endpoints": "15.197.206.173:443-192.168.1.218:47194",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 49 bytes)",
+        "Medium entropy (6.20)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "A\u0004W\u0091D\b\u00fc\u001c\u00fb=x\u00b0\u00b5WK{\u0013\u0007\u00bd\u00c3_\u00c7tx\u00db\u00ac\u0087W-\u00b4\u0090\u0082\u00e2\u0091++7\u000eV,\u0014^\u001fIN\u00be\u00e2\u001d\u00ac\u008dI\u0091\u00cf\u00d7k\u00e2\u009d\u00ddt'\u00c1\u00ca\u00a73J=qz\u009d\u00b8\u00eb\u0086\u0013\u00a0^\u0003\u00d9#V\u0097\u00117\u00e8\"\u00e9\u00ad\u00cd\\/9\u00da\u0085c\u00c6\u0089\u008d\u00a5\u00fc",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.218:41206-35.173.209.252:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.218:41206-35.173.209.252:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 49 bytes)",
+        "Medium entropy (6.19)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "A\u0004\u008b\\\u0082E\u001f\u00f1\u0084\u00e3\u00f6\u001b7\u00deb\u00da2\u00a9\u0004.!\u00eb\u0081\u009cQF\u00f1;\u0019\u001d\u00eb\u00a1\u00eez #lG\u00fb\u00d2\u0085\u0019\u00de4%b\u00a0\u0082a.\u0084\u00e5D\t9\u00c5\u001a)\u00cb\u008em\u000f\\\u00ca\u00ec\u00c0\u00c1v\u00df\u00fa\u00a9)]\u00c3.\u00a2tpz\u0088\u009d\u00a0I\u009ca\u0007\u00c2\u00ba+\u00c2$\u00f1\u0014\u001au\u00d4\u0010h",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:176.34.81.102:443-192.168.1.218:40574",
+      "protocol": "TCP",
+      "endpoints": "176.34.81.102:443-192.168.1.218:40574",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (WAN to LAN)",
+        "Chatty (avg size: 621 bytes)",
+        "Medium entropy (7.55)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "#\u00fc\u00a9\\\u00b2\b\u00fe\t\u00f1\u0095\u00d9\u00d1G\u0001F{O\u009b\u00f1R\u00e6|\u00bb\u0006\t\u00c6\u00f3a0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000>\u0017\u00e3/)\u00942\u008dn\u0081\u00f7\u009c\u009a\u00000\u00bf\u00f4\u00ef]aMVh W\u00f3\u00be\u00d0\u008ch(\u00dd8\u00a0O\u0012#\u000bBt\u00fdq\u0012Q\u0080Z\u0003\u00a2\u0080\u001dj\u00bc\u009a\u00c0p\u0091\u0087\n\u00de\u00b9\u00cf\u00d1%=\u00d3\u0099f\u00f1\u00f9\u00ae\bX\u0088\u00db\u00f2\t\u00bc\u00f5\u00d7\u009bi\u00ce\u008b\u00fe\u00e1(\u001d2\u00f8\u00035\u009f\u00e6\u00c8\u00fa\u0092\u00a7\u00f7\\\u0081F`o\u009d\u00bd\u001b\u00c2\u00bd>\u00c2\u00ccG\u00c9\u008b\u00cfGQ\u00840\u00da\u00e02\u00fa\u009c\u000f\u001c\u00c5\r\u001e\u00beA]QXq\u00a6-\u00b6\u009d\u00e1\u0000\u00d4#N\u00f5w\u00a8\u00beK\u00a2\u00a1\u00b7",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.111:62931-54.156.211.246:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.111:62931-54.156.211.246:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 43 bytes)",
+        "Medium entropy (6.57)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "A\u0004\u001eP\u009e\u00e7|\u0080\u009d\u00b6\u00ee\u0089b4\u0003\bE\u0089\u0086\u00c7\u0004\u00d3\u009f\u00b6\u009f\u00f9\u009a-1W\u00aa\u001a\u0096\u00faq\u00c8\u0086K'\u001f\u0093\u00fd\u00b9J\u0004\u00fe>\u00cez\u00be\u0015Z\u008a\u00ffc)z\u000b3\u009e\u00dd\u00b7$\u00f93u\u008e!o\u0092(\u00e9\u0082ggY\u0011\u00de\u00b2\u00a5\u00aaJ\u00b9\u00abpq>X\u00abw\u008c\u00f7ku\u00bdK\u00dc\u00e0\"x7=r\u00bc\u00e7_\u00c6\u0019\u00ebpU\u00b8\u00bc\u00da\u00b7g\u0005\"!\u00a0K\u00ea`\u000f\"?\u00e4\\T\f",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    }
+  ]
+}

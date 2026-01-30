@@ -1,0 +1,19 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2023-09-24T10:06:24+00:00",
+    "valid_until": "2024-09-23T10:05:03+00:00",
+    "issuer_cn": "Go Daddy Secure Certificate Authority - G2",
+    "subject_cn": "*.iotbing.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.iotbing.com')>",
+      "<DNSName(value='iotbing.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "48:82:0A:3B:E5:B1:B1:F7:ED:94:85:4C:71:02:83:E7:52:3A:2B:ED:1D:CA:61:AF:B3:5E:D9:FE:BB:E1:A8:98",
+    "found_in_packet_number": "5640",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]

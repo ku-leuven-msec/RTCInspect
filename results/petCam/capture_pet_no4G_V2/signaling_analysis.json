@@ -1,0 +1,97 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "UDP:192.168.200.1:47969-192.168.200.101:40084",
+      "protocol": "UDP",
+      "endpoints": "192.168.200.1:47969-192.168.200.101:40084",
+      "likelihood_score": 6,
+      "evidence": [
+        "Chatty (avg size: 56 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (5.03)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "vCHsXqjqjBvvWlTsWMxbZQFNscUDbZAS"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0000\u0001\u0000$JpdtpsekmOrFvvrn\u0000\u0006\u0000 vCHsXqjqjBvvWlTsWMxbZQFNscUDbZAS",
+      "geoip_info": "Not available"
+    },
+    {
+      "session_id": "UDP:192.168.200.1:60211-192.168.200.101:40914",
+      "protocol": "UDP",
+      "endpoints": "192.168.200.1:60211-192.168.200.101:40914",
+      "likelihood_score": 5,
+      "evidence": [
+        "Chatty (avg size: 539 bytes)",
+        "Contains long ID-like strings"
+      ],
+      "extracted_strings": {
+        "hex_strings": [],
+        "base64_strings": [
+          "jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX",
+          "UUUUUTTUUUUUUUUUUUUU",
+          "UUUUUUUUUUUUUUUUUUUU",
+          "UUTTTTTTTTUUUTUUUUUU",
+          "UTTTWWWWWWWWWWTTTTUU",
+          "UUUTTWWWWVWTTUUUUUUUUUUU",
+          "UUUTTTTTTTTTTTTTTTTTTTUU",
+          "UUUTTTTTTTTWWTTTTTTTUUUU",
+          "UUUTTTTTTTTTTWWTTTTT",
+          "UUUUTTTTUUTTTTTTTTTTUTTU",
+          "UUUUTTTTTTTTTUUUUUUU",
+          "UTUUTTWTTTTUUUUUUUUU",
+          "UUUTTUTTTTTTTTTTTTTTUUUU",
+          "UUUUUUUUUUUUUTTTTTTT",
+          "UUUUUUUUTTTTTTTTTTTT",
+          "UUTUUUUUUUUUUTTTTTTTTTUU",
+          "UTTUTTTTTTTTTTUUUUUU",
+          "UUUUUUTUUUUTTTTTTWTTTTUU",
+          "UUTUUUUTTTTTTTTTTTTU",
+          "UUUWVTUTTTTTTWWWWTTU",
+          "UTTUTTTTTTTTTTUUUUUU",
+          "UUUUUUTUUUUTTTTTTWTTTTUU",
+          "UUTUUUUTTTTTTTTTTTTU",
+          "UUUWVTUTTTTTTWWWWTTU",
+          "UTTUTTTTTTTTTTUUUUUU",
+          "UUUUUUTUUUUTTTTTTWTTTTUU",
+          "UUTUUUUTTTTTTTTTTTTU",
+          "UUUWVTUTTTTTTWWWWTTU",
+          "UUUUUUTTWTWWWWWWTTTTTTTT",
+          "UUTWVTTTWTTWWWVVVWVV",
+          "UWWTWWWWVWTWWUUTUUTTTTTU",
+          "TWWVQPPQVWWWTTTTUTTT",
+          "UTWQQVWWWTTTUUTTTWWT",
+          "UTWWWWWWTTTTUUUTTTTU",
+          "TTUUUUTTTTTTTTTTTUUUTTTT",
+          "UUUUTUUUUTUUTTTTTTUU",
+          "UUUTTTTTTTTTUUUUUUTTTTTT",
+          "UUUUUTTUTTTTWTTTTTTUUUUU",
+          "UUUUUUUUUUUUTUUUUTTTTTUUUUUUUUUU",
+          "UUUUUUTTTTTTTTTTTTTTTTTTTTUUUTUU",
+          "UUUUUTTUTTTTWTTTTTTUUUUU",
+          "UUUUUUUUUUUUTUUUUTTTTTUUUUUUUUUU",
+          "UUUUUUTTTTTTTTTTTTTTTTTTTTUUUTUU",
+          "jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX",
+          "jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX",
+          "jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX",
+          "UUUUUUUUUTTTTTTTTTTU",
+          "UUUUUUUUUUUUUUTTTTTTTTUU",
+          "UUUUUTTTUUUUUUUUUUTTTUUU",
+          "UUUTUUUUUUTTTTTTTTTTTTUU",
+          "UUUUUUUUUTUUTTTTTTTUTTUUUUUU",
+          "UUUTTTTTTUUUUUUUUUUUUUUTUUUUUUUU",
+          "UUUUTTTTUUUUUUUUUUUUUUUUUUUU",
+          "jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0001\u0001\u00000sVUOrlsnMyxnVLaD\u0000\u0006\u0000 jshBaVxjFeDnpjtKGuDhVCMxqyssWpgX\u0000\u0001\u0000\b\u0000\u0001\u009f\u00d2\u00c0\u00a8\u00c8e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0004\u0000\u0000\u00f0\u0000\u0000\u0002\u00cct8\u00bbC\u00af\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0002\u00f0\u0000\u0000\u0002\u00ccw8\u00bbC\u00af\u0000\u0003\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0004\u0000\u0000\u00f0\u00008\u00bbE\u00c5\u0000\u0002\u00ccwDHMC\u0000\u0001\u00da\u00d1F\u00ca\u0000\u0019\u0001\u0002\u0000\u0001\u0003\u0010\u00cc\u0086\u00d8H\u00ce\u00a1\u00ba\u00b8fkm\u00fby\u00f4\u00c1\u0004\u0004\u0001\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0004\u0000\u0000\u00f0\u00008\u00bbE",
+      "geoip_info": "Not available"
+    }
+  ]
+}

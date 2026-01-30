@@ -1,0 +1,27 @@
+{
+  "WS:192.168.1.125:51843-104.18.20.227:443": {
+    "detection_method": "Decrypted WebSocket",
+    "important_info": {
+      "jingle-ufrag": "VbvR",
+      "jingle-pwd": "Q42KztiYZ8UUhu/UmlStlC+M",
+      "jingle-fingerprint": "0B:97:EB:B2:82:24:D1:0C:0F:53:C7:3E:BD:BC:FC:7A:96:32:AC:BC:23:21:24:42:0D:69:03:39:5E:FD:E6:AA"
+    },
+    "packets_with_info": [
+      {
+        "packet_number": "3590",
+        "protocol": "WebSocket",
+        "payload_snippet": "<iq id=\"1aa8797f-f1c9-46ee-9b12-fba0e46501fa:sendIQ\" to=\"anonnetwebrtc@conference.meet.jit.si/focus\" type=\"set\" xmlns=\"jabber:client\"><jingle action=\"session-accept\" initiator=\"anonnetwebrtc@conference.meet.jit.si/focus\" responder=\"684e97d3-1632-4a82-be30-6a197a4e72ef@meet.jit.si/oRAY79kpt4ql\" sid=\"b4qcrhgkemjql\" xmlns=\"urn:xmpp:jingle:1\"><group semantics=\"BUNDLE\" xmlns=\"urn:xmpp:jingle:apps:grouping:0\"><content name=\"audio\"/><content name=\"video\"/><content name=\"data\"/></group><content crea"
+      },
+      {
+        "packet_number": "3925",
+        "protocol": "WebSocket",
+        "payload_snippet": "<iq id=\"81bb938d-d764-4b21-9284-e38b2d6230f6:sendIQ\" to=\"anonnetwebrtc@conference.meet.jit.si/08ac0e85\" type=\"set\" xmlns=\"jabber:client\"><jingle action=\"session-accept\" initiator=\"anonnetwebrtc@conference.meet.jit.si/08ac0e85\" responder=\"684e97d3-1632-4a82-be30-6a197a4e72ef@meet.jit.si/oRAY79kpt4ql\" sid=\"d7beac64bbdb\" xmlns=\"urn:xmpp:jingle:1\"><group semantics=\"BUNDLE\" xmlns=\"urn:xmpp:jingle:apps:grouping:0\"><content name=\"0\"/><content name=\"1\"/></group><content creator=\"responder\" name=\"0\" "
+      },
+      {
+        "packet_number": "4020",
+        "protocol": "WebSocket",
+        "payload_snippet": "<iq id=\"3231406a-d332-429b-83ac-c0fda663ebff:sendIQ\" to=\"anonnetwebrtc@conference.meet.jit.si/08ac0e85\" type=\"set\" xmlns=\"jabber:client\"><jingle action=\"transport-info\" initiator=\"anonnetwebrtc@conference.meet.jit.si/08ac0e85\" sid=\"d7beac64bbdb\" xmlns=\"urn:xmpp:jingle:1\"><content creator=\"responder\" name=\"0\"><transport pwd=\"Q42KztiYZ8UUhu/UmlStlC+M\" ufrag=\"VbvR\" xmlns=\"urn:xmpp:jingle:transports:ice-udp:1\"><candidate component=\"1\" foundation=\"662490026\" generation=\"0\" id=\"y3pguuvne1\" ip=\"192"
+      }
+    ]
+  }
+}

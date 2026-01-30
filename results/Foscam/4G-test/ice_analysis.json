@@ -1,0 +1,2433 @@
+{
+  "geoip_summary": {
+    "144.24.187.227": {
+      "ip": "144.24.187.227",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    },
+    "192.168.1.66": {
+      "ip": "192.168.1.66",
+      "error": {
+        "type": "non_public_or_invalid",
+        "message": "Non-public or invalid IP"
+      }
+    }
+  },
+  "stun_transactions": {
+    "5d3e7d9888ea43ae94cf0100": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:31901",
+      "public_ip_disclosed": true,
+      "library_info": "Citrix-3.2.5.2 'Marshal West'",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.1025362,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 34782,
+          "message_type": "Binding Request",
+          "attributes": {
+            "SOFTWARE": "pjnath-2.3.4"
+          }
+        },
+        {
+          "timestamp": 1758716928.1136284,
+          "src_ip": "144.24.187.227",
+          "src_port": 34782,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:31901",
+            "MAPPED-ADDRESS": "193.190.225.247:31901",
+            "RESPONSE-ORIGIN": "000187de00000000",
+            "SOFTWARE": "Citrix-3.2.5.2 'Marshal West'"
+          }
+        }
+      ]
+    },
+    "191b1224ff4b9b6b4e050100": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:42906",
+      "public_ip_disclosed": true,
+      "library_info": "Citrix-3.2.5.2 'Marshal West'",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.1081793,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 34782,
+          "message_type": "Binding Request",
+          "attributes": {
+            "SOFTWARE": "pjnath-2.3.4"
+          }
+        },
+        {
+          "timestamp": 1758716928.119676,
+          "src_ip": "144.24.187.227",
+          "src_port": 34782,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "MAPPED-ADDRESS": "193.190.225.247:42906",
+            "RESPONSE-ORIGIN": "000187de00000000",
+            "SOFTWARE": "Citrix-3.2.5.2 'Marshal West'"
+          }
+        }
+      ]
+    },
+    "d80300007fef4604321e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "100.66.133.248",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.241383,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 37112,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3428817,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 37112,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.543228,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 37112,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.9438553,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 37112,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "16431c15",
+        "ufrag_local": "4de6516b",
+        "tie_breaker": 2768274605703668957,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d80300001f5dbc6b341e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "100.66.133.248",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.2505484,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 49505,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3515322,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 49505,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.5518126,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 49505,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.9524417,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 49505,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "3b635598",
+        "ufrag_local": "5912f10d",
+        "tie_breaker": 4997066781025936923,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d80300009df5ad08371e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "109.140.36.233",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.2883437,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58847,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3874476,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58847,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.588327,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58847,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.989045,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58847,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "16431c15",
+        "ufrag_local": "4de6516b",
+        "tie_breaker": 2768274605703668957,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d803000027d08c7c381e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "109.140.36.233",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.2978997,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58469,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.400387,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58469,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.5948768,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58469,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.9954708,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 58469,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "3b635598",
+        "ufrag_local": "5912f10d",
+        "tie_breaker": 4997066781025936923,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d8030000635f021f391e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.310107,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 56608,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "8c60f915930d00e0e62806f7703fbd3624a4a8ae",
+            "FINGERPRINT": "0xe3255956"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3605514,
+          "src_ip": "144.24.187.227",
+          "src_port": 56608,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Error Response",
+          "attributes": {
+            "ERROR-CODE": {
+              "code": 487,
+              "reason": "Role Conflict"
+            },
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "5a385d38141b4763dcd070c2c7de9e9f502c3c33",
+            "FINGERPRINT": "0x24517595"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "16431c15",
+        "ufrag_local": "4de6516b",
+        "tie_breaker": 2768274605703668957,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d803000031c56b7d3a1e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.3166907,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 58557,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "eb8e2f2aba5412de213ce18aac1502038ca5145b",
+            "FINGERPRINT": "0x17e77dea"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.367874,
+          "src_ip": "144.24.187.227",
+          "src_port": 58557,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Error Response",
+          "attributes": {
+            "ERROR-CODE": {
+              "code": 487,
+              "reason": "Role Conflict"
+            },
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "ea49ad46b1b8f54699fc9404aebab359cabdb91a",
+            "FINGERPRINT": "0x74823117"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "3b635598",
+        "ufrag_local": "5912f10d",
+        "tie_breaker": 4997066781025936923,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d8030000e54bd646401e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:31901",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.3743658,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 56608,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "7e75be8470aab82ade1f2846c666133e9f3bf24c",
+            "FINGERPRINT": "0x88b4a960"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3872166,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 56608,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "7e75be8470aab82ade1f2846c666133e9f3bf24c",
+            "FINGERPRINT": "0x88b4a960"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.421054,
+          "src_ip": "144.24.187.227",
+          "src_port": 56608,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:31901",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "0d2501720f50179beb6dedf0215931f1924c323a",
+            "FINGERPRINT": "0x8c8cb5d7"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.4354126,
+          "src_ip": "144.24.187.227",
+          "src_port": 56608,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:31901",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "0d2501720f50179beb6dedf0215931f1924c323a",
+            "FINGERPRINT": "0x8c8cb5d7"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "16431c15",
+        "ufrag_local": "4de6516b",
+        "tie_breaker": 2768274605703668957,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "067b000089e5bf4e61efea09": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "144.24.187.227",
+      "responder_ip": "192.168.1.66",
+      "exposed_reflexive_address": "144.24.187.227:58557",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.3753543,
+          "src_ip": "144.24.187.227",
+          "src_port": 58557,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1368852086887607478,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "5912f10d:3b635598",
+            "MESSAGE-INTEGRITY": "4e5d4f8c280c254760e7a6333d91b1175b85f7fd",
+            "FINGERPRINT": "0x01bc00ff"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.385011,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 58557,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:58557",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "e359169fd5a5276bac29bf8b85ef2e6f43cfdd40",
+            "FINGERPRINT": "0xdfc468ab"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.427388,
+          "src_ip": "144.24.187.227",
+          "src_port": 58557,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1368852086887607478,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "5912f10d:3b635598",
+            "MESSAGE-INTEGRITY": "4e5d4f8c280c254760e7a6333d91b1175b85f7fd",
+            "FINGERPRINT": "0x01bc00ff"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.430023,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 58557,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:58557",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "e359169fd5a5276bac29bf8b85ef2e6f43cfdd40",
+            "FINGERPRINT": "0xdfc468ab"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "5912f10d",
+        "ufrag_local": "3b635598",
+        "tie_breaker": 1368852086887607478,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "067b00005cab060660efea09": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "144.24.187.227",
+      "responder_ip": "192.168.1.66",
+      "exposed_reflexive_address": "144.24.187.227:56608",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.3753545,
+          "src_ip": "144.24.187.227",
+          "src_port": 56608,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1954024989901851305,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "4de6516b:16431c15",
+            "MESSAGE-INTEGRITY": "a6994d36d9b4f45570524c47b319e11296cf6321",
+            "FINGERPRINT": "0xdae8ab7c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.386819,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 56608,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:56608",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "d490aed672db9358470a252c412137958ac8e1be",
+            "FINGERPRINT": "0x51ebb4bc"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.4214303,
+          "src_ip": "144.24.187.227",
+          "src_port": 56608,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 38521,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1954024989901851305,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "4de6516b:16431c15",
+            "MESSAGE-INTEGRITY": "a6994d36d9b4f45570524c47b319e11296cf6321",
+            "FINGERPRINT": "0xdae8ab7c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.4247296,
+          "src_ip": "192.168.1.66",
+          "src_port": 38521,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 56608,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:56608",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "d490aed672db9358470a252c412137958ac8e1be",
+            "FINGERPRINT": "0x51ebb4bc"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "4de6516b",
+        "ufrag_local": "16431c15",
+        "tie_breaker": 1954024989901851305,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d80300009f4e2c06421e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:42906",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716928.3768167,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 58557,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "32f05225150a9a56d5717d1686569453f946af56",
+            "FINGERPRINT": "0x8c3f14e0"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.3861434,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 58557,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "32f05225150a9a56d5717d1686569453f946af56",
+            "FINGERPRINT": "0x8c3f14e0"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.427388,
+          "src_ip": "144.24.187.227",
+          "src_port": 58557,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "46712badd8282fed1105f69c9cf4cc0dcce024d6",
+            "FINGERPRINT": "0xd99b840a"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716928.4357061,
+          "src_ip": "144.24.187.227",
+          "src_port": 58557,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "46712badd8282fed1105f69c9cf4cc0dcce024d6",
+            "FINGERPRINT": "0xd99b840a"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "3b635598",
+        "ufrag_local": "5912f10d",
+        "tie_breaker": 4997066781025936923,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "6a438217bace783411260100": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:37361",
+      "public_ip_disclosed": true,
+      "library_info": "Citrix-3.2.5.2 'Marshal West'",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716948.5522327,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 34782,
+          "message_type": "Binding Request",
+          "attributes": {
+            "SOFTWARE": "pjnath-2.3.4"
+          }
+        },
+        {
+          "timestamp": 1758716948.5634515,
+          "src_ip": "144.24.187.227",
+          "src_port": 34782,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 37361,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:37361",
+            "MAPPED-ADDRESS": "193.190.225.247:37361",
+            "RESPONSE-ORIGIN": "000187de00000000",
+            "SOFTWARE": "Citrix-3.2.5.2 'Marshal West'"
+          }
+        }
+      ]
+    },
+    "d80300005c57982f4a1e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "100.66.133.248",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716948.683843,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 40524,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716948.7885656,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 40524,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716948.9891117,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 40524,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716949.3939264,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "100.66.133.248",
+          "dst_port": 40524,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "52ea1a03",
+        "ufrag_local": "233f72b0",
+        "tie_breaker": 1399952721367284330,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d80300007e2d59294c1e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "109.140.36.233",
+      "exposed_reflexive_address": "Not detected",
+      "public_ip_disclosed": false,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716948.7260518,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 59262,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716948.8296878,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 59262,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716949.0306036,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 59262,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716949.4839048,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "109.140.36.233",
+          "dst_port": 59262,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "52ea1a03",
+        "ufrag_local": "233f72b0",
+        "tie_breaker": 1399952721367284330,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "d80300000e7f194d4d1e3406": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:37361",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716948.7469077,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 64552,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "9a152e9b42fc56775099f3fcf13cdb8f10f25369",
+            "FINGERPRINT": "0x3f1ebca7"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716948.792116,
+          "src_ip": "144.24.187.227",
+          "src_port": 64552,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 37361,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:37361",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "a32afce5ac7ba669496d56a9b4df46765d7631e5",
+            "FINGERPRINT": "0xa8ea4c5e"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "52ea1a03",
+        "ufrag_local": "233f72b0",
+        "tie_breaker": 1399952721367284330,
+        "roles_seen": [
+          "controlled"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "067b0000d5d19e1c78efea09": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "ICE connectivity checks",
+      "authentication_type": "Short-term (ICE)",
+      "client_lan_ip": "144.24.187.227",
+      "responder_ip": "192.168.1.66",
+      "exposed_reflexive_address": "144.24.187.227:64552",
+      "public_ip_disclosed": true,
+      "library_info": "pjnath-2.3.4",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716948.7992704,
+          "src_ip": "144.24.187.227",
+          "src_port": 64552,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 37361,
+          "message_type": "Binding Request",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": "",
+            "ICE-CONTROLLING": 6924152726821735474,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "233f72b0:52ea1a03",
+            "MESSAGE-INTEGRITY": "913b59497b4f4d41c2e2588f0db59f86e3ba7f1e",
+            "FINGERPRINT": "0x4675ac2c"
+          },
+          "fingerprint_valid": true
+        },
+        {
+          "timestamp": 1758716948.8145616,
+          "src_ip": "192.168.1.66",
+          "src_port": 37361,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 64552,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:64552",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "230dbb791d468ad7bca61f83d7dad6db287f674a",
+            "FINGERPRINT": "0x5083f976"
+          },
+          "fingerprint_valid": true
+        }
+      ],
+      "ice": {
+        "ufrag_remote": "233f72b0",
+        "ufrag_local": "52ea1a03",
+        "tie_breaker": 6924152726821735474,
+        "roles_seen": [
+          "controlling"
+        ],
+        "priority_min": 1862270975,
+        "priority_max": 1862270975
+      }
+    },
+    "191b1224ff4b9b6b4e050200": {
+      "is_stun_used": true,
+      "stun_standard": "RFC 5389/8489 (magic cookie present)",
+      "mode": "NAT behavior discovery (RFC 5780)",
+      "authentication_type": "None",
+      "client_lan_ip": "192.168.1.66",
+      "responder_ip": "144.24.187.227",
+      "exposed_reflexive_address": "193.190.225.247:42906",
+      "public_ip_disclosed": true,
+      "library_info": "Citrix-3.2.5.2 'Marshal West'",
+      "asn_info": "Unknown",
+      "packets": [
+        {
+          "timestamp": 1758716953.1498709,
+          "src_ip": "192.168.1.66",
+          "src_port": 42906,
+          "dst_ip": "144.24.187.227",
+          "dst_port": 34782,
+          "message_type": "Binding Request",
+          "attributes": {
+            "SOFTWARE": "pjnath-2.3.4"
+          }
+        },
+        {
+          "timestamp": 1758716953.1607528,
+          "src_ip": "144.24.187.227",
+          "src_port": 34782,
+          "dst_ip": "192.168.1.66",
+          "dst_port": 42906,
+          "message_type": "Binding Success Response",
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "MAPPED-ADDRESS": "193.190.225.247:42906",
+            "RESPONSE-ORIGIN": "000187de00000000",
+            "SOFTWARE": "Citrix-3.2.5.2 'Marshal West'"
+          }
+        }
+      ]
+    }
+  },
+  "ice_transactions": {
+    "d80300007fef4604321e3406": {
+      "txid": "d80300007fef4604321e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:38521 \u2192 100.66.133.248:37112",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.241383,
+          "src": "192.168.1.66:38521",
+          "dst": "100.66.133.248:37112",
+          "transaction_id": "d80300007fef4604321e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3428817,
+          "src": "192.168.1.66:38521",
+          "dst": "100.66.133.248:37112",
+          "transaction_id": "d80300007fef4604321e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.543228,
+          "src": "192.168.1.66:38521",
+          "dst": "100.66.133.248:37112",
+          "transaction_id": "d80300007fef4604321e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.9438553,
+          "src": "192.168.1.66:38521",
+          "dst": "100.66.133.248:37112",
+          "transaction_id": "d80300007fef4604321e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "eac55f379f3ece0c3cff35e28f55199f7c7576ff",
+            "FINGERPRINT": "0x47b064ae"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300001f5dbc6b341e3406": {
+      "txid": "d80300001f5dbc6b341e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:42906 \u2192 100.66.133.248:49505",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.2505484,
+          "src": "192.168.1.66:42906",
+          "dst": "100.66.133.248:49505",
+          "transaction_id": "d80300001f5dbc6b341e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3515322,
+          "src": "192.168.1.66:42906",
+          "dst": "100.66.133.248:49505",
+          "transaction_id": "d80300001f5dbc6b341e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.5518126,
+          "src": "192.168.1.66:42906",
+          "dst": "100.66.133.248:49505",
+          "transaction_id": "d80300001f5dbc6b341e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.9524417,
+          "src": "192.168.1.66:42906",
+          "dst": "100.66.133.248:49505",
+          "transaction_id": "d80300001f5dbc6b341e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "5e21d102e167667135b44c5561f8a74a5fb90606",
+            "FINGERPRINT": "0x75dd7c38"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300009df5ad08371e3406": {
+      "txid": "d80300009df5ad08371e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:38521 \u2192 109.140.36.233:58847",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.2883437,
+          "src": "192.168.1.66:38521",
+          "dst": "109.140.36.233:58847",
+          "transaction_id": "d80300009df5ad08371e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3874476,
+          "src": "192.168.1.66:38521",
+          "dst": "109.140.36.233:58847",
+          "transaction_id": "d80300009df5ad08371e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.588327,
+          "src": "192.168.1.66:38521",
+          "dst": "109.140.36.233:58847",
+          "transaction_id": "d80300009df5ad08371e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.989045,
+          "src": "192.168.1.66:38521",
+          "dst": "109.140.36.233:58847",
+          "transaction_id": "d80300009df5ad08371e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "5e635666e82bff8bad1233c6c5c359747f93d315",
+            "FINGERPRINT": "0xbf014699"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d803000027d08c7c381e3406": {
+      "txid": "d803000027d08c7c381e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:42906 \u2192 109.140.36.233:58469",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.2978997,
+          "src": "192.168.1.66:42906",
+          "dst": "109.140.36.233:58469",
+          "transaction_id": "d803000027d08c7c381e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.400387,
+          "src": "192.168.1.66:42906",
+          "dst": "109.140.36.233:58469",
+          "transaction_id": "d803000027d08c7c381e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.5948768,
+          "src": "192.168.1.66:42906",
+          "dst": "109.140.36.233:58469",
+          "transaction_id": "d803000027d08c7c381e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.9954708,
+          "src": "192.168.1.66:42906",
+          "dst": "109.140.36.233:58469",
+          "transaction_id": "d803000027d08c7c381e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "ac6aa6df2696f78efce039b521502ab4214a4c6d",
+            "FINGERPRINT": "0x0fc5478d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d8030000635f021f391e3406": {
+      "txid": "d8030000635f021f391e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:38521 \u2192 144.24.187.227:56608",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.310107,
+          "src": "192.168.1.66:38521",
+          "dst": "144.24.187.227:56608",
+          "transaction_id": "d8030000635f021f391e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "8c60f915930d00e0e62806f7703fbd3624a4a8ae",
+            "FINGERPRINT": "0xe3255956"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3605514,
+          "src": "144.24.187.227:56608",
+          "dst": "192.168.1.66:38521",
+          "transaction_id": "d8030000635f021f391e3406",
+          "message_type": "Binding Error Response",
+          "username": null,
+          "attributes": {
+            "ERROR-CODE": {
+              "code": 487,
+              "reason": "Role Conflict"
+            },
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "5a385d38141b4763dcd070c2c7de9e9f502c3c33",
+            "FINGERPRINT": "0x24517595"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d803000031c56b7d3a1e3406": {
+      "txid": "d803000031c56b7d3a1e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:42906 \u2192 144.24.187.227:58557",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716928.3166907,
+          "src": "192.168.1.66:42906",
+          "dst": "144.24.187.227:58557",
+          "transaction_id": "d803000031c56b7d3a1e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "eb8e2f2aba5412de213ce18aac1502038ca5145b",
+            "FINGERPRINT": "0x17e77dea"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.367874,
+          "src": "144.24.187.227:58557",
+          "dst": "192.168.1.66:42906",
+          "transaction_id": "d803000031c56b7d3a1e3406",
+          "message_type": "Binding Error Response",
+          "username": null,
+          "attributes": {
+            "ERROR-CODE": {
+              "code": 487,
+              "reason": "Role Conflict"
+            },
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "ea49ad46b1b8f54699fc9404aebab359cabdb91a",
+            "FINGERPRINT": "0x74823117"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d8030000e54bd646401e3406": {
+      "txid": "d8030000e54bd646401e3406",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.66:38521 \u2192 144.24.187.227:56608",
+      "response_path": "144.24.187.227:56608 \u2192 192.168.1.66:38521",
+      "messages": [
+        {
+          "timestamp": 1758716928.3743658,
+          "src": "192.168.1.66:38521",
+          "dst": "144.24.187.227:56608",
+          "transaction_id": "d8030000e54bd646401e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "7e75be8470aab82ade1f2846c666133e9f3bf24c",
+            "FINGERPRINT": "0x88b4a960"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3872166,
+          "src": "192.168.1.66:38521",
+          "dst": "144.24.187.227:56608",
+          "transaction_id": "d8030000e54bd646401e3406",
+          "message_type": "Binding Request",
+          "username": "16431c15:4de6516b",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 2768274605703668957,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "16431c15:4de6516b",
+            "MESSAGE-INTEGRITY": "7e75be8470aab82ade1f2846c666133e9f3bf24c",
+            "FINGERPRINT": "0x88b4a960"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.421054,
+          "src": "144.24.187.227:56608",
+          "dst": "192.168.1.66:38521",
+          "transaction_id": "d8030000e54bd646401e3406",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:31901",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "0d2501720f50179beb6dedf0215931f1924c323a",
+            "FINGERPRINT": "0x8c8cb5d7"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.4354126,
+          "src": "144.24.187.227:56608",
+          "dst": "192.168.1.66:38521",
+          "transaction_id": "d8030000e54bd646401e3406",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:31901",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "0d2501720f50179beb6dedf0215931f1924c323a",
+            "FINGERPRINT": "0x8c8cb5d7"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "067b000089e5bf4e61efea09": {
+      "txid": "067b000089e5bf4e61efea09",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "144.24.187.227:58557 \u2192 192.168.1.66:42906",
+      "response_path": "192.168.1.66:42906 \u2192 144.24.187.227:58557",
+      "messages": [
+        {
+          "timestamp": 1758716928.3753543,
+          "src": "144.24.187.227:58557",
+          "dst": "192.168.1.66:42906",
+          "transaction_id": "067b000089e5bf4e61efea09",
+          "message_type": "Binding Request",
+          "username": "5912f10d:3b635598",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1368852086887607478,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "5912f10d:3b635598",
+            "MESSAGE-INTEGRITY": "4e5d4f8c280c254760e7a6333d91b1175b85f7fd",
+            "FINGERPRINT": "0x01bc00ff"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.385011,
+          "src": "192.168.1.66:42906",
+          "dst": "144.24.187.227:58557",
+          "transaction_id": "067b000089e5bf4e61efea09",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:58557",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "e359169fd5a5276bac29bf8b85ef2e6f43cfdd40",
+            "FINGERPRINT": "0xdfc468ab"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.427388,
+          "src": "144.24.187.227:58557",
+          "dst": "192.168.1.66:42906",
+          "transaction_id": "067b000089e5bf4e61efea09",
+          "message_type": "Binding Request",
+          "username": "5912f10d:3b635598",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1368852086887607478,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "5912f10d:3b635598",
+            "MESSAGE-INTEGRITY": "4e5d4f8c280c254760e7a6333d91b1175b85f7fd",
+            "FINGERPRINT": "0x01bc00ff"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.430023,
+          "src": "192.168.1.66:42906",
+          "dst": "144.24.187.227:58557",
+          "transaction_id": "067b000089e5bf4e61efea09",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:58557",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "e359169fd5a5276bac29bf8b85ef2e6f43cfdd40",
+            "FINGERPRINT": "0xdfc468ab"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "067b00005cab060660efea09": {
+      "txid": "067b00005cab060660efea09",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "144.24.187.227:56608 \u2192 192.168.1.66:38521",
+      "response_path": "192.168.1.66:38521 \u2192 144.24.187.227:56608",
+      "messages": [
+        {
+          "timestamp": 1758716928.3753545,
+          "src": "144.24.187.227:56608",
+          "dst": "192.168.1.66:38521",
+          "transaction_id": "067b00005cab060660efea09",
+          "message_type": "Binding Request",
+          "username": "4de6516b:16431c15",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1954024989901851305,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "4de6516b:16431c15",
+            "MESSAGE-INTEGRITY": "a6994d36d9b4f45570524c47b319e11296cf6321",
+            "FINGERPRINT": "0xdae8ab7c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.386819,
+          "src": "192.168.1.66:38521",
+          "dst": "144.24.187.227:56608",
+          "transaction_id": "067b00005cab060660efea09",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:56608",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "d490aed672db9358470a252c412137958ac8e1be",
+            "FINGERPRINT": "0x51ebb4bc"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.4214303,
+          "src": "144.24.187.227:56608",
+          "dst": "192.168.1.66:38521",
+          "transaction_id": "067b00005cab060660efea09",
+          "message_type": "Binding Request",
+          "username": "4de6516b:16431c15",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1954024989901851305,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "4de6516b:16431c15",
+            "MESSAGE-INTEGRITY": "a6994d36d9b4f45570524c47b319e11296cf6321",
+            "FINGERPRINT": "0xdae8ab7c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.4247296,
+          "src": "192.168.1.66:38521",
+          "dst": "144.24.187.227:56608",
+          "transaction_id": "067b00005cab060660efea09",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:56608",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "d490aed672db9358470a252c412137958ac8e1be",
+            "FINGERPRINT": "0x51ebb4bc"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300009f4e2c06421e3406": {
+      "txid": "d80300009f4e2c06421e3406",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "192.168.1.66:42906 \u2192 144.24.187.227:58557",
+      "response_path": "144.24.187.227:58557 \u2192 192.168.1.66:42906",
+      "messages": [
+        {
+          "timestamp": 1758716928.3768167,
+          "src": "192.168.1.66:42906",
+          "dst": "144.24.187.227:58557",
+          "transaction_id": "d80300009f4e2c06421e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "32f05225150a9a56d5717d1686569453f946af56",
+            "FINGERPRINT": "0x8c3f14e0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.3861434,
+          "src": "192.168.1.66:42906",
+          "dst": "144.24.187.227:58557",
+          "transaction_id": "d80300009f4e2c06421e3406",
+          "message_type": "Binding Request",
+          "username": "3b635598:5912f10d",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 4997066781025936923,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "3b635598:5912f10d",
+            "MESSAGE-INTEGRITY": "32f05225150a9a56d5717d1686569453f946af56",
+            "FINGERPRINT": "0x8c3f14e0"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.427388,
+          "src": "144.24.187.227:58557",
+          "dst": "192.168.1.66:42906",
+          "transaction_id": "d80300009f4e2c06421e3406",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "46712badd8282fed1105f69c9cf4cc0dcce024d6",
+            "FINGERPRINT": "0xd99b840a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716928.4357061,
+          "src": "144.24.187.227:58557",
+          "dst": "192.168.1.66:42906",
+          "transaction_id": "d80300009f4e2c06421e3406",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:42906",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "46712badd8282fed1105f69c9cf4cc0dcce024d6",
+            "FINGERPRINT": "0xd99b840a"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300005c57982f4a1e3406": {
+      "txid": "d80300005c57982f4a1e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:37361 \u2192 100.66.133.248:40524",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716948.683843,
+          "src": "192.168.1.66:37361",
+          "dst": "100.66.133.248:40524",
+          "transaction_id": "d80300005c57982f4a1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716948.7885656,
+          "src": "192.168.1.66:37361",
+          "dst": "100.66.133.248:40524",
+          "transaction_id": "d80300005c57982f4a1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716948.9891117,
+          "src": "192.168.1.66:37361",
+          "dst": "100.66.133.248:40524",
+          "transaction_id": "d80300005c57982f4a1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716949.3939264,
+          "src": "192.168.1.66:37361",
+          "dst": "100.66.133.248:40524",
+          "transaction_id": "d80300005c57982f4a1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "fa84de1f9854aa3b876cfc13aa6e197d079f4d72",
+            "FINGERPRINT": "0x3081f28d"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300007e2d59294c1e3406": {
+      "txid": "d80300007e2d59294c1e3406",
+      "has_request": true,
+      "has_success": false,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:37361 \u2192 109.140.36.233:59262",
+      "response_path": "N/A",
+      "messages": [
+        {
+          "timestamp": 1758716948.7260518,
+          "src": "192.168.1.66:37361",
+          "dst": "109.140.36.233:59262",
+          "transaction_id": "d80300007e2d59294c1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716948.8296878,
+          "src": "192.168.1.66:37361",
+          "dst": "109.140.36.233:59262",
+          "transaction_id": "d80300007e2d59294c1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716949.0306036,
+          "src": "192.168.1.66:37361",
+          "dst": "109.140.36.233:59262",
+          "transaction_id": "d80300007e2d59294c1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716949.4839048,
+          "src": "192.168.1.66:37361",
+          "dst": "109.140.36.233:59262",
+          "transaction_id": "d80300007e2d59294c1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "ee3b760ca4849d66e7b3a7652bb9a913c6d6895a",
+            "FINGERPRINT": "0x39cc1d7e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "d80300000e7f194d4d1e3406": {
+      "txid": "d80300000e7f194d4d1e3406",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlled",
+      "used_use_candidate": false,
+      "selected": false,
+      "request_path": "192.168.1.66:37361 \u2192 144.24.187.227:64552",
+      "response_path": "144.24.187.227:64552 \u2192 192.168.1.66:37361",
+      "messages": [
+        {
+          "timestamp": 1758716948.7469077,
+          "src": "192.168.1.66:37361",
+          "dst": "144.24.187.227:64552",
+          "transaction_id": "d80300000e7f194d4d1e3406",
+          "message_type": "Binding Request",
+          "username": "52ea1a03:233f72b0",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "ICE-CONTROLLED": 1399952721367284330,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "52ea1a03:233f72b0",
+            "MESSAGE-INTEGRITY": "9a152e9b42fc56775099f3fcf13cdb8f10f25369",
+            "FINGERPRINT": "0x3f1ebca7"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716948.792116,
+          "src": "144.24.187.227:64552",
+          "dst": "192.168.1.66:37361",
+          "transaction_id": "d80300000e7f194d4d1e3406",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "193.190.225.247:37361",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "a32afce5ac7ba669496d56a9b4df46765d7631e5",
+            "FINGERPRINT": "0xa8ea4c5e"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    },
+    "067b0000d5d19e1c78efea09": {
+      "txid": "067b0000d5d19e1c78efea09",
+      "has_request": true,
+      "has_success": true,
+      "role": "controlling",
+      "used_use_candidate": true,
+      "selected": true,
+      "request_path": "144.24.187.227:64552 \u2192 192.168.1.66:37361",
+      "response_path": "192.168.1.66:37361 \u2192 144.24.187.227:64552",
+      "messages": [
+        {
+          "timestamp": 1758716948.7992704,
+          "src": "144.24.187.227:64552",
+          "dst": "192.168.1.66:37361",
+          "transaction_id": "067b0000d5d19e1c78efea09",
+          "message_type": "Binding Request",
+          "username": "233f72b0:52ea1a03",
+          "attributes": {
+            "PRIORITY": 1862270975,
+            "USE-CANDIDATE": true,
+            "ICE-CONTROLLING": 6924152726821735474,
+            "SOFTWARE": "pjnath-2.3.4",
+            "USERNAME": "233f72b0:52ea1a03",
+            "MESSAGE-INTEGRITY": "913b59497b4f4d41c2e2588f0db59f86e3ba7f1e",
+            "FINGERPRINT": "0x4675ac2c"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        },
+        {
+          "timestamp": 1758716948.8145616,
+          "src": "192.168.1.66:37361",
+          "dst": "144.24.187.227:64552",
+          "transaction_id": "067b0000d5d19e1c78efea09",
+          "message_type": "Binding Success Response",
+          "username": null,
+          "attributes": {
+            "XOR-MAPPED-ADDRESS": "144.24.187.227:64552",
+            "SOFTWARE": "pjnath-2.3.4",
+            "MESSAGE-INTEGRITY": "230dbb791d468ad7bca61f83d7dad6db287f674a",
+            "FINGERPRINT": "0x5083f976"
+          },
+          "is_ice_used": true,
+          "ice_version_standard": "RFC 8445 (modern ICE)",
+          "library_name": "pjnath",
+          "library_version": "2.3.4"
+        }
+      ]
+    }
+  }
+}

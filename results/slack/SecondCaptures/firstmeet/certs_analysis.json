@@ -1,0 +1,155 @@
+[
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2024-11-23T23:57:56+00:00",
+    "valid_until": "2025-12-25T23:57:55+00:00",
+    "issuer_cn": "GlobalSign Atlas R3 DV TLS CA 2024 Q4",
+    "subject_cn": "*.speedcurve.com",
+    "subject_alternative_names": [
+      "<DNSName(value='*.speedcurve.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "B8:41:CD:51:86:94:C2:56:66:C1:20:68:5A:97:29:D4:E2:82:D4:89:50:97:E4:47:E5:7B:38:E5:50:CA:39:7D",
+    "found_in_packet_number": "3683",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-07-06T00:00:00+00:00",
+    "valid_until": "2026-08-04T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M03",
+    "subject_cn": "gnar.grammarly.com",
+    "subject_alternative_names": [
+      "<DNSName(value='gnar.grammarly.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "06:08:E5:54:2A:5A:93:E0:21:FB:20:46:D8:2D:62:06:F2:1A:E6:57:93:D7:8D:A2:3E:3B:7B:F4:A3:3C:3A:26",
+    "found_in_packet_number": "10273",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-04-15T00:00:00+00:00",
+    "valid_until": "2026-05-13T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M03",
+    "subject_cn": "data.grammarly.com",
+    "subject_alternative_names": [
+      "<DNSName(value='data.grammarly.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "08:EE:15:BA:36:E2:62:B1:B4:9F:9A:5F:1D:FD:1D:A0:9C:DB:F2:54:D9:6D:20:21:70:BD:29:D6:33:94:45:46",
+    "found_in_packet_number": "10370",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-07-02T00:00:00+00:00",
+    "valid_until": "2026-06-14T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M01",
+    "subject_cn": "signal.z1.ec1.m.chime.aws",
+    "subject_alternative_names": [
+      "<DNSName(value='signal.z1.ec1.m.chime.aws')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "C5:80:8F:E5:68:95:33:77:2D:65:22:6F:E2:14:B5:A3:B1:77:58:FC:E1:4A:70:1C:D3:C0:58:9F:20:DD:40:9A",
+    "found_in_packet_number": "11080",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-08-26T00:00:00+00:00",
+    "valid_until": "2026-08-22T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M02",
+    "subject_cn": "ice.m1.ec1.app.chime.aws",
+    "subject_alternative_names": [
+      "<DNSName(value='ice.m1.ec1.app.chime.aws')>",
+      "<DNSName(value='icea.z1.ec1.m.chime.aws')>",
+      "<DNSName(value='ice.z1.ec1.m.chime.aws')>",
+      "<DNSName(value='ice64.z1.ec1.m.chime.aws')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "E3:D0:56:ED:AA:CF:6F:C0:26:12:CE:67:49:D8:FD:75:E2:83:01:19:4C:C6:E5:B5:7F:A5:5F:37:83:6C:AE:ED",
+    "found_in_packet_number": "11216",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2024-08-29T18:06:24+00:00",
+    "valid_until": "2025-11-29T18:06:24+00:00",
+    "issuer_cn": "Microsoft Secure Server CA 2011",
+    "subject_cn": "settings-win.data.microsoft.com",
+    "subject_alternative_names": [
+      "<DNSName(value='settings-win.data.microsoft.com')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "3A:20:2E:13:58:27:9B:11:9F:71:DB:CC:FD:39:32:A6:DA:E8:02:04:8B:F1:42:2C:98:22:64:A9:A7:81:C3:B6",
+    "found_in_packet_number": "27418",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-05-01T00:00:00+00:00",
+    "valid_until": "2026-05-31T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M03",
+    "subject_cn": "extension.femetrics.grammarly.io",
+    "subject_alternative_names": [
+      "<DNSName(value='extension.femetrics.grammarly.io')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "FF:8E:E9:BE:30:E5:4F:9D:86:2D:1C:93:E2:DF:B2:4A:FF:34:78:E4:B2:53:00:BB:53:38:3B:C9:F3:7F:D9:E0",
+    "found_in_packet_number": "33862",
+    "found_in_packet_summary": "TLS Packet"
+  },
+  {
+    "self_signed": false,
+    "validity_period_ok": true,
+    "valid_from": "2025-05-30T00:00:00+00:00",
+    "valid_until": "2026-06-28T23:59:59+00:00",
+    "issuer_cn": "Amazon RSA 2048 M02",
+    "subject_cn": "f-log.grammarly.io",
+    "subject_alternative_names": [
+      "<DNSName(value='f-log.grammarly.io')>",
+      "<DNSName(value='f-log-officeaddinjs.grammarly.io')>",
+      "<DNSName(value='f-log-js-plugin.grammarly.io')>",
+      "<DNSName(value='f-log-assistant.grammarly.io')>",
+      "<DNSName(value='f-log-balto.grammarly.io')>",
+      "<DNSName(value='f-log-win-extension.grammarly.io')>",
+      "<DNSName(value='f-log-mobile-ios-retail.grammarly.io')>",
+      "<DNSName(value='f-log-at.grammarly.io')>",
+      "<DNSName(value='f-log-inkwell.grammarly.io')>",
+      "<DNSName(value='f-log-test.grammarly.io')>",
+      "<DNSName(value='f-log-wrex.grammarly.io')>",
+      "<DNSName(value='f-log-ai-editor.grammarly.io')>",
+      "<DNSName(value='f-log-officeaddin.grammarly.io')>",
+      "<DNSName(value='f-log-support.grammarly.io')>",
+      "<DNSName(value='f-log-mac-extension.grammarly.io')>",
+      "<DNSName(value='f-log-pl.grammarly.io')>",
+      "<DNSName(value='f-log-extension.grammarly.io')>",
+      "<DNSName(value='f-log-mobile.grammarly.io')>",
+      "<DNSName(value='f-log-mobile-ios.grammarly.io')>",
+      "<DNSName(value='f-log-features-ci.grammarly.io')>",
+      "<DNSName(value='f-log-editor-debug.grammarly.io')>",
+      "<DNSName(value='f-log-csp.grammarly.io')>",
+      "<DNSName(value='f-log-editor.grammarly.io')>"
+    ],
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "public_key_algorithm": "RSAPublicKey",
+    "fingerprint": "4F:1D:FA:28:5E:B4:AD:C2:AB:DD:93:80:6C:92:ED:CB:85:1A:6F:EA:88:FA:BE:FD:0B:E1:38:E5:5A:64:CF:70",
+    "found_in_packet_number": "36164",
+    "found_in_packet_summary": "TLS Packet"
+  }
+]
