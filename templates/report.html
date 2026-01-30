@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Report: {{ report_name }}</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; margin: 0; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .header { background: #1a2533; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+        .header h1 { margin: 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;}
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .card h3 { margin-top: 0; color: #0056b3; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .card p { margin: 10px 0; }
+        .status { font-weight: bold; }
+        .status-ok { color: #28a745; }
+        .status-warn { color: #ffc107; }
+        .status-fail { color: #dc3545; }
+        .collapsible { background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; margin-top: 20px; }
+        .collapsible summary { font-weight: bold; cursor: pointer; padding: 15px; background: #eef; }
+        .collapsible div { padding: 15px; border-top: 1px solid #ddd; }
+        .code { background-color: #282c34; color: #abb2bf; padding: 10px; border-radius: 5px; white-space: pre-wrap; word-wrap: break-word; font-family: 'Courier New', Courier, monospace; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #e0e0e0; padding: 10px; text-align: left; }
+        th { background-color: #f7f7f7; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>WebRTC Security Analysis Report</h1>
+        <p><strong>Target:</strong> {{ report_name }}</p>
+    </div>
+
+    <!-- HIGH-LEVEL SUMMARY CARDS -->
+    <div class="grid">
+        <!-- Signaling Summary -->
+        {% set signaling_session = data.get('signaling', {}).get(list(data.get('signaling', {}).keys())[0], {}) if data.get('signaling') else {} %}
+        {% set signaling_summary = signaling_session.get('summary', {}) %}
+        <div class="card">
+            <h3>📡 Signaling</h3>
+            <p><strong>Protocol:</strong> {{ signaling_summary.get('how_is_signaling_done', 'N/A') }}</p>
+            <p><strong>Encryption:</strong>
+                <span class="status {% if signaling_summary.get('is_cleartext_or_encrypted') == 'Encrypted (TLS)' %}status-ok{% else %}status-fail{% endif %}">
+                    {{ signaling_summary.get('is_cleartext_or_encrypted', 'N/A') }}
+                </span>
+            </p>
+            <p><strong>Authentication:</strong> {{ signaling_summary.get('presence_of_authentication', 'N/A') }}</p>
+            <p><strong>Server:</strong> {{ signaling_summary.get('servers_contacted', 'N/A') }}</p>
+        </div>
+
+        <!-- Certificate Summary -->
+        {% set cert = data.get('certs', [{}])[0] %}
+        <div class="card">
+            <h3>📜 Certificate</h3>
+            <p><strong>Trust Model:</strong> 
+                <span class="status {% if not cert.get('self_signed') %}status-ok{% else %}status-fail{% endif %}">
+                    {% if cert.get('self_signed') %}Self-Signed (Untrusted){% else %}CA Signed (Trusted){% endif %}
+                </span>
+            </p>
+            <p><strong>Validity:</strong>
+                <span class="status {% if cert.get('validity_period_ok') %}status-ok{% else %}status-fail{% endif %}">
+                    {% if cert.get('validity_period_ok') %}Valid{% else %}Expired / Invalid{% endif %}
+                </span>
+            </p>
+            <p><strong>Issued to:</strong> {{ cert.get('subject_cn', 'N/A') }}</p>
+            <p><strong>Issued by:</strong> {{ cert.get('issuer_cn', 'N/A') }}</p>
+        </div>
+
+        <!-- Handshake Summary -->
+        {% set handshake = data.get('handshake', [{}])[0] %}
+        <div class="card">
+            <h3>🤝 Handshake Security</h3>
+            <p><strong>Protocol:</strong> {{ handshake.get('protocol', 'N/A') }}</p>
+            <p><strong>Chosen Cipher Suite:</strong><br>
+                <span class="status {% if handshake.get('server_hello', {}).get('is_encryption_strong') %}status-ok{% else %}status-warn{% endif %}">
+                    {{ handshake.get('server_hello', {}).get('chosen_crypto_suite', 'N/A') }}
+                </span>
+            </p>
+            <p><strong>Weak Ciphers Offered:</strong>
+                <span class="status {% if handshake.get('client_hello', {}).get('security_summary', {}).get('offers_weak_ciphers') %}status-warn{% else %}status-ok{% endif %}">
+                    {{ "Yes" if handshake.get('client_hello', {}).get('security_summary', {}).get('offers_weak_ciphers') else "No" }}
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <!-- DETAILED FINDINGS SECTIONS -->
+    <div class="collapsible">
+        <summary>Detailed Signaling Credentials</summary>
+        <div>
+            {% if signaling_session.get('important_info') %}
+                <table>
+                    <tr><th>Parameter</th><th>Value</th></tr>
+                    {% for key, value in signaling_session.get('important_info').items() %}
+                        <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>No specific credentials or important info extracted from signaling.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="collapsible">
+        <summary>WebRTC/TLS Handshake Details</summary>
+        <div>
+            <h4>Client Hello</h4>
+            <div class="code">{{ handshake.get('client_hello', {}) | tojson(indent=2) }}</div>
+            <h4>Server Hello</h4>
+            <div class="code">{{ handshake.get('server_hello', {}) | tojson(indent=2) }}</div>
+            <h4>Certificate Details</h4>
+            <div class="code">{{ cert | tojson(indent=2) }}</div>
+        </div>
+    </div>
+
+    <div class="collapsible">
+        <summary>STUN/TURN/ICE Packet Analysis</summary>
+        <div>
+            <h4>STUN</h4>
+            <div class="code">{{ data.get('stun', {}) | tojson(indent=2) }}</div>
+            <h4>TURN</h4>
+            <div class="code">{{ data.get('turn', {}) | tojson(indent=2) }}</div>
+            <h4>ICE</h4>
+            <div class="code">{{ data.get('ice', {}) | tojson(indent=2) }}</div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

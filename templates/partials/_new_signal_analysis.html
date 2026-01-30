@@ -1,0 +1,70 @@
+{# This template is specifically for new_signal_analysis.json #}
+
+{# Macro to nicely format long, multi-line SDP strings #}
+{% macro format_sdp(sdp_string) %}
+    {% if sdp_string and sdp_string is string %}
+        <pre class="mb-0 small bg-light p-2 rounded"><code>{{ sdp_string.replace('\\r\\n', '\n') }}</code></pre>
+    {% else %}
+        <code>{{ sdp_string }}</code>
+    {% endif %}
+{% endmacro %}
+
+<div class="accordion" id="newSignalAccordion">
+    {% for session_id, session_data in report_content.items() %}
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-sig-{{ loop.index }}">
+                Session: <strong>{{ session_id }}</strong>
+                <span class="badge bg-info ms-3">{{ session_data.detection_method }}</span>
+            </button>
+        </h2>
+        <div id="collapse-new-sig-{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#newSignalAccordion">
+            <div class="accordion-body">
+                
+                <!-- Section for Important Info -->
+                <h5 class="card-title">Extracted Credentials & Identifiers</h5>
+                {% if session_data.important_info %}
+                <div class="p-3 border rounded mb-4">
+                    <dl class="row mb-0">
+                    {% for key, value in session_data.important_info.items() %}
+                        <dt class="col-sm-3 text-muted">{{ key }}</dt>
+                        <dd class="col-sm-9">
+                            {# Use our macro to format SDP-like blobs #}
+                            {{ format_sdp(value) }}
+                        </dd>
+                    {% endfor %}
+                    </dl>
+                </div>
+                {% else %}
+                <div class="alert alert-secondary">No important information was automatically extracted.</div>
+                {% endif %}
+
+                <!-- Section for Packets with Info -->
+                <h5 class="card-title">Relevant Packets ({{ session_data.packets_with_info|length }})</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm table-hover table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 10%;">Packet #</th>
+                                <th style="width: 15%;">Protocol</th>
+                                <th>Payload Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for packet in session_data.packets_with_info %}
+                            <tr>
+                                <td>{{ packet.packet_number }}</td>
+                                <td>{{ packet.protocol }}</td>
+                                <td style="word-break: break-all;">
+                                    <pre class="mb-0 small"><code>{{ packet.payload_snippet | truncate(300) }}</code></pre>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

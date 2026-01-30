@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Summary for {{ device_name }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ device_name }} Summary</li>
+      </ol>
+    </nav>
+
+    <h2 class="mb-4">Aggregated Summary for: <strong>{{ device_name }}</strong></h2>
+    <i class="bi bi-info-circle-fill ms-1" 
+       data-bs-toggle="tooltip" 
+       data-bs-placement="right" 
+       title="This page is still under construction, can be buggy for certain use cases.">
+    </i>
+    <!-- Overall Stats Card -->
+    <div class="card mb-4">
+        <div class="card-header"><h4><i class="bi bi-bar-chart-line-fill"></i> Overall Statistics</h4></div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Total Captures Analyzed</dt>
+                <dd class="col-sm-9">{{ summary.total_captures }}</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Credential Findings Card -->
+    <div class="card mb-4">
+    <div class="card-header"><h4><i class="bi bi-key-fill"></i> Credential & Identifier Findings</h4></div>
+    <div class="card-body">
+        <h5 class="card-title">Cleartext Signaling Credentials</h5>
+        {% if summary.signaling_creds %}
+            <div class="alert alert-danger"><strong>{{ summary.signaling_creds|length }}</strong> cleartext credential(s) found across all captures.</div>
+            <table class="table table-sm table-hover table-bordered">
+                <thead class="table-light"><tr><th>Source Capture</th><th>Credential Type</th><th>Value</th></tr></thead>
+                <tbody>
+                {% for cred in summary.signaling_creds %}
+                    <tr><td>{{ cred.source }}</td><td>{{ cred.type }}</td><td><code>{{ cred.value }}</code></td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="alert alert-success">No cleartext credentials found in signaling across any captures.</div>
+        {% endif %}
+        
+        <hr>
+
+        <h5 class="card-title mt-4">Unique TURN Usernames</h5>
+        {% if summary.turn_usernames %}
+            <p>The following unique TURN usernames were identified during analysis:</p>
+            <ul class="list-group">
+                {% for username in summary.turn_usernames %}
+                <li class="list-group-item"><code>{{ username }}</code></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+             <div class="alert alert-secondary">No TURN usernames were found.</div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Certificate Analysis Card (Updated) -->
+<div class="card mb-4">
+    <div class="card-header"><h4><i class="bi bi-file-earmark-lock-fill"></i> Certificate Analysis</h4></div>
+    <div class="list-group list-group-flush">
+        <div class="list-group-item">
+            <strong>Self-Signed Certificates:</strong>
+            {% if summary.self_signed_cert_count > 0 %}
+                <span class="badge text-bg-warning float-end">{{ summary.self_signed_cert_count }} Found</span>
+            {% else %}
+                <span class="badge text-bg-success float-end">None Found</span>
+            {% endif %}
+        </div>
+        <div class="list-group-item">
+            <strong>Outdated/Invalid Certificates:</strong>
+            {% if summary.outdated_cert_count > 0 %}
+                <span class="badge text-bg-warning float-end">{{ summary.outdated_cert_count }} Found</span>
+            {% else %}
+                <span class="badge text-bg-success float-end">None Found</span>
+            {% endif %}
+        </div>
+    </div>
+    <div class="card mb-4">
+    <div class="card-header"><h4><i class="bi bi-file-earmark-lock-fill"></i> Certificate Analysis</h4></div>
+    <div class="list-group list-group-flush">
+        <!-- ... (self-signed and outdated counts are unchanged) ... -->
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Reused Certificates</h5>
+        {% if summary.reused_certs %}
+            <p>The following certificate fingerprints were found in multiple distinct captures, indicating potential key/certificate reuse across sessions or devices.</p>
+            {% for cert_info in summary.reused_certs %}
+                <div class="mb-3 p-3 border rounded">
+                    <strong>Fingerprint:</strong> <code>{{ cert_info.fingerprint }}</code>
+                    <p class="mb-1 mt-2">Found in {{ cert_info.locations|length }} instances:</p>
+                    <ul class="list-group list-group-sm">
+                        {# THIS IS THE NEW PART THAT SHOWS CONTEXT #}
+                        {% for loc in cert_info.locations %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            {{ loc.capture }}
+                            <span class="badge 
+                                {% if loc.context == 'DTLS' %} text-bg-primary
+                                {% elif loc.context == 'TLS' %} text-bg-info
+                                {% else %} text-bg-secondary
+                                {% endif %}">
+                                {{ loc.context }}
+                            </span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="alert alert-success">No reused certificates were detected across captures.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

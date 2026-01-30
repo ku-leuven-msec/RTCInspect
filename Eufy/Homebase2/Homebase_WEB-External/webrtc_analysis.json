@@ -1,0 +1,152 @@
+[
+  {
+    "protocol": "DTLS",
+    "client_endpoint": "78.22.232.243:53845",
+    "server_endpoint": "192.168.100.133:40222",
+    "total_bytes": 1695,
+    "client_hello": {
+      "version": "DTLS 1.2 (0xfefd)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+          "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+          "TLS_RSA_WITH_AES_128_GCM_SHA256",
+          "TLS_RSA_WITH_AES_128_CBC_SHA",
+          "TLS_RSA_WITH_AES_256_CBC_SHA"
+        ]
+      }
+    },
+    "server_hello": {},
+    "certificate_details": {
+      "self_signed": true,
+      "validity_period_ok": true,
+      "valid_from": "2023-10-29T13:48:27+00:00",
+      "valid_until": "2023-11-29T13:48:27+00:00",
+      "issuer_cn": "WebRTC",
+      "subject_cn": "WebRTC",
+      "subject_alternative_names": [],
+      "key_exchange_algorithm": "ecdsa-with-SHA256",
+      "fingerprint": "22:E9:C3:45:A5:5E:39:73:41:82:78:98:6E:D5:8A:E8:37:C3:D9:F8:64:09:88:6E:3F:F8:16:4F:52:C6:55:4C"
+    }
+  },
+  {
+    "protocol": "DTLS",
+    "client_endpoint": "192.168.100.133:40222",
+    "server_endpoint": "3.123.109.172:50641",
+    "total_bytes": 8043,
+    "client_hello": {},
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": true,
+      "validity_period_ok": false,
+      "valid_from": "2021-07-13T07:29:27+00:00",
+      "valid_until": "2022-07-13T07:29:27+00:00",
+      "issuer_cn": "AK",
+      "subject_cn": "AK",
+      "subject_alternative_names": [],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "A9:07:34:CA:F8:6F:12:21:98:12:C9:D1:90:49:90:93:54:E6:6F:08:01:73:2C:81:F8:43:4B:75:BC:89:8D:3C"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.100.133:39968",
+    "server_endpoint": "3.67.163.246:443",
+    "total_bytes": 4549,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-09-12T14:59:21+00:00",
+      "valid_until": "2024-10-13T14:59:21+00:00",
+      "issuer_cn": "Go Daddy Secure Certificate Authority - G2",
+      "subject_cn": "*.eufylife.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.eufylife.com')>",
+        "<DNSName(value='eufylife.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "71:0E:58:85:BF:70:02:8C:E6:21:5B:25:B1:A4:40:C7:57:2D:FB:FC:3F:E5:6D:D0:47:AA:A5:46:07:84:BA:27"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "client_endpoint": "192.168.100.133:48767",
+    "server_endpoint": "54.93.129.217:443",
+    "total_bytes": 4979,
+    "client_hello": {
+      "version": "TLS 1.2 (0x0303)",
+      "offered_cipher_suites": [
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
+      ],
+      "security_summary": {
+        "offers_weak_ciphers": true,
+        "weak_ciphers_list": [
+          "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+        ]
+      }
+    },
+    "server_hello": {
+      "chosen_crypto_suite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "is_encryption_strong": true
+    },
+    "certificate_details": {
+      "self_signed": false,
+      "validity_period_ok": true,
+      "valid_from": "2023-09-12T14:59:21+00:00",
+      "valid_until": "2024-10-13T14:59:21+00:00",
+      "issuer_cn": "Go Daddy Secure Certificate Authority - G2",
+      "subject_cn": "*.eufylife.com",
+      "subject_alternative_names": [
+        "<DNSName(value='*.eufylife.com')>",
+        "<DNSName(value='eufylife.com')>"
+      ],
+      "key_exchange_algorithm": "sha256WithRSAEncryption",
+      "fingerprint": "71:0E:58:85:BF:70:02:8C:E6:21:5B:25:B1:A4:40:C7:57:2D:FB:FC:3F:E5:6D:D0:47:AA:A5:46:07:84:BA:27"
+    }
+  }
+]

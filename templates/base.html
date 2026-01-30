@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}WebRTC Security Dashboard{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-size: 0.9rem;
+        }
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: calc(100vh - 56px); /* Full height minus navbar */
+            overflow-y: auto;
+        }
+        .report-section {
+            padding-top: 60px;
+            margin-top: -60px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="bi bi-shield-check"></i>
+                WebRTC Security Dashboard
+            </a>
+            <span class="navbar-text text-white-50">
+                {% block breadcrumb %}{% endblock %}
+            </span>
+        </div>
+    </nav>
+
+    <!-- This is the single, correct content container -->
+    <div class="container-fluid">
+        
+        <!-- Flash messages should be rendered here, at the top of the content area -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show mt-3" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- This is the placeholder for the child template's content -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- This is a good place for page-specific scripts -->
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

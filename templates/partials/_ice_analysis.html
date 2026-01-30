@@ -1,0 +1,101 @@
+<div class="accordion" id="iceTransactionAccordion">
+  {% set transactions = report_content.ice_transactions.items() %}
+  {% set display_limit = 20 %}
+
+  {% for tx_id, tx in transactions %}
+    {% if loop.index0 == display_limit %}
+      <p class="text-center my-3">
+        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#moreIceTransactions">
+          <i class="bi bi-chevron-down"></i> Show {{ transactions|length - display_limit }} more transactions...
+        </button>
+      </p>
+      <div class="collapse" id="moreIceTransactions">
+    {% endif %}
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-ice-{{ tx_id }}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-ice-{{ tx_id }}" aria-expanded="false" aria-controls="collapse-ice-{{ tx_id }}">
+          ICE Tx: <strong class="ms-1 me-2">{{ tx_id }}</strong>
+
+          {% if tx.selected %}
+            <span class="badge text-bg-success me-2">Selected</span>
+          {% elif tx.has_success %}
+            <span class="badge text-bg-primary me-2">Success</span>
+          {% else %}
+            <span class="badge text-bg-secondary me-2">No Response</span>
+          {% endif %}
+
+          <span class="badge bg-light text-dark me-2">Role: {{ tx.role }}</span>
+
+          {% if tx.used_use_candidate %}
+            <span class="badge text-bg-info">USE-CANDIDATE</span>
+          {% endif %}
+
+          {# Optional if you add these fields in Python #}
+          {% if tx.dest_scope is defined and tx.has_success == false and tx.dest_scope in ['rfc1918','rfc6598','link-local'] %}
+            <span class="badge text-bg-light ms-2">Likely unroutable ({{ tx.dest_scope }})</span>
+          {% endif %}
+          {% if tx.reflexive_observed %}
+            <span class="badge text-bg-warning ms-2">Reflexive: {{ tx.reflexive_addr }}</span>
+          {% endif %}
+        </button>
+      </h2>
+
+      <div id="collapse-ice-{{ tx_id }}" class="accordion-collapse collapse" aria-labelledby="heading-ice-{{ tx_id }}" data-bs-parent="#iceTransactionAccordion">
+        <div class="accordion-body">
+          <div class="mb-2 small text-muted">
+            Path (req): <code>{{ tx.request_path }}</code>
+            {% if tx.has_success %} &nbsp;|&nbsp; Path (resp): <code>{{ tx.response_path }}</code>{% endif %}
+          </div>
+
+          {% for msg in tx.messages %}
+            <div class="mb-3 p-3 border rounded">
+              <h6 class="mb-2">
+                {% if msg.message_type == 'Binding Success Response' %}
+                  <span class="badge text-bg-success">{{ msg.message_type }}</span>
+                {% elif msg.message_type == 'Binding Error Response' %}
+                  <span class="badge text-bg-danger">{{ msg.message_type }}</span>
+                {% else %}
+                  <span class="badge text-bg-primary">{{ msg.message_type }}</span>
+                {% endif %}
+                <small class="text-muted float-end">{{ format_timestamp(msg.timestamp) }}</small>
+              </h6>
+
+              <table class="table table-sm table-bordered">
+                <tbody>
+                  <tr><th style="width:35%;">Source → Destination</th><td><code>{{ msg.src }} -> {{ msg.dst }}</code></td></tr>
+                  <tr><th>Username</th><td><code>{{ msg.username }}</code></td></tr>
+                  <tr><th>ICE Standard</th><td>{{ msg.ice_version_standard }}</td></tr>
+                  <tr><th>Library</th><td>{{ msg.library_name }} / {{ msg.library_version }}</td></tr>
+                </tbody>
+              </table>
+
+              {% set a = msg.attributes %}
+              {% if a %}
+                <div class="small text-muted">
+                  {% if a.PRIORITY is defined %}PRIORITY={{ a.PRIORITY }}{% endif %}
+                  {% if a['ICE-CONTROLLING'] is defined %} &nbsp;|&nbsp; ICE-CONTROLLING={{ a['ICE-CONTROLLING'] }}{% endif %}
+                  {% if a['ICE-CONTROLLED'] is defined %} &nbsp;|&nbsp; ICE-CONTROLLED={{ a['ICE-CONTROLLED'] }}{% endif %}
+                  {% if a['USE-CANDIDATE'] is defined %} &nbsp;|&nbsp; USE-CANDIDATE{% endif %}
+                  {% if a['XOR-MAPPED-ADDRESS'] is defined %} &nbsp;|&nbsp; XOR-MAPPED-ADDRESS={{ a['XOR-MAPPED-ADDRESS'] }}{% endif %}
+                  {% if a['ERROR-CODE'] is defined %}
+                    &nbsp;|&nbsp; ERROR={{ a['ERROR-CODE'].code }} ({{ a['ERROR-CODE'].reason }})
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% if transactions|length > display_limit %}
+    </div> <!-- closes #moreIceTransactions -->
+  {% endif %}
+
+  {% if not transactions %}
+    <div class="alert alert-secondary">No ICE transactions were found in this capture.</div>
+  {% endif %}
+</div>

@@ -1,0 +1,490 @@
+{# ===========================
+   Reusable renderer (TLS/DTLS)
+   =========================== #}
+{% macro render_connection_item(connection, loop, parent_id) %}
+{% set ch = connection.get('client_hello') or {} %}
+{% set sh = connection.get('server_hello') or {} %}
+{% set cert = connection.get('certificate_details') or {} %}
+{% set weak_offered = (ch.get('security_summary', {}).get('offers_weak_ciphers') == true) %}
+{% set weak_list = ch.get('security_summary', {}).get('weak_ciphers_list') or [] %}
+{% set chosen = sh.get('chosen_crypto_suite') %}
+{% set chosen_is_strong = sh.get('is_encryption_strong') %}
+{% set proto = connection.get('protocol', 'TLS') %}
+{% set hdr_id = 'heading-webrtc-%s-%s' % (parent_id, loop.index) %}
+{% set col_id = 'collapse-webrtc-%s-%s' % (parent_id, loop.index) %}
+{% set bytes = connection.total_bytes %}
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="{{ hdr_id }}">
+    <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#{{ col_id }}">
+      <span class="me-2">
+        <span class="badge text-bg-{{ 'primary' if proto == 'TLS' else 'info' }}">{{ proto }}</span>
+      </span>
+      {% if connection.get('client_endpoint') and connection.get('server_endpoint') %}
+        <code>{{ connection.client_endpoint }}</code>
+        &nbsp;<i class="bi bi-arrow-right-short"></i>&nbsp;
+        <code>{{ connection.server_endpoint }}</code>
+      {% else %}
+        Connection #{{ loop.index }}
+      {% endif %}
+      {% if chosen %}
+        <span class="ms-2 badge text-bg-{{ 'success' if chosen_is_strong else 'danger' }}"
+              title="Server-chosen cipher">
+          {{ chosen }}
+        </span>
+      {% endif %}
+      {% if weak_offered %}
+        <span class="ms-2 badge text-bg-warning" title="Client offered weak ciphers">Weak ciphers offered</span>
+      {% endif %}
+      {% if cert %}
+        {% if cert.get('self_signed') %}
+          <span class="ms-2 badge text-bg-warning">Self-signed</span>
+        {% endif %}
+        {% if cert.get('validity_period_ok') is not none %}
+          <span class="ms-2 badge text-bg-{{ 'success' if cert.validity_period_ok else 'warning' }}">
+            {{ 'Cert valid' if cert.validity_period_ok else 'Cert validity issue' }}
+          </span>
+        {% endif %}
+        <span class="ms-2 badge text-bg-info" title="Size">{% if bytes > 1048576 %}{{ "%.2f"|format(bytes/1048576) }} MB
+              {% elif bytes > 1024 %}{{ "%.2f"|format(bytes/1024) }} KB
+              {% else %}{{ bytes }} Bytes{% endif %}
+        </span>
+
+      {% endif %}
+    </button>
+  </h2>
+
+  <div id="{{ col_id }}" class="accordion-collapse collapse" data-bs-parent="#{{ parent_id }}">
+    <div class="accordion-body">
+
+      {# ---- Connection meta ---- #}
+      <div class="mb-3">
+        <h6 class="mb-2"><i class="bi bi-diagram-3"></i> Connection</h6>
+        <dl class="row mb-0">
+          {% if connection.get('client_endpoint') %}
+            <dt class="col-sm-3 text-muted">Client</dt>
+            <dd class="col-sm-9"><code>{{ connection.client_endpoint }}</code></dd>
+          {% endif %}
+          {% if connection.get('server_endpoint') %}
+            <dt class="col-sm-3 text-muted">Server</dt>
+            <dd class="col-sm-9"><code>{{ connection.server_endpoint }}</code></dd>
+          {% endif %}
+          {% if connection.get('total_bytes') is not none %}
+            {% set bytes = connection.total_bytes %}
+            <dt class="col-sm-3 text-muted">Total Traffic</dt>
+            <dd class="col-sm-9">
+              {% if bytes > 1048576 %}{{ "%.2f"|format(bytes/1048576) }} MB
+              {% elif bytes > 1024 %}{{ "%.2f"|format(bytes/1024) }} KB
+              {% else %}{{ bytes }} Bytes{% endif %}
+            </dd>
+          {% endif %}
+        </dl>
+      </div>
+
+      {# ---- Security summary row of badges ---- #}
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <span class="badge text-bg-{{ 'primary' if proto == 'TLS' else 'info' }}">
+          {{ proto }}
+        </span>
+        {% if ch.get('version') %}
+          <span class="badge text-bg-light">ClientHello: {{ ch.version }}</span>
+        {% endif %}
+        {% if chosen %}
+          <span class="badge text-bg-{{ 'success' if chosen_is_strong else 'danger' }}">
+            Chosen: {{ chosen }}
+          </span>
+        {% endif %}
+        {% if weak_offered %}
+          <span class="badge text-bg-warning">Weak ciphers offered ({{ weak_list|length }})</span>
+        {% else %}
+          <span class="badge text-bg-success">No weak ciphers offered</span>
+        {% endif %}
+      </div>
+
+      <hr class="my-3">
+
+      {# ---- Server Hello (compact) ---- #}
+      <div class="mb-4">
+        <h6 class="mb-2"><i class="bi bi-hdd-stack"></i> Server Hello</h6>
+        {% if sh %}
+          <table class="table table-sm table-bordered mb-0">
+            <tbody>
+              <tr>
+                <th style="width:30%;">Chosen Cipher Suite</th>
+                <td>
+                  <code>{{ sh.get('chosen_crypto_suite','N/A') }}</code>
+                  {% if sh.get('is_encryption_strong') is not none %}
+                    <span class="badge text-bg-{{ 'success' if sh.is_encryption_strong else 'danger' }} float-end">
+                      {{ 'Strong' if sh.is_encryption_strong else 'Weak' }}
+                    </span>
+                  {% endif %}
+                </td>
+              </tr>
+              {% if sh.get('version') %}
+              <tr>
+                <th>Protocol Version</th>
+                <td>{{ sh.version }}</td>
+              </tr>
+              {% endif %}
+              {% if sh.get('extensions') %}
+              <tr>
+                <th>Extensions</th>
+                <td>
+                  <div class="accordion" id="srvext-{{ col_id }}">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#srvext-collapse-{{ col_id }}">
+                          Show extensions
+                        </button>
+                      </h2>
+                      <div id="srvext-collapse-{{ col_id }}" class="accordion-collapse collapse">
+                        <div class="accordion-body p-2">
+                          <pre class="small mb-0">{{ sh.extensions | tojson(indent=2) }}</pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        {% else %}
+          <div class="alert alert-secondary mb-0">No Server Hello parsed.</div>
+        {% endif %}
+      </div>
+
+      {# ---- Client Hello (accordion with offered cipher suites) ---- #}
+      <div class="mb-4">
+        <h6 class="mb-2"><i class="bi bi-display"></i> Client Hello</h6>
+        {% if ch %}
+          <table class="table table-sm table-bordered">
+            <tbody>
+              {% if ch.get('version') %}
+              <tr>
+                <th style="width:30%;">Protocol Version</th>
+                <td>{{ ch.version }}</td>
+              </tr>
+              {% endif %}
+
+              {% if ch.get('sni') %}
+              <tr>
+                <th>SNI</th>
+                <td><code>{{ ch.sni }}</code></td>
+              </tr>
+              {% endif %}
+
+              {% if ch.get('alpn_protocols') %}
+              <tr>
+                <th>ALPN</th>
+                <td>
+                  {% for a in ch.alpn_protocols %}
+                    <span class="badge text-bg-light me-1">{{ a }}</span>
+                  {% endfor %}
+                </td>
+              </tr>
+              {% endif %}
+
+              <tr>
+                <th>Offered Cipher Suites</th>
+                <td>
+                  {% if ch.get('offered_cipher_suites') %}
+                    <div class="accordion" id="ciphers-{{ col_id }}">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed py-2" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#ciphers-collapse-{{ col_id }}">
+                            Show all {{ ch.offered_cipher_suites|length }} cipher suites
+                          </button>
+                        </h2>
+                        <div id="ciphers-collapse-{{ col_id }}" class="accordion-collapse collapse">
+                          <div class="accordion-body p-0">
+                            <ul class="list-group list-group-flush">
+                              {% for cs in ch.offered_cipher_suites %}
+                                {% set is_weak = cs in weak_list %}
+                                <li class="list-group-item {% if is_weak %}list-group-item-warning{% endif %}">
+                                  <code>{{ cs }}</code>
+                                  {% if is_weak %}
+                                    <span class="badge text-bg-danger ms-1">Weak</span>
+                                  {% endif %}
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% else %}
+                    <span class="text-muted">No cipher list parsed.</span>
+                  {% endif %}
+                </td>
+              </tr>
+
+              {% if weak_offered %}
+              <tr class="table-warning">
+                <th>Weak Ciphers Offered</th>
+                <td class="small">
+                  {% for cs in weak_list %}
+                    <code class="me-2">{{ cs }}</code>
+                  {% endfor %}
+                </td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        {% else %}
+          <div class="alert alert-secondary mb-0">No Client Hello parsed.</div>
+        {% endif %}
+      </div>
+
+      {# ---- Certificate details ---- #}
+      <div class="mb-2">
+        <h6 class="mb-2"><i class="bi bi-file-earmark-lock"></i> Certificate</h6>
+        {% if cert %}
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            {% if cert.get('self_signed') %}
+              <span class="badge text-bg-danger">
+                <i class="bi bi-exclamation-triangle-fill"></i> Self-signed
+              </span>
+            {% else %}
+              <span class="badge text-bg-success">
+                <i class="bi bi-check-circle-fill"></i> Issued by CA
+              </span>
+            {% endif %}
+            {% if cert.get('validity_period_ok') is not none %}
+              <span class="badge text-bg-{{ 'success' if cert.validity_period_ok else 'warning' }}">
+                {{ 'Validity OK' if cert.validity_period_ok else 'Validity problem' }}
+              </span>
+            {% endif %}
+          </div>
+
+          <table class="table table-sm table-bordered mb-2">
+            <tbody>
+              {% if cert.get('subject_cn') %}
+              <tr><th style="width:30%;">Subject CN</th><td>{{ cert.subject_cn }}</td></tr>
+              {% endif %}
+              {% if cert.get('issuer_cn') %}
+              <tr><th>Issuer CN</th><td>{{ cert.issuer_cn }}</td></tr>
+              {% endif %}
+              {% if cert.get('valid_from') %}
+              <tr><th>Valid From</th><td>{{ cert.valid_from }}</td></tr>
+              {% endif %}
+              {% if cert.get('valid_until') %}
+              <tr><th>Valid Until</th><td>{{ cert.valid_until }}</td></tr>
+              {% endif %}
+              {% if cert.get('key_exchange_algorithm') %}
+              <tr><th>Signature Algorithm</th><td>{{ cert.key_exchange_algorithm }}</td></tr>
+              {% endif %}
+              {% if cert.get('subject_alternative_names') %}
+              <tr>
+                <th>SANs</th>
+                <td class="small">
+                  {% for san in cert.subject_alternative_names %}
+                    <code class="me-1">{{ san }}</code>
+                  {% endfor %}
+                </td>
+              </tr>
+              {% endif %}
+              {% if cert.get('fingerprint') %}
+              <tr><th>Fingerprint (SHA-256)</th><td><code>{{ cert.fingerprint }}</code></td></tr>
+              {% endif %}
+            </tbody>
+          </table>
+        {% else %}
+          <div class="alert alert-secondary mb-0">No certificate available.</div>
+        {% endif %}
+      </div>
+
+      {# ---- Raw JSON (optional) ---- #}
+      <div class="accordion mt-3" id="raw-{{ col_id }}">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#raw-collapse-{{ col_id }}">
+              Show raw record
+            </button>
+          </h2>
+          <div id="raw-collapse-{{ col_id }}" class="accordion-collapse collapse">
+            <div class="accordion-body p-2">
+              <pre class="small mb-0">{{ connection | tojson(indent=2) }}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+
+{# ===========================
+   DTLS (media) section
+   =========================== #}
+<h4 class="mt-4">DTLS Connections</h4>
+<div class="accordion" id="dtlsConnectionAccordion">
+  {% set dtls_connections = report_content | selectattr('protocol','equalto','DTLS') | list %}
+
+   {% if summary.DTLS_certificate_reuse %}
+    <div class="alert alert-danger">
+      <i class="bi bi-exclamation-triangle-fill"></i>
+      Possible DTLS certificate reuse detected across multiple DTLS sessions under this folder (see Summary across captures).
+      <i class="bi bi-info-circle-fill ms-1" 
+        data-bs-toggle="tooltip" 
+        data-bs-placement="right" 
+        title="Can be a sign of misconfiguration, or can be that an ephemeral certificate is used for a time period across multiple connections.">
+    </i>
+    </div>
+    {% endif %}
+
+  {% if dtls_connections %}
+    {% for connection in dtls_connections %}
+      {{ render_connection_item(connection, loop, 'dtlsConnectionAccordion') }}
+    {% endfor %}
+  {% else %}
+    <div class="alert alert-secondary">No DTLS connections found.</div>
+  {% endif %}
+</div>
+
+{# ===========================
+   TLS (signaling/other) section
+   =========================== #}
+
+
+
+<h4 class="mt-4">TLS Connections</h4>
+
+<div class="d-flex align-items-center gap-2 mb-3">
+  <label for="tlsSortSelect" class="form-label mb-0">Sort TLS connections by:</label>
+  <select id="tlsSortSelect" class="form-select form-select-sm" style="width:auto"
+          onchange="sortTlsConnections(this.value)">
+    <option value="chronological" selected>Chronological</option>
+    <option value="size">Largest stream</option>
+  </select>
+</div>
+
+<div class="accordion" id="tlsConnectionAccordion">
+  {% set tls_connections = report_content | selectattr('protocol','equalto','TLS') | list %}
+  {% set display_limit = 20 %}
+
+  {% if tls_connections %}
+    {% for connection in tls_connections %}
+      {# When we reach the display limit, show a collapsible “Show more” section #}
+      {% if loop.index0 == display_limit %}
+        <p class="text-center my-3">
+          <button class="btn btn-sm btn-outline-secondary" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#moreTlsConnections">
+            <i class="bi bi-chevron-down"></i>
+            Show {{ tls_connections|length - display_limit }} more connections...
+          </button>
+        </p>
+        <div class="collapse" id="moreTlsConnections">
+      {% endif %}
+
+      {{ render_connection_item(connection, loop, 'tlsConnectionAccordion') }}
+    {% endfor %}
+
+    {% if tls_connections|length > display_limit %}
+      </div> {# closes #moreTlsConnections #}
+    {% endif %}
+  {% else %}
+    <div class="alert alert-secondary">No TLS connections found.</div>
+  {% endif %}
+</div>
+
+<script>
+function sortTlsConnections(mode) {
+  const accordion = document.getElementById('tlsConnectionAccordion');
+  if (!accordion) return;
+
+  // ---- STEP 1: Collect all top-level accordion items (visible + hidden)
+  let items = Array.from(accordion.querySelectorAll(':scope > .accordion-item'));
+  const moreCollapse = accordion.querySelector('#moreTlsConnections');
+  if (moreCollapse) {
+    const collapsedItems = Array.from(moreCollapse.querySelectorAll(':scope > .accordion-item'));
+    items = items.concat(collapsedItems);
+  }
+
+  // ---- STEP 2: If any item lacks an index, restore from stored map
+  if (!items.every(i => i.dataset.originalIndex)) {
+    const map = window._tlsOriginalOrder || [];
+    items.forEach((it, i) => {
+      if (!it.dataset.originalIndex && map[i] !== undefined) {
+        it.dataset.originalIndex = map[i];
+      }
+    });
+  }
+
+  // ---- STEP 3: Clear all old DOM elements
+  Array.from(accordion.children).forEach(el => el.remove());
+
+  // ---- STEP 4: Sort logic
+  const parseBytes = el => {
+    const badge = el.querySelector('.badge.text-bg-info[title="Size"]');
+    if (!badge) return 0;
+    const txt = badge.textContent.trim();
+    if (txt.endsWith('MB')) return parseFloat(txt) * 1024 * 1024;
+    if (txt.endsWith('KB')) return parseFloat(txt) * 1024;
+    const n = parseFloat(txt);
+    return isNaN(n) ? 0 : n;
+  };
+
+  if (mode === 'size') {
+    items.sort((a, b) => parseBytes(b) - parseBytes(a)); // largest first
+  } else {
+    items.sort((a, b) => parseInt(a.dataset.originalIndex) - parseInt(b.dataset.originalIndex));
+  }
+
+  // ---- STEP 5: Rebuild accordion
+  const DISPLAY_LIMIT = 20;
+  const visible = items.slice(0, DISPLAY_LIMIT);
+  const hidden  = items.slice(DISPLAY_LIMIT);
+
+  visible.forEach(it => accordion.appendChild(it));
+
+  if (hidden.length > 0) {
+    const btnWrapper = document.createElement('p');
+    btnWrapper.className = 'text-center my-3';
+    btnWrapper.dataset.showmore = 'true';
+    btnWrapper.innerHTML = `
+      <button id="showMoreBtn" class="btn btn-sm btn-outline-secondary"
+              type="button" data-bs-toggle="collapse"
+              data-bs-target="#moreTlsConnections" aria-expanded="false"
+              aria-controls="moreTlsConnections">
+        <i class="bi bi-chevron-down"></i>
+        Show ${hidden.length} more connections...
+      </button>`;
+    accordion.appendChild(btnWrapper);
+
+    const collapse = document.createElement('div');
+    collapse.id = 'moreTlsConnections';
+    collapse.className = 'collapse';
+    hidden.forEach(it => collapse.appendChild(it));
+    accordion.appendChild(collapse);
+
+    if (window.bootstrap && bootstrap.Collapse) {
+      new bootstrap.Collapse(collapse, { toggle: false });
+    }
+  }
+}
+
+// ---- STEP 6: Index *all* connections at page load (visible + hidden)
+document.addEventListener('DOMContentLoaded', () => {
+  const accordion = document.getElementById('tlsConnectionAccordion');
+  let items = Array.from(accordion.querySelectorAll(':scope > .accordion-item'));
+  const moreCollapse = accordion.querySelector('#moreTlsConnections');
+  if (moreCollapse) {
+    const collapsedItems = Array.from(moreCollapse.querySelectorAll(':scope > .accordion-item'));
+    items = items.concat(collapsedItems);
+  }
+
+  window._tlsOriginalOrder = [];
+  items.forEach((item, i) => {
+    item.dataset.originalIndex = i;
+    window._tlsOriginalOrder.push(i);
+  });
+});
+</script>

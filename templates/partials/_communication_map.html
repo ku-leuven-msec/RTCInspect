@@ -1,0 +1,218 @@
+{#--- STAGE 1: DATA PREPARATION (NO HTML IS RENDERED HERE) ---#}
+{% set min_traffic_mb = 0.05 %}
+{% set hide_multicast = true %}
+
+{% set aggregated_convs = {} %}
+{% set all_ips = [] %}
+
+{% for conv in report_content %}
+    {% set is_multicast = conv.dst_ip.startswith(('224.', '239.')) %}
+    {% if conv.get('total_data_mb', 0) > min_traffic_mb and not (hide_multicast and is_multicast) %}
+        
+        {# --- THIS IS THE FIX --- #}
+        {# Use a multi-line block to safely append to the list without printing "None" #}
+        {% if conv.src_ip not in all_ips %}
+            {% do all_ips.append(conv.src_ip) %}
+        {% endif %}
+        {% if conv.dst_ip not in all_ips %}
+            {% do all_ips.append(conv.dst_ip) %}
+        {% endif %}
+        {# --- END OF FIX --- #}
+
+        {% set agg_key = conv.src_ip + '->' + conv.dst_ip + ':' + conv.dst_port %}
+        {% if agg_key not in aggregated_convs %}
+            {% do aggregated_convs.update({
+                agg_key: {
+                    'src_ip': conv.src_ip, 'dst_ip': conv.dst_ip, 'dst_port': conv.dst_port,
+                    'transport': conv.transport_protocol, 'total_mb': 0, 'count': 0
+                }
+            }) %}
+        {% endif %}
+        
+        {% do aggregated_convs[agg_key].update({
+            'total_mb': aggregated_convs[agg_key].total_mb + conv.total_data_mb,
+            'count': aggregated_convs[agg_key].count + 1
+        }) %}
+    {% endif %}
+{% endfor %}
+{#--- END OF DATA PREPARATION ---#}
+
+
+{#--- STAGE 2: RENDER THE VISUALIZATION ---#}
+<div class="card">
+    <div class="card-body d-flex justify-content-center">
+        <div class="mermaid">
+            graph LR
+            %% --- 1. Define Node Styles ---
+            classDef localNode fill:#cde,stroke:#666,stroke-width:2px,color:#333;
+            classDef publicNode fill:#f9f,stroke:#666,stroke-width:2px,color:#333;
+            %% --- 2. Define All Unique Nodes ---
+            {% for ip in all_ips %}
+            {{ ip | replace('.', '_') }}("{{ ip }}")
+            {% endfor %}
+            %% --- 3. Assign Styles to Nodes ---
+            {% for ip in all_ips %}
+                {% if ip.startswith(('192.168', '10.', '172.16', '172.17', '172.18', '172.19', '172.2', '172.3')) %}
+                    class {{ ip | replace('.', '_') }} localNode
+                {% else %}
+                    class {{ ip | replace('.', '_') }} publicNode
+                {% endif %}
+            {% endfor %}
+            %% --- 4. Define all the AGGREGATED Communication Links ---
+            {% for key, conv in aggregated_convs.items() %}
+                {% set label = conv.transport + ' ' + conv.dst_port|string + '<br/>' + ("%.2f"|format(conv.total_mb)) + ' MB' %}
+                {% if conv.count > 1 %}
+                    {% set label = label + '<br/>(' + (conv.count|string) + ' sessions)' %}
+                {% endif %}
+                
+                {% if conv.total_mb > 10 %}
+                    {{ conv.src_ip | replace('.', '_') }} ==>|"{{ label }}"| {{ conv.dst_ip | replace('.', '_') }}
+                {% else %}
+                    {{ conv.src_ip | replace('.', '_') }} -->|"{{ label }}"| {{ conv.dst_ip | replace('.', '_') }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="card-footer text-muted small">
+        Displaying aggregated connections with over {{ min_traffic_mb }} MB of traffic. Multicast traffic is {{ 'hidden' if hide_multicast else 'shown' }}.
+    </div>
+</div>
+
+{#--- STAGE 1: DATA PREPARATION (NO HTML IS RENDERED HERE) ---#}
+{% set min_traffic_mb = 0.0001 %}
+{% set hide_multicast = true %}
+
+{% set aggregated_convs = {} %}
+{% set all_ips = [] %}
+
+{% for conv in report_content %}
+    {% set is_multicast = conv.dst_ip.startswith(('224.', '239.')) %}
+    {% if conv.get('total_data_mb', 0) > min_traffic_mb and not (hide_multicast and is_multicast) %}
+        
+        {# --- THIS IS THE FIX --- #}
+        {# Use a multi-line block to safely append to the list without printing "None" #}
+        {% if conv.src_ip not in all_ips %}
+            {% do all_ips.append(conv.src_ip) %}
+        {% endif %}
+        {% if conv.dst_ip not in all_ips %}
+            {% do all_ips.append(conv.dst_ip) %}
+        {% endif %}
+        {# --- END OF FIX --- #}
+
+        {% set agg_key = conv.src_ip + '->' + conv.dst_ip + ':' + conv.dst_port %}
+        {% if agg_key not in aggregated_convs %}
+            {% do aggregated_convs.update({
+                agg_key: {
+                    'src_ip': conv.src_ip, 'dst_ip': conv.dst_ip, 'dst_port': conv.dst_port,
+                    'transport': conv.transport_protocol, 'total_mb': 0, 'count': 0
+                }
+            }) %}
+        {% endif %}
+        
+        {% do aggregated_convs[agg_key].update({
+            'total_mb': aggregated_convs[agg_key].total_mb + conv.total_data_mb,
+            'count': aggregated_convs[agg_key].count + 1
+        }) %}
+    {% endif %}
+{% endfor %}
+{#--- END OF DATA PREPARATION ---#}
+
+
+{#--- STAGE 2: RENDER THE VISUALIZATION ---#}
+<div class="card">
+    <div class="card-body d-flex justify-content-center">
+        <div class="mermaid">
+            graph LR
+            %% --- 1. Define Node Styles ---
+            classDef localNode fill:#cde,stroke:#666,stroke-width:2px,color:#333;
+            classDef publicNode fill:#f9f,stroke:#666,stroke-width:2px,color:#333;
+            %% --- 2. Define All Unique Nodes ---
+            {% for ip in all_ips %}
+            {{ ip | replace('.', '_') }}("{{ ip }}")
+            {% endfor %}
+            %% --- 3. Assign Styles to Nodes ---
+            {% for ip in all_ips %}
+                {% if ip.startswith(('192.168', '10.', '172.16', '172.17', '172.18', '172.19', '172.2', '172.3')) %}
+                    class {{ ip | replace('.', '_') }} localNode
+                {% else %}
+                    class {{ ip | replace('.', '_') }} publicNode
+                {% endif %}
+            {% endfor %}
+            %% --- 4. Define all the AGGREGATED Communication Links ---
+            {% for key, conv in aggregated_convs.items() %}
+                {% set label = conv.transport + ' ' + conv.dst_port|string + '<br/>' + ("%.2f"|format(conv.total_mb)) + ' MB' %}
+                {% if conv.count > 1 %}
+                    {% set label = label + '<br/>(' + (conv.count|string) + ' sessions)' %}
+                {% endif %}
+                
+                {% if conv.total_mb > 10 %}
+                    {{ conv.src_ip | replace('.', '_') }} ==>|"{{ label }}"| {{ conv.dst_ip | replace('.', '_') }}
+                {% else %}
+                    {{ conv.src_ip | replace('.', '_') }} -->|"{{ label }}"| {{ conv.dst_ip | replace('.', '_') }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="card-footer text-muted small">
+        Displaying aggregated connections with over {{ min_traffic_mb }} MB of traffic. Multicast traffic is {{ 'hidden' if hide_multicast else 'shown' }}.
+    </div>
+</div>
+
+
+
+
+{# This template takes 'rtc_flow_data' as input from Flask #}
+{% macro safe_id(ip) -%}{{ ip.replace('.', '_').replace(':', '_') }}{%- endmacro %}
+
+<div class="card">
+    <div class="card-body d-flex justify-content-center">
+        <div class="mermaid">
+            graph LR
+
+            %% --- Define Node Styles ---
+            classDef localNode fill:#cde,stroke:#666,stroke-width:2px,color:#333;
+            classDef publicNode fill:#f9f,stroke:#666,stroke-width:2px,color:#333;
+            classDef rtcNode fill:#FFC,stroke:#B5930D,stroke-width:2px,color:#333;
+
+            %% --- Collect and Define All Unique Nodes ---
+            {% set rtc_ips = [] %}
+            {% for conv in rtc_flow_data %}
+                {% if conv.src_ip not in rtc_ips %}{% do rtc_ips.append(conv.src_ip) %}{% endif %}
+                {% if conv.dst_ip not in rtc_ips %}{% do rtc_ips.append(conv.dst_ip) %}{% endif %}
+            {% endfor %}
+
+            {% for ip in rtc_ips %}
+            {{ safe_id(ip) }}("{{ ip }}")
+            {% endfor %}
+
+            %% --- Assign Styles to Nodes ---
+            {% for ip in rtc_ips %}
+                {% if ip.startswith(('192.168', '10.', '172.16')) %}
+                    class {{ safe_id(ip) }} localNode
+                {% else %}
+                    {# Highlight all public RTC IPs with a special color #}
+                    class {{ safe_id(ip) }} rtcNode
+                {% endif %}
+            {% endfor %}
+
+            %% --- Define all the Communication Links ---
+            {% for conv in rtc_flow_data %}
+                {% set label = conv.transport_protocol + ' ' + conv.dst_port %}
+                {% if conv.get('total_data_mb', 0) > 0.1 %}
+                    {% set label = label + '<br/>' + ("%.2f"|format(conv.total_data_mb)) + ' MB' %}
+                {% endif %}
+                
+                {# Use a thicker line for DTLS or high-volume traffic #}
+                {% if conv.application_protocols and 'DTLS' in conv.application_protocols or conv.get('total_data_mb', 0) > 5 %}
+                    {{ safe_id(conv.src_ip) }} ==>|"{{ label }}"| {{ safe_id(conv.dst_ip) }}
+                {% else %}
+                    {{ safe_id(conv.src_ip) }} -->|"{{ label }}"| {{ safe_id(conv.dst_ip) }}
+                {% endif %}
+            {% endfor %}
+            
+        </div>
+    </div>
+    <div class="card-footer text-muted small">
+        This graph shows only conversations where both endpoints were identified as part of the RTC setup/media flow (Signaling, STUN, TURN, ICE, DTLS).
+    </div>
+</div>

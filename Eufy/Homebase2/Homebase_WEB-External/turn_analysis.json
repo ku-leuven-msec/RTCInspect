@@ -1,0 +1,630 @@
+{
+  "geoip_summary": {
+    "3.123.109.172": {
+      "ip": "3.123.109.172",
+      "error": {
+        "type": "auth",
+        "status": 403,
+        "message": "Invalid or unknown token"
+      }
+    }
+  },
+  "turn_transactions": {
+    "db6aa62b655ba7e9e1b82dda": [
+      {
+        "timestamp": 1698673687.126518,
+        "src": "192.168.100.133:46587",
+        "dst": "3.123.109.172:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "db6aa62b655ba7e9e1b82dda",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0003004c2112a442db6aa62b655ba7e9e1b82dda000d00040000025800190004110000008022000a6c6962636f7265696365000000060020303331633735373931356663323938656333326361353836363334313438333680280004de2aaddd",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 600
+        },
+        "credentials": {
+          "username": "031c757915fc298ec32ca58663414836"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673687.148512,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:46587",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "db6aa62b655ba7e9e1b82dda",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0113005c2112a442db6aa62b655ba7e9e1b82dda0009001000000401556e617574686f72697a6564001500103534313034396165313433343061336300140009616e6b65722e636f6d00000080220018436f7475726e2d342e352e32202764616e2045696465722780280004b94a3523",
+        "credentials": {
+          "realm": "anker.com",
+          "nonce": "541049ae14340a3c"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorized"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673687.150273,
+        "src": "192.168.100.133:46587",
+        "dst": "3.123.109.172:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "db6aa62b655ba7e9e1b82dda",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300882112a442db6aa62b655ba7e9e1b82dda000d00040000025800190004110000008022000a6c6962636f7265696365000000060020303331633735373931356663323938656333326361353836363334313438333600140009616e6b65722e636f6d0000000015001035343130343961653134333430613363000800141aae95b1ac3613b7789e50e02ce0c1b325ad317580280004cee14714",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 600
+        },
+        "credentials": {
+          "username": "031c757915fc298ec32ca58663414836",
+          "realm": "anker.com",
+          "nonce": "541049ae14340a3c"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673687.17367,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:46587",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "db6aa62b655ba7e9e1b82dda",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442db6aa62b655ba7e9e1b82dda001600080001e5272269c9ee00200008000194e97651e69e000d00040000025880220018436f7475726e2d342e352e32202764616e204569646572270008001416bf7e90cae1d1e2aa2ad27a06cf77e90c328b2880280004a57e6f45",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "3.123.109.172:50229",
+          "XOR-MAPPED-ADDRESS": "87.67.66.220:46587",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "87.67.66.220:46587",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "78694af5d16150586e4d0c75": [
+      {
+        "timestamp": 1698673687.526509,
+        "src": "192.168.100.133:46587",
+        "dst": "3.123.109.172:3478",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "78694af5d16150586e4d0c75",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000800842112a44278694af5d16150586e4d0c75001200080001d9706f044cb18022000a6c6962636f7265696365000000060020303331633735373931356663323938656333326361353836363334313438333600140009616e6b65722e636f6d00000000150010353431303439616531343334306133630008001430c74cb54ee61d5c86cc5d79e93d111af40ade8380280004be8fec0c",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "78.22.232.243:63586"
+        },
+        "credentials": {
+          "username": "031c757915fc298ec32ca58663414836",
+          "realm": "anker.com",
+          "nonce": "541049ae14340a3c"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673687.547162,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:46587",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "78694af5d16150586e4d0c75",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a44278694af5d16150586e4d0c7580220018436f7475726e2d342e352e32202764616e204569646572270008001418ed31e8bcea8e3504290ebae3d2e6b03d8af9bb80280004d5fc27ee",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "3ca24a55dd1ff5a22cfa4fba": [
+      {
+        "timestamp": 1698673702.186372,
+        "src": "192.168.100.133:46587",
+        "dst": "3.123.109.172:3478",
+        "message_type": "Refresh Request",
+        "transaction_id": "3ca24a55dd1ff5a22cfa4fba",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000400802112a4423ca24a55dd1ff5a22cfa4fba000d0004000002588022000a6c6962636f7265696365000000060020303331633735373931356663323938656333326361353836363334313438333600140009616e6b65722e636f6d0000000015001035343130343961653134333430613363000800143cc9daf94e39534b3ae5ebc706c9ffcb755f8fd080280004aa9df70c",
+        "attrs_view": {
+          "LIFETIME": 600
+        },
+        "credentials": {
+          "username": "031c757915fc298ec32ca58663414836",
+          "realm": "anker.com",
+          "nonce": "541049ae14340a3c"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673702.207396,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:46587",
+        "message_type": "Refresh Success Response",
+        "transaction_id": "3ca24a55dd1ff5a22cfa4fba",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "010400442112a4423ca24a55dd1ff5a22cfa4fba000d00040000025880220018436f7475726e2d342e352e32202764616e2045696465722700080014d3bb09a740d4cf164f82c0d91b5f72e201bf11e9802800040cc1d4a1",
+        "attrs_view": {
+          "LIFETIME": 600
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "f1d96624908a053ba1a158c8": [
+      {
+        "timestamp": 1698673708.291799,
+        "src": "192.168.100.133:40222",
+        "dst": "3.123.109.172:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "f1d96624908a053ba1a158c8",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0003004c2112a442f1d96624908a053ba1a158c8000d00040000025800190004110000008022000a6c6962636f72656963650000000600203261636336663336323032656434373736616131343332356634643734336235802800046c7720d3",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 600
+        },
+        "credentials": {
+          "username": "2acc6f36202ed4776aa14325f4d743b5"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673708.313481,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:40222",
+        "message_type": "Allocate Error Response",
+        "transaction_id": "f1d96624908a053ba1a158c8",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "None",
+        "integrity_attribute": null,
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": null,
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0113005c2112a442f1d96624908a053ba1a158c80009001000000401556e617574686f72697a6564001500106463633533623565666338376130623300140009616e6b65722e636f6d00000080220018436f7475726e2d342e352e32202764616e2045696465722780280004e4ecb276",
+        "credentials": {
+          "realm": "anker.com",
+          "nonce": "dcc53b5efc87a0b3"
+        },
+        "error": {
+          "code": 401,
+          "reason": "Unauthorized"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673708.31473,
+        "src": "192.168.100.133:40222",
+        "dst": "3.123.109.172:3478",
+        "message_type": "Allocate Request",
+        "transaction_id": "f1d96624908a053ba1a158c8",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000300882112a442f1d96624908a053ba1a158c8000d00040000025800190004110000008022000a6c6962636f7265696365000000060020326163633666333632303265643437373661613134333235663464373433623500140009616e6b65722e636f6d000000001500106463633533623565666338376130623300080014d48853f1b91d9f1226265712ac8385e41b8acde380280004c03e8abb",
+        "attrs_view": {
+          "REQUESTED-TRANSPORT": {
+            "protocol_num": 17,
+            "protocol": "UDP"
+          },
+          "LIFETIME": 600
+        },
+        "credentials": {
+          "username": "2acc6f36202ed4776aa14325f4d743b5",
+          "realm": "anker.com",
+          "nonce": "dcc53b5efc87a0b3"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673708.337864,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:40222",
+        "message_type": "Allocate Success Response",
+        "transaction_id": "f1d96624908a053ba1a158c8",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": true,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0103005c2112a442f1d96624908a053ba1a158c8001600080001ec022269c9ee002000080001bc0c7651e69e000d00040000025880220018436f7475726e2d342e352e32202764616e2045696465722700080014a939a2a872ff4355e9d99ae20d47e36a94dbe34f80280004513864c6",
+        "attrs_view": {
+          "XOR-RELAYED-ADDRESS": "3.123.109.172:52496",
+          "XOR-MAPPED-ADDRESS": "87.67.66.220:40222",
+          "LIFETIME": 600
+        },
+        "reflexive_address_observed": "87.67.66.220:40222",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "57207e14b1bb5433baa947af": [
+      {
+        "timestamp": 1698673708.643443,
+        "src": "192.168.100.133:40222",
+        "dst": "3.123.109.172:3478",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "57207e14b1bb5433baa947af",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000800842112a44257207e14b1bb5433baa947af001200080001f3476f044cb18022000a6c6962636f7265696365000000060020326163633666333632303265643437373661613134333235663464373433623500140009616e6b65722e636f6d0000000015001064636335336235656663383761306233000800146412ba5077e9cf1118d11045dbe13000217f3bc180280004022a8525",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "78.22.232.243:53845"
+        },
+        "credentials": {
+          "username": "2acc6f36202ed4776aa14325f4d743b5",
+          "realm": "anker.com",
+          "nonce": "dcc53b5efc87a0b3"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673708.664394,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:40222",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "57207e14b1bb5433baa947af",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a44257207e14b1bb5433baa947af80220018436f7475726e2d342e352e32202764616e20456964657227000800146ce53437faa6951448ae968c244c5c61b903dcdb80280004f0023a2e",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ],
+    "eedca093df5220056c506c3b": [
+      {
+        "timestamp": 1698673708.711152,
+        "src": "192.168.100.133:40222",
+        "dst": "3.123.109.172:3478",
+        "message_type": "CreatePermission Request",
+        "transaction_id": "eedca093df5220056c506c3b",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Long-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Unknown",
+        "library_version": "Unknown",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "000800842112a442eedca093df5220056c506c3b001200080001e4c32269c9ee8022000a6c6962636f7265696365000000060020326163633666333632303265643437373661613134333235663464373433623500140009616e6b65722e636f6d000000001500106463633533623565666338376130623300080014f56888089167673be7d8d71187ccfd0a4f406b1e80280004f8541820",
+        "attrs_view": {
+          "XOR-PEER-ADDRESS": "3.123.109.172:50641"
+        },
+        "credentials": {
+          "username": "2acc6f36202ed4776aa14325f4d743b5",
+          "realm": "anker.com",
+          "nonce": "dcc53b5efc87a0b3"
+        },
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      },
+      {
+        "timestamp": 1698673708.732194,
+        "src": "3.123.109.172:3478",
+        "dst": "192.168.100.133:40222",
+        "message_type": "CreatePermission Success Response",
+        "transaction_id": "eedca093df5220056c506c3b",
+        "turn_version_standard": "RFC 5766 / 8656",
+        "message_authentication_type": "Short-Term",
+        "integrity_attribute": "MESSAGE-INTEGRITY",
+        "internal_ip_exposure_via_mapped_address": false,
+        "library_name": "Coturn",
+        "library_version": "4.5.2",
+        "oauth": {
+          "supported_hint_seen": false,
+          "used": false,
+          "kid": null,
+          "integrity_algorithm": "HMAC-SHA1",
+          "policy_violation": false
+        },
+        "raw_payload_hex": "0108003c2112a442eedca093df5220056c506c3b80220018436f7475726e2d342e352e32202764616e2045696465722700080014d744c98ee6525af96f555ef3e8ab1ebc3d510321802800045623acba",
+        "transaction_authentication_type": "Long-Term",
+        "transaction_oauth": {
+          "used": false,
+          "hint_seen": false,
+          "policy_violation": false
+        }
+      }
+    ]
+  },
+  "turn_allocations": {
+    "192.168.100.133:46587|3.123.109.172:3478": {
+      "client": "192.168.100.133:46587",
+      "server": "3.123.109.172:3478",
+      "relayed_address": "3.123.109.172:50229",
+      "requested_transport": null,
+      "lifetime": 600,
+      "allocated": true,
+      "refresh_count": 1,
+      "first_seen": 1698673687.126518,
+      "last_seen": 1698673702.207396,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "78.22.232.243:63586"
+      ],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorized"
+        }
+      ]
+    },
+    "192.168.100.133:40222|3.123.109.172:3478": {
+      "client": "192.168.100.133:40222",
+      "server": "3.123.109.172:3478",
+      "relayed_address": "3.123.109.172:52496",
+      "requested_transport": null,
+      "lifetime": 600,
+      "allocated": true,
+      "refresh_count": 0,
+      "first_seen": 1698673708.291799,
+      "last_seen": 1698673708.732194,
+      "auth_modes": [
+        "Long-Term",
+        "None",
+        "Short-Term"
+      ],
+      "oauth_used": false,
+      "permissions": [
+        "3.123.109.172:50641",
+        "78.22.232.243:53845"
+      ],
+      "channels": {},
+      "data": {
+        "count": 0,
+        "bytes": 0
+      },
+      "errors": [
+        {
+          "code": 401,
+          "reason": "Unauthorized"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,303 @@
+<!-- GeoIP (with error-tolerant fields) -->
+{% if report_content.geoip_summary %}
+<div class="card mb-3">
+  <div class="card-header bg-light">
+    <h5 class="mb-0"><i class="bi bi-geo-alt-fill"></i> GeoIP for TURN Servers</h5>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped table-sm mb-0">
+      <thead>
+        <tr>
+          <th>IP Address</th>
+          <th>Hostname</th>
+          <th>Location</th>
+          <th>Organization (ASN)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ip, info in report_content.geoip_summary.items() %}
+        <tr>
+          <td><code>{{ ip }}</code></td>
+          {% if info.error %}
+            <td colspan="3" class="text-danger">
+              <i class="bi bi-exclamation-triangle"></i> Error: {{ info.error }}
+            </td>
+          {% else %}
+            <td>{{ info.hostname | default('N/A') }}</td>
+            <td>{{ info.city | default('N/A') }}, {{ info.country | default('N/A') }}</td>
+            <td>{{ info.organization | default('N/A') }}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<!-- ===== TURN Allocations (overview) ===== -->
+{% if report_content.turn_allocations %}
+<div class="card mb-3">
+  <div class="card-header bg-light">
+    <h5 class="mb-0"><i class="bi bi-diagram-3"></i> TURN Allocations</h5>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-sm table-hover mb-0 align-middle">
+        <thead>
+          <tr>
+            <th>Client</th>
+            <th>Server</th>
+            <th>Relayed</th>
+            <th>Transport</th>
+            <th>Lifetime</th>
+            <th>Refreshes</th>
+            <th>Perms</th>
+            <th>Channels</th>
+            <th>Data</th>
+            <th>Auth Modes</th>
+            <th>OAuth</th>
+            <th>First / Last</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for key, a in report_content.turn_allocations.items() %}
+          <tr>
+            <td><code>{{ a.client }}</code></td>
+            <td><code>{{ a.server }}</code></td>
+            <td>
+              {% if a.relayed_address %}
+                <code>{{ a.relayed_address }}</code>
+              {% else %}
+                <span class="text-muted">—</span>
+              {% endif %}
+            </td>
+            <td>{{ a.requested_transport or '—' }}</td>
+            <td>
+              {% if a.lifetime is not none %}{{ a.lifetime }}s{% else %}<span class="text-muted">—</span>{% endif %}
+            </td>
+            <td>{{ a.refresh_count }}</td>
+            <td>
+              {% if a.permissions and a.permissions|length %}
+                <span class="badge bg-light text-dark">{{ a.permissions|length }}</span>
+              {% else %}<span class="text-muted">0</span>{% endif %}
+            </td>
+            <td>
+              {% if a.channels and a.channels|length %}
+                <span class="badge bg-light text-dark">{{ a.channels|length }}</span>
+              {% else %}<span class="text-muted">0</span>{% endif %}
+            </td>
+            <td class="small">
+              {{ a.data.count }} pkt{% if a.data.count != 1 %}s{% endif %} / {{ a.data.bytes }} B
+            </td>
+            <td class="small">
+              {% if a.auth_modes and a.auth_modes|length %}
+                {{ a.auth_modes|join(', ') }}
+              {% else %}<span class="text-muted">—</span>{% endif %}
+            </td>
+            <td>
+              {% if a.oauth_used %}
+                <span class="badge text-bg-warning">OAuth</span>
+              {% else %}<span class="text-muted">—</span>{% endif %}
+            </td>
+            <td class="small">
+              <span class="text-muted">{{ format_timestamp(a.first_seen) }}</span><br>
+              <span class="text-muted">{{ format_timestamp(a.last_seen) }}</span>
+            </td>
+          </tr>
+          {% if (a.permissions and a.permissions|length) or (a.channels and a.channels|length) or (a.errors and a.errors|length) %}
+          <tr class="table-light">
+            <td colspan="12" class="small">
+              {% if a.permissions and a.permissions|length %}
+                <div class="mb-1">
+                  <strong>Permissions:</strong>
+                  {% for p in a.permissions %}
+                    <code class="me-2">{{ p }}</code>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              {% if a.channels and a.channels|length %}
+                <div class="mb-1">
+                  <strong>Channels:</strong>
+                  {% for ch, peer in a.channels.items() %}
+                    <span class="me-2">#{{ ch }} → <code>{{ peer }}</code></span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- ===== TURN Transactions (accordion) ===== -->
+<div class="accordion" id="turnTransactionAccordion">
+  {% set transactions = report_content.turn_transactions.items() %}
+  {% set display_limit = 20 %}
+
+  {% for tx_id, turn_messages in transactions %}
+    {% if loop.index0 == display_limit %}
+      <p class="text-center my-3">
+        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#moreTurnTransactions">
+          <i class="bi bi-chevron-down"></i> Show {{ transactions|length - display_limit }} more transactions...
+        </button>
+      </p>
+      <div class="collapse" id="moreTurnTransactions">
+    {% endif %}
+
+    {% set methods = turn_messages | map(attribute='message_type') | list %}
+    {% set err_count = (turn_messages | selectattr('error') | list) | length %}
+    {% set any_oauth = (turn_messages | selectattr('oauth') | selectattr('oauth.used') | list) | length > 0 %}
+    {% set any_violation = (turn_messages | selectattr('oauth') | selectattr('oauth.policy_violation') | list) | length > 0 %}
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-turn-{{ tx_id }}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-turn-{{ tx_id }}" aria-expanded="false" aria-controls="collapse-turn-{{ tx_id }}">
+          Tx: <strong class="ms-1 me-2">{{ tx_id }}</strong>
+          <span class="badge bg-light text-dark me-2">{{ methods|unique|join(', ') }}</span>
+          {% if err_count > 0 %}
+            <span class="badge text-bg-warning me-2">{{ err_count }} error{{ 's' if err_count!=1 }}</span>
+          {% endif %}
+          {% if any_oauth %}
+            <span class="badge text-bg-warning me-2">OAuth</span>
+          {% endif %}
+          {% if any_violation %}
+            <span class="badge text-bg-danger">OAuth misuse</span>
+          {% endif %}
+        </button>
+      </h2>
+
+      <div id="collapse-turn-{{ tx_id }}" class="accordion-collapse collapse" aria-labelledby="heading-turn-{{ tx_id }}" data-bs-parent="#turnTransactionAccordion">
+        <div class="accordion-body">
+          {% for msg in turn_messages %}
+          <div class="mb-3 p-3 border rounded">
+            <h6 class="mb-2">
+              {% if 'Error' in msg.message_type %}
+                <span class="badge text-bg-warning">{{ msg.message_type }}</span>
+              {% elif 'Success' in msg.message_type %}
+                <span class="badge text-bg-success">{{ msg.message_type }}</span>
+              {% else %}
+                <span class="badge text-bg-primary">{{ msg.message_type }}</span>
+              {% endif %}
+              <small class="text-muted float-end">{{ format_timestamp(msg.timestamp) }}</small>
+            </h6>
+
+            <div class="small mb-2">
+              <code>{{ msg.src }}</code> → <code>{{ msg.dst }}</code>
+              {% if msg.integrity_attribute %}
+                <span class="badge text-bg-dark ms-2">{{ msg.integrity_attribute }}</span>
+              {% endif %}
+              {% if msg.oauth and msg.oauth.used %}
+                <span class="badge text-bg-warning ms-1">OAuth</span>
+              {% endif %}
+              {% if msg.oauth and msg.oauth.policy_violation %}
+                <span class="badge text-bg-danger ms-1">OAuth misuse</span>
+              {% endif %}
+            </div>
+
+            <table class="table table-sm table-bordered mb-2">
+              <tbody>
+                <tr><th style="width: 30%;">Auth (msg)</th><td>{{ msg.message_authentication_type }}</td></tr>
+                <tr><th>Auth (tx)</th><td>{{ msg.transaction_authentication_type }}</td></tr>
+                <tr><th>Library</th><td>{{ msg.library_name | default('Unknown') }} / {{ msg.library_version | default('Unknown') }}</td></tr>
+                {% if msg.error %}
+                  <tr class="table-warning">
+                    <th>Error</th>
+                    <td><strong>{{ msg.error.code }}</strong> {{ msg.error.reason }}</td>
+                  </tr>
+                {% endif %}
+                {% if msg.hints %}
+                  <tr class="table-warning">
+                    <th>Hint</th>
+                    <td>
+                      {% for h in msg.hints %}
+                        <div class="small">{{ h }}</div>
+                      {% endfor %}
+                    </td>
+                  </tr>
+                {% endif %}
+                {% if msg.credentials %}
+                  {% for key, value in msg.credentials.items() %}
+                    <tr class="table-info">
+                      <th>Credential: {{ key|replace('_',' ')|title }}</th>
+                      <td>
+                        {% if key == 'oauth_access_token_meta' %}
+                          <code>present={{ value.present }}, length={{ value.length }}, preview={{ value.preview }}</code>
+                        {% else %}
+                          <code>{{ value }}</code>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% endif %}
+              </tbody>
+            </table>
+
+            {% set av = msg.attrs_view %}
+            {% if av %}
+            <div class="accordion" id="accordion-turn-{{ tx_id }}-{{ loop.index }}">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-turn-{{ tx_id }}-{{ loop.index }}">
+                    Show Parsed Attributes
+                  </button>
+                </h2>
+                <div id="collapse-turn-{{ tx_id }}-{{ loop.index }}" class="accordion-collapse collapse">
+                  <div class="accordion-body p-0">
+                    <table class="table table-sm table-hover mb-0">
+                      <tbody class="small">
+                        {% for k, v in av.items() %}
+                          <tr>
+                            <td style="width: 35%;"><strong>{{ k }}</strong></td>
+                            <td>
+                              {% if v is mapping %}
+                                <code>{{ v | tojson }}</code>
+                              {% else %}
+                                <code>{{ v }}</code>
+                              {% endif %}
+                            </td>
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="accordion mt-2" id="accordion-raw-{{ tx_id }}-{{ loop.index }}">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-raw-{{ tx_id }}-{{ loop.index }}">
+                    Show Raw Payload (Hex)
+                  </button>
+                </h2>
+                <div id="collapse-raw-{{ tx_id }}-{{ loop.index }}" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <pre class="bg-dark text-white p-2 rounded small"><code>{{ msg.raw_payload_hex }}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% if transactions|length > display_limit %}
+    </div> <!-- closes #moreTurnTransactions -->
+  {% endif %}
+
+  {% if not transactions %}
+    <div class="alert alert-secondary">No TURN transactions were found in this capture.</div>
+  {% endif %}
+</div>

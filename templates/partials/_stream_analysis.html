@@ -1,0 +1,89 @@
+<div class="row">
+    <!-- Identified Media Stream -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5><i class="bi bi-diagram-3"></i> Media Stream Info</h5>
+            </div>
+            <div class="card-body">
+                
+                {# --- PORT EXTRACTION LOGIC --- #}
+                {% set session_str = report_content.identified_media_stream.session_id %}
+                {% set port1 = 'N/A' %}
+                {% set port2 = 'N/A' %}
+                {# Safely parse the string to avoid errors if the format ever changes #}
+                {% if ':' in session_str and '-' in session_str %}
+                    {# Turns "PROTO:IP1:PORT1-IP2:PORT2" into ["IP1:PORT1", "IP2:PORT2"] #}
+                    {% set endpoints = session_str.split(':', 1)[1].split('-') %}
+                    {# Extracts the port from "IP:PORT" by splitting on the last colon #}
+                    {% set port1 = endpoints[0].rsplit(':', 1)[1] %}
+                    {% set port2 = endpoints[1].rsplit(':', 1)[1] %}
+                {% endif %}
+                {# --- END LOGIC --- #}
+
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <th style="width: 40%;">Session ID</th>
+                            <td><code>{{ session_str }}</code></td>
+                        </tr>
+                        <!-- NEW ROW TO DISPLAY PORTS -->
+                        <tr>
+                            <th>Ports Used</th>
+                            <td>
+                                <code>{{ port1 }}</code> 
+                                <i class="bi bi-arrow-left-right"></i> 
+                                <code>{{ port2 }}</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Total Packets</th>
+                            <td>{{ report_content.identified_media_stream.total_packets | int }}</td>
+                        </tr>
+                        <tr>
+                            <th>Total Data Volume</th>
+                            <td>{{ "%.2f"|format(report_content.identified_media_stream.total_data_volume_mb) }} MB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encryption Analysis (No changes here) -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5><i class="bi bi-shield-lock"></i> Encryption Analysis</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <th style="width: 40%;">Avg. Payload Entropy</th>
+                            <td>{{ "%.4f"|format(report_content.encryption_analysis.average_payload_entropy) }}</td>
+                        </tr>
+                        <tr>
+                            <th>Encryption Grade</th>
+                            <td>
+                                {% set grade = report_content.encryption_analysis.encryption_grade %}
+                                {% if 'Very High' in grade or 'Strongly' in grade %}
+                                    <span class="badge text-bg-success">{{ grade }}</span>
+                                {% elif 'Medium' in grade %}
+                                    <span class="badge text-bg-warning">{{ grade }}</span>
+                                {% else %}
+                                    <span class="badge text-bg-danger">{{ grade }}</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="mt-3 text-muted small">{{ report_content.encryption_analysis.analysis_note }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info mt-3">
+    <p class="mb-1"><strong>Protocol Identification:</strong> {{ report_content.extra_info.protocol_identification }}</p>
+</div>

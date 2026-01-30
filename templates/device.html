@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Captures for {{ device_name }} - {{ super() }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ device_name }}</li>
+      </ol>
+    </nav>
+
+    <h2 class="mb-3"><i class="bi bi-display"></i> Scans for: {{ device_name }}</h2>
+    <p class="lead">Select a capture to view the detailed security report.</p>
+
+    <div class="list-group">
+        {# Sort the captures in reverse order to show the newest first #}
+        {% for capture in captures %}
+        <a href="{{ url_for('capture_details', device_name=device_name, capture_id=capture) }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>
+                <i class="bi bi-camera-video"></i>
+                {{ capture }}
+            </span>
+            <i class="bi bi-chevron-right"></i>
+        </a>
+        {% else %}
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">No Captures Found!</h4>
+            <p>The directory for this device exists, but it contains no scan capture sub-folders.</p>
+            <hr>
+            <p class="mb-0">Make sure your results are being saved correctly in the format: `results/{{ device_name }}/capture_id/`</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

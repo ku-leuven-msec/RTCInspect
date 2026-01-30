@@ -1,0 +1,215 @@
+{# --- RECURSIVE MACRO DEFINITION --- #}
+{% macro render_dict(data) %}
+    <dl class="row mb-0">
+    {% for key, value in data.items() %}
+        <dt class="col-sm-4 text-muted">{{ key.replace('_', ' ') | title }}</dt>
+        <dd class="col-sm-8">
+        {% if key == 'candidate' %}
+            <pre class="mb-0 small"><code>{{ value }}</code></pre>
+        {% elif value is mapping %}
+            {{ render_dict(value) }}
+        {% elif value is iterable and value is not string %}
+            <ul class="list-unstyled mb-0">
+            {% for item in value %}
+                <li><code>{{ item }}</code></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <code>{{ value }}</code>
+        {% endif %}
+        </dd>
+    {% endfor %}
+    </dl>
+{% endmacro %}
+
+
+
+<div class="accordion" id="signalingReportAccordion">
+
+{# --- RENDER HEURISTIC-BASED SESSIONS --- #}
+{% if report_content.get('detection_method') == 'Heuristic-Based' %}
+
+    {% set sessions = report_content.sessions %}
+    {% set display_limit = 20 %}
+
+    {% for session in sessions %}
+        {# When we hit the limit, insert the "show more" button and open a collapse container #}
+        {% if loop.index0 == display_limit %}
+            <p class="text-center my-3">
+                <button class="btn btn-sm btn-outline-secondary" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#moreSigSessions">
+                    <i class="bi bi-chevron-down"></i>
+                    Show {{ sessions|length - display_limit }} more sessions...
+                </button>
+            </p>
+            <div class="collapse" id="moreSigSessions">
+        {% endif %}
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-sig-{{ loop.index }}">
+                 <button class="accordion-button collapsed" type="button"
+                         data-bs-toggle="collapse" data-bs-target="#collapse-sig-{{ loop.index }}">
+                    Session: <strong>{{ session.session_id }}</strong>
+                    <span class="badge bg-primary ms-3">Likelihood: {{ session.likelihood_score }}/10</span>
+                </button>
+            </h2>
+            <div id="collapse-sig-{{ loop.index }}" class="accordion-collapse collapse"
+                 data-bs-parent="#signalingReportAccordion">
+                <div class="accordion-body">
+                    <!-- START: HEURISTIC DETAILS -->
+                    <h6><i class="bi bi-geo-alt-fill"></i> Geographic Information</h6>
+                    <div class="p-3 border rounded mb-3">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-3 text-muted">Server Info</dt>
+                            <dd class="col-sm-9"><code>{{ session.geoip_info }}</code></dd>
+                        </dl>
+                    </div>
+
+                    <h6>Evidence:</h6>
+                    <ul class="list-group list-group-flush mb-3">
+                        {% for ev in session.evidence %}
+                        <li class="list-group-item ps-0">{{ ev }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <p>
+                        <button class="btn btn-outline-secondary btn-sm" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseHeuristicDetails-{{ loop.index }}">
+                            <i class="bi bi-search"></i> Show/Hide Payloads & Extracted Strings
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseHeuristicDetails-{{ loop.index }}">
+                        <div class="card card-body">
+                            <h6>Payload Snippet:</h6>
+                            <pre class="bg-dark text-white p-2 rounded"><code>{{ session.payload_snippet }}</code></pre>
+
+                            {% if session.extracted_strings %}
+                                <hr>
+                                <h6><i class="bi bi-hash"></i> Extracted Hex Strings</h6>
+                                {% if session.extracted_strings.hex_strings %}
+                                    <ul class="list-unstyled">
+                                        {% for hex_str in session.extracted_strings.hex_strings | unique %}
+                                            <li><code>{{ hex_str }}</code></li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <p class="text-muted fst-italic">None found.</p>
+                                {% endif %}
+
+                                <hr>
+                                <h6><i class="bi bi-journal-code"></i> Extracted Base64 Strings (Unique)</h6>
+                                {% if session.extracted_strings.base64_strings %}
+                                    <ul class="list-unstyled">
+                                        {% for b64_str in session.extracted_strings.base64_strings | unique %}
+                                            <li><code>{{ b64_str }}</code></li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <p class="text-muted fst-italic">None found.</p>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!-- END: HEURISTIC DETAILS -->
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% if sessions|length > display_limit %}
+        </div> {# closes #moreSigSessions #}
+    {% endif %}
+
+
+{# --- RENDER KEYWORD-BASED SESSIONS --- #}
+{% else %}
+
+    {% set sessions = report_content.items() %}
+    {% set display_limit = 20 %}
+
+    {% for session_id, session_data in sessions %}
+        {% set safe_id = session_id | replace(':', '-') | replace('.', '-') %}
+
+        {% if loop.index0 == display_limit %}
+            <p class="text-center my-3">
+                <button class="btn btn-sm btn-outline-secondary" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#moreSigSessions">
+                    <i class="bi bi-chevron-down"></i>
+                    Show {{ sessions|length - display_limit }} more sessions...
+                </button>
+            </p>
+            <div class="collapse" id="moreSigSessions">
+        {% endif %}
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-sig-{{ safe_id }}">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-sig-{{ safe_id }}">
+                    Session: <strong>{{ session_id }}</strong>
+                    {% if session_data.important_info.get('turn_password') or session_data.important_info.get('ice-pwd') %}
+                        <span class="badge bg-danger ms-3">Credentials Found</span>
+                    {% endif %}
+                </button>
+            </h2>
+            <div id="collapse-sig-{{ safe_id }}" class="accordion-collapse collapse"
+                 data-bs-parent="#signalingReportAccordion">
+                <div class="accordion-body">
+
+                    {% set creds = session_data.important_info %}
+                    {% if creds.get('turn_password') or creds.get('ice-pwd') or creds.get('dtls-fingerprint') %}
+                    <div class="alert alert-danger">
+                        <h5 class="alert-heading"><i class="bi bi-exclamation-triangle-fill"></i> Credentials Found in Cleartext!</h5>
+                        {% if creds.get('turn_password') %}
+                            <p class="mb-1"><strong>TURN Password:</strong> <code>{{ creds.turn_password }}</code></p>
+                        {% endif %}
+                        {% if creds.get('ice-pwd') %}
+                            <p class="mb-0"><strong>ICE Password:</strong> <code>{{ creds['ice-pwd'] }}</code></p>
+                        {% endif %}
+                        {% if creds.get('dtls-fingerprint') %}
+                            <p class="mb-0"><strong>DTLS Fingerprint:</strong> <code>{{ creds['dtls-fingerprint'] }}</code></p>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    <h5 class="card-title">Summary</h5>
+                    <div class="p-3 border rounded mb-3">
+                        {{ render_dict(session_data.summary) }}
+                    </div>
+
+                    <p>
+                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseInfo-{{ loop.index }}">
+                        Show/Hide All Extracted Info
+                      </button>
+                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseRawPackets-{{ loop.index }}">
+                        Show/Hide Raw Packets ({{ session_data.packets|length }})
+                      </button>
+                    </p>
+
+                    <div class="collapse" id="collapseInfo-{{ loop.index }}">
+                      <div class="card card-body">
+                            <h6 class="card-title">Important Info</h6>
+                            {{ render_dict(session_data.important_info) }}
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseRawPackets-{{ loop.index }}">
+                      <div class="card card-body mt-2">
+                        <h6 class="card-title">Packet Payloads</h6>
+                        {% for packet in session_data.packets %}
+                            <pre class="bg-dark text-white p-2 rounded small mb-1"><code>{{ packet.payload_snippet }}</code></pre>
+                        {% endfor %}
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+   {% if sessions|length > display_limit %}
+        </div> {# closes #moreSigSessions #}
+    {% endif %}
+
+{% endif %}

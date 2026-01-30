@@ -1,0 +1,104 @@
+<div class="row g-3 mb-4">
+    <!-- Protocols Used -->
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-header"><i class="bi bi-diagram-3-fill"></i> Protocols Used</div>
+            <div class="list-group list-group-flush">
+                <div class="list-group-item d-flex justify-content-between align-items-center">STUN {% if summary.stun_used == 'Yes' %}<span class="badge text-bg-success">Yes</span>{% elif summary.stun_used == 'No' %}<span class="badge text-bg-secondary">No</span>{% else %}<span class="badge text-bg-light text-dark">N/A</span>{% endif %}</div>
+                <div class="list-group-item d-flex justify-content-between align-items-center">TURN {% if summary.turn_used == 'Yes' %}<span class="badge text-bg-success">Yes</span>{% elif summary.turn_used == 'No' %}<span class="badge text-bg-secondary">No</span>{% else %}<span class="badge text-bg-light text-dark">N/A</span>{% endif %}</div>
+                <div class="list-group-item d-flex justify-content-between align-items-center">ICE {% if summary.ice_used == 'Yes' %}<span class="badge text-bg-success">Yes</span>{% elif summary.ice_used == 'No' %}<span class="badge text-bg-secondary">No</span>{% else %}<span class="badge text-bg-light text-dark">N/A</span>{% endif %}</div>
+                <div class="list-group-item d-flex justify-content-between align-items-center">DTLS (Media) {% if summary.dtls_used == 'Yes' %}<span class="badge text-bg-success">Yes</span>{% elif summary.dtls_used == 'No' %}<span class="badge text-bg-secondary">No</span>{% else %}<span class="badge text-bg-light text-dark">N/A</span>{% endif %}</div>
+                <div class="list-group-item d-flex justify-content-between align-items-center">TLS (Signaling/Other) {% if summary.tls_used == 'Yes' %}<span class="badge text-bg-success">Yes</span>{% elif summary.tls_used == 'No' %}<span class="badge text-bg-secondary">No</span>{% else %}<span class="badge text-bg-light text-dark">N/A</span>{% endif %}</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Signaling Analysis -->
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-header"><i class="bi bi-broadcast-pin"></i> Signaling Analysis</div>
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ summary.signaling_method }}</h5>
+                <p class="card-text">Detection Method</p>
+            </div>
+            <div class="card-footer">
+                {% if summary.TURN_credentials_found %}
+                <div class="alert alert-danger d-flex align-items-center p-2 mb-0" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><div>TURN Credentials Found!</div>
+                </div>
+                {% endif %}
+
+                {% if summary.ICE_credentials_found %}
+                <div class="alert alert-danger d-flex align-items-center p-2 mb-0" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><div>ICE Credentials Found!</div>
+                </div>
+                 {% endif %}
+
+                {% if summary.ice_candidates %}
+                <div class="alert alert-danger d-flex align-items-center p-2 mb-0" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><div>ICE Candidates Found!</div>
+                </div>
+                 {% endif %}    
+                {% if summary.IPs_in_candidates %}
+                <div class="alert alert-warning d-flex align-items-center p-2 mb-0" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><div>IP Addresses Found in ICE Candidates!</div>
+                </div>
+                {% endif %}
+                {% if summary.signaling_method == "Not Found" and not (summary.TURN_credentials_found or summary.ICE_credentials_found) %}
+                <div class="alert alert-success d-flex align-items-center p-2 mb-0" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i><div>No Obvious Cleartext Credentials</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Certificate Health -->
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-header"><i class="bi bi-file-earmark-lock-fill"></i> Cryptographic Hygiene</div>
+            <div class="list-group list-group-flush">
+                <div class="card-body text-center">
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        Self-Signed Certs
+                        {% if summary.self_signed_certs %}
+                            <span class="badge text-bg-warning">Yes</span>
+                        {% else %}
+                            <span class="badge text-bg-success">No</span>
+                        {% endif %}
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        Outdated Certs
+                        {% if summary.outdated_certs %}
+                            <span class="badge text-bg-danger">Yes</span>
+                        {% else %}
+                            <span class="badge text-bg-success">No</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-footer">
+                    {% if summary.weak_ciphers %}
+                    <div class="alert alert-danger d-flex align-items-center p-2 mb-0" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i><div>Weak Ciphers Detected in DTLS/TLS Connections!</div>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-success d-flex align-items-center p-2 mb-0" role="alert">
+                        <i class="bi bi-check-circle-fill me-2"></i><div>No Weak Ciphers Detected</div>
+                    </div>
+                    {% endif %}
+                    {% if summary.DTLS_certificate_reuse %}
+                    <div class="alert alert-danger d-flex align-items-center p-2 mb-0" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i><div>DTLS Certificate Reuse Detected!</div>
+                         <i class="bi bi-info-circle-fill ms-1" 
+                               data-bs-toggle="tooltip" 
+                               data-bs-placement="right" 
+                               title="Indicates the same DTLS certificate was used in multiple distinct DTLS connections within this capture or across other captures in the same folder.">
+                            </i>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>

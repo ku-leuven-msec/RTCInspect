@@ -1,0 +1,120 @@
+<div class="accordion" id="certAnalysisAccordion">
+{% for cert in report_content %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-cert-{{ loop.index }}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-cert-{{ loop.index }}" aria-expanded="false" aria-controls="collapse-cert-{{ loop.index }}">
+                Certificate for: <strong>{{ cert.subject_cn }}</strong>
+                {% if cert.self_signed %}
+                    <span class="badge bg-warning ms-3">Self-Signed</span>
+                {% endif %}
+                {% if not cert.validity_period_ok %}
+                    <span class="badge bg-danger ms-3">Invalid Validity Period</span>
+                {% endif %}
+            </button>
+        </h2>
+        <div id="collapse-cert-{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="heading-cert-{{ loop.index }}" data-bs-parent="#certAnalysisAccordion">
+            <div class="accordion-body">
+                
+                <h5 class="card-title">Security Flags</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    {% if cert.self_signed %}
+                        <span class="badge text-bg-warning fs-6"><i class="bi bi-exclamation-triangle-fill"></i> Self-Signed</span>
+                    {% else %}
+                        <span class="badge text-bg-success fs-6"><i class="bi bi-check-circle-fill"></i> Not Self-Signed</span>
+                    {% endif %}
+                    {% if not cert.validity_period_ok %}
+                        <span class="badge text-bg-danger fs-6"><i class="bi bi-calendar-x-fill"></i> Invalid Validity Period</span>
+                    {% else %}
+                        <span class="badge text-bg-success fs-6"><i class="bi bi-check-circle-fill"></i> Validity Period OK</span>
+                    {% endif %}
+                </div>
+                
+                <h5 class="card-title mt-4">Details</h5>
+                <dl class="row">
+                    <dt class="col-sm-3">Subject CN</dt>
+                    <dd class="col-sm-9">{{ cert.subject_cn }}</dd>
+
+                    <dt class="col-sm-3">Issuer CN</dt>
+                    <dd class="col-sm-9">{{ cert.issuer_cn }}</dd>
+
+                    <dt class="col-sm-3">Valid From</dt>
+                    <dd class="col-sm-9">{{ cert.valid_from }}</dd>
+                    
+                    <dt class="col-sm-3">Valid Until</dt>
+                    <dd class="col-sm-9">{{ cert.valid_until }}</dd>
+                    
+                    <dt class="col-sm-3">Signature Algorithm</dt>
+                    <dd class="col-sm-9"><code>{{ cert.signature_algorithm }}</code></dd>
+                    
+                    <dt class="col-sm-3">Public Key Algorithm</dt>
+                    <dd class="col-sm-9"><code>{{ cert.public_key_algorithm }}</code></dd>
+
+                    <dt class="col-sm-3">Subject Alt. Names</dt>
+                    <dd class="col-sm-9">
+                        {% if cert.subject_alternative_names %}
+                            {% for name in cert.subject_alternative_names %}
+                                <code>{{ name }}</code><br>
+                            {% endfor %}
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </dd>
+                    <dt class="col-sm-3">Fingerprint</dt>
+                    <dd class="col-sm-9">{{ cert.fingerprint }}</dd>
+
+                </dl>
+                {% if cert.sender_info and cert.receiver_info %}
+                <h5 class="card-title mt-4">Connection Endpoints</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>IP Address</th>
+                                <th>Type</th>
+                                <th>Hostname</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sender</strong></td>
+                                <td><code>{{ cert.sender_info.ip }}</code></td>
+                                <td>
+                                    {% if cert.sender_info.type == 'Private' %}
+                                        <span class="badge text-bg-info">Private</span>
+                                    {% else %}
+                                        <span class="badge text-bg-primary">Public</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ cert.sender_info.hostname | default('N/A') }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Receiver</strong></td>
+                                <td><code>{{ cert.receiver_info.ip }}</code></td>
+                                <td>
+                                     {% if cert.receiver_info.type == 'Private' %}
+                                        <span class="badge text-bg-info">Private</span>
+                                    {% else %}
+                                        <span class="badge text-bg-primary">Public</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ cert.receiver_info.hostname | default('N/A') }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+
+                <div class="text-muted mt-3 pt-2 border-top">
+                    Found in packet {{ cert.found_in_packet_number }} ({{ cert.found_in_packet_summary }})
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="alert alert-secondary">
+        No certificates were found in this capture.
+    </div>
+{% endfor %}
+</div>

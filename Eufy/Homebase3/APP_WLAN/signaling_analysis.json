@@ -1,0 +1,73 @@
+{
+  "detection_method": "Heuristic-Based",
+  "sessions": [
+    {
+      "session_id": "UDP:192.168.1.73:33169-3.66.70.89:5062",
+      "protocol": "UDP",
+      "endpoints": "192.168.1.73:33169-3.66.70.89:5062",
+      "likelihood_score": 8,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 120 bytes)",
+        "Contains long ID-like strings",
+        "Medium entropy (5.08)"
+      ],
+      "extracted_strings": {
+        "hex_strings": [
+          "0236437303968075748833c9e60cf8ca"
+        ],
+        "base64_strings": [
+          "0236437303968075748833c9e60cf8ca"
+        ]
+      },
+      "fingerprint": [],
+      "payload_snippet": "\u0003\u0000\u00f6u\u0001\u0000B\u0000-[Pg\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000T8030P2323251E59\u0000\u0000\u0000\u0000\u000e\u0006\u0010\u00f6\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000236437303968075748833c9e60cf8ca \u0000\u00cd\u009a2\u001b\u009bd\u008aF\u0085\u00fd\u00d2\u00af\u00df\u000bB\u00e3\u00bf\u00d2/qW\u00e5\u00ae$\u00d3\u00b3H&\u0092\u0087\u00b5\u0001",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "UDP:192.168.1.73:13437-3.124.97.151:32100",
+      "protocol": "UDP",
+      "endpoints": "192.168.1.73:13437-3.124.97.151:32100",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 68 bytes)",
+        "Medium entropy (6.38)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u00f1\u0012\u0000,5\u0095\u00f8\\\u00c9\u0083\u0019\u00fd(\u00fc\u00f3\u00bc\u00e9\u00c3\u00aa\f\u00ccV\u00cc\u009c\\\u000e\u001b^\u0000\n\u00ff\u0098\u000b\u009b\u00ee\u00caz\u00cc\u0000\u00c2\u00b8\u00ccA\u00afq\u0007\u00a5\u00f5\u00f1\u00f9\u0000T\u0005\u009c\u00db\u0088\u0082\u008aC\u00f4N\u00c0m\u0089$a\u001d\u000b\u001cew\u00df\u00aa7\u0019\u00e0\u00a9\"5\u00f5&\u001d^Z)\u0019\u00e1\"5\u00f6\u00f0(\u00fe\u00be\u00dc\u00b08\u00ff\u00fc\u00ad\u009ax\u008c\u00a1#\u00ad\u00e7w+\u00be\u00ca\u0013\u00c9\u00d1\u00aa7\u0019\u00e1\"5\u00f4Ly\u001a\u00e2\u00ad2\u00ef\"5\u00f4N\u00c2\u00f5><",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "UDP:192.168.1.73:29728-3.124.97.151:32100",
+      "protocol": "UDP",
+      "endpoints": "192.168.1.73:29728-3.124.97.151:32100",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 28 bytes)",
+        "Medium entropy (5.57)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "\u00f1\u0000\u0000\u0000\u00f1\u0012\u0000,5\u0095\u00f8\\\u00c9\u0083\u0019\u00fd(\u00fc\u00f3\u00bc\u00e9\u00c3\u00aa\f\u00ccV\u00cc\u009c\\\u000e\u001b^\u0000\n\u00a2\u00de\u00c9\u0007\u0004R\n:X\u0088\r\u00dc:\u00e2\u00d6\u009d\u00c5\u00d9\u00f1\u0001\u0000\u0010\u0000\u0002 t\u00f4\u00e1\u00be\u00c1\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00f1\u0013\u0000\bp<\u00be\u0087\u00ab\u00bb\u00c9\u009d\u00f1\u0012\u0000,5\u0095\u00f8\\\u00c9\u0083\u0019\u00fd(\u00fc\u00f3\u00bc\u00e9\u00c3\u00aa\f\u00ccV\u00cc\u009c\\\u000e\u001b^\u0000\n\u00a2\u00de\u00c9\u0007\u0004R\n:X\u0088\r\u00dc:\u00e2\u00d6\u009d\u00c5\u00d9\u00f1\u0013\u0000\bp<\u00be\u0087\u00ab\u00bb\u00c9\u009d\u00f1\u0012\u0000,5\u0095\u00f8\\\u00c9\u0083\u0019\u00fd(\u00fc\u00f3\u00bc\u00e9\u00c3\u00aa\f\u00ccV\u00cc\u009c\\\u000e\u001b^\u0000\n\u00a2\u00de\u00c9\u0007\u0004R\n:X\u0088\r\u00dc:\u00e2\u00d6\u009d\u00c5\u00d9\u00f1\u0013\u0000\bp<\u00be\u0087",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    },
+    {
+      "session_id": "TCP:192.168.1.73:50924-3.121.170.0:443",
+      "protocol": "TCP",
+      "endpoints": "192.168.1.73:50924-3.121.170.0:443",
+      "likelihood_score": 5,
+      "evidence": [
+        "Client-Server (LAN to WAN)",
+        "Chatty (avg size: 423 bytes)",
+        "Medium entropy (7.64)"
+      ],
+      "extracted_strings": {},
+      "fingerprint": [],
+      "payload_snippet": "rts.godaddy.com/repository/0\r\u0006\t*\u0086H\u0086\u00f7\r\u0001\u0001\u000b\u0005\u0000\u0003\u0082\u0001\u0001\u0000\b~l\u0093\u0010\u00c88\u00b8\u0096\u00a9\u0090K\u00ff\u00a1_O\u0004\u00efl>\u009c\u0088\u0006\u00c9P\u008f\u00a6s\u00f7W1\u001b\u00be\u00bc\u00e4/\u00db\u00f8\u00ba\u00d3[\u00e0\u00b4\u00e7\u00e6yb\u000e\f\u00a2\u00d7jcs1\u00b5\u00f5\u00a8H\u00a4;\b-\u00a2]\u0090\u00d7\u00b4|%O\u0011V0\u00c4\u00b6D\u009d{,\u009d\u00e5^\u00e6\u00ef\fa\u00aa\u00bf\u00e4*\u001b\u00ee\u0084\u009e\u00b8\u0083}\u00c1C\u00ceD\u00a7\u0013p\r\u0091\u001f\u00f4\u00c8\u0013\u00ad\u0083`\u00d9\u00d8r\u00a8s$\u001e\u00b5\u00ac\"\u000e\u00ca\u0017\u0089bXD\u001b\u00ab\u0089%\u0001\u0000\u000f\u00cd\u00c4\u001bb\u00dbQ\u00b4\u00d3\u000fQ*\u009b\u00f4\u00bcs",
+      "geoip_info": "N/A, N/A, N/A, N/A"
+    }
+  ]
+}
