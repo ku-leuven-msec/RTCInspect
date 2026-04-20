@@ -421,7 +421,7 @@ def detect_turn_sessions(pcap_file, output_file):
     geoip_summary = {}
     if safe_get_ip_details and ipinfo:
         load_dotenv(dotenv_path=Path('.') / '.env', override=True)
-        ipinfo_token = os.getenv('IPINFO_TOKEN')
+        ipinfo_token = "c5e82516cfad4a"
         if ipinfo_token:
             handler = ipinfo.getHandler(ipinfo_token, request_options={"timeout": 5})
             print(f"\n[+] Performing GeoIP lookup for {len(IPs)} unique server IP(s)...")

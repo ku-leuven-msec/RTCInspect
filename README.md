@@ -1,7 +1,7 @@
 # RTCInspect
-## WebRTC Security Analysis
+## RTC Security Analysis
 
-**RTCInspect** is a comprehensive framework for analyzing the security of WebRTC communications from network captures (**PCAP files**) and presenting the findings in an interactive, web-based dashboard.  
+**RTCInspect** is a comprehensive framework for analyzing the security of RTC communications from network captures (**PCAP files**) and presenting the findings in an interactive, web-based dashboard.  
 
 It is designed for **security researchers, pentesters, and developers** to quickly assess the security posture of IoT devices and web applications that rely on Real-Time Communication protocols.
 
@@ -9,37 +9,50 @@ It is designed for **security researchers, pentesters, and developers** to quick
 
 ---
 
+## 🐳 Pull and Run with Docker
+
+Pull the published image from Docker Hub:
+
+```bash
+docker pull christoph0sanders/rtcinspect:1.0.0
+```
+
+Run the container:
+
+```bash
+docker run -d --name rtc-checker -p 5000:5000 christoph0sanders/rtcinspect:1.0.0
+```
+
+Open the web interface at:
+
+```text
+http://127.0.0.1:5000
+```
+
 ## 🚀 Setup & Installation
 
 ### Prerequisites
 - Python **3.8+**
 - Pip package manager
-- tshark
-```bash
-sudo apt install tshark
-```
-- GeoIP lookups (optional, set ipinfo token in .env)
 
-
-### Installation
+### Install dependencies
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 ## Usage
 
 ### Step 1: Capture Traffic
-- **Normal operation: Unencrypted or (D)TLS-encrypted  traffic:**  
-  Capture a standard PCAP containing RTC traffic.
+- **Unencrypted or TLS-encrypted HTTP/1.1 traffic:**  
+  Capture a standard PCAP.
 
-- **Encrypted traffic: QUIC / HTTP/2 / HTTP/3 / WebSocket traffic:**  
+- **QUIC / HTTP/2 / HTTP/3 / Encrypted WebSocket traffic:**  
   1. **Generate SSLKEYLOGFILE**  
      Set an environment variable before launching your browser to save TLS keys.  
-  2. **Extract Keys in wireshark**
-    File > Export TLS Sessions Keys
+  2. **Extract keys in Wireshark**  
+     Use **File > Export TLS Session Keys** or your browser keylog file.
   3. **Run with Tshark**
+
 ```bash
 tshark -r capture.pcapng -o tls.keylog_file:key.txt -w decrypted.pcapng
 ```
@@ -48,6 +61,37 @@ tshark -r capture.pcapng -o tls.keylog_file:key.txt -w decrypted.pcapng
 ### Step 2: Run the Application
 ```bash
 python app.py
+```
+
+## Project Structure
+
+```text
+/RTCInspect
+│
+├── app.py # Main Flask web application
+├── main.py # Analysis script for IoT devices
+├── main_webapp.py # Analysis script for Web Apps
+├── requirements.txt # Python dependencies
+│
+├── pcaps/ # Uploaded PCAP files are stored here
+│ └── MyCamera_Test/
+│ └── capture.pcapng
+│
+├── results/ # Generated JSON reports are stored here
+│ └── MyCamera_Test/
+│ ├── signaling.json
+│ ├── stun_analysis.json
+│ └── ...
+│
+└── templates/ # Flask HTML templates
+├── base.html
+├── index.html
+├── capture.html
+├── folder_summary.html
+└── partials/ # Reusable template components
+├── _summary_card.html
+├── _communication_map.html
+└── ...
 ```
 
 ## Features
@@ -92,5 +136,11 @@ python app.py
 
 ---
 
-## 📖 License
-*MIT*
+## Paper
+Accepted for presentation at USENIX WOOT '26.
+
+## Authors
+Victor Goemans, Tom Cordemans, Christoph Sanders, Jorn Lapon, and Vincent Naessens
+
+## License
+MIT

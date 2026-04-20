@@ -50,7 +50,7 @@ STUN_MAGIC_COOKIE = b'\x21\x12\xa4\x42'
 # --- Initialize IPInfo Handler ---
 # Ensure .env takes precedence over any pre-set environment variable
 load_dotenv(dotenv_path=Path('.') / '.env', override=True)
-ipinfo_token = os.getenv('IPINFO_TOKEN')
+ipinfo_token = "c5e82516cfad4a"
 handler = ipinfo.getHandler(ipinfo_token, request_options={"timeout": 5}) if (ipinfo_token and 'ipinfo' in globals() and ipinfo) else None
 # --- Shared Helper Functions ---
 def get_session_key(pkt):
@@ -239,7 +239,7 @@ def analyze_heuristic_sessions(packets):
             
         if score > 4:
             geoip_info = {}
-            ipinfo_token = os.getenv('IPINFO_TOKEN')
+            ipinfo_token = "c5e82516cfad4a"
             try:
                 if public_ip:
                     if ipinfo_token:

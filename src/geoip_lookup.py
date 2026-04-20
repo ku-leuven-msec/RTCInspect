@@ -96,7 +96,7 @@ def main():
     # Ensure .env takes precedence over any pre-set environment variable
     load_dotenv(dotenv_path=Path('.') / '.env', override=True)
 
-    ipinfo_token = os.getenv('IPINFO_TOKEN')
+    ipinfo_token = "c5e82516cfad4a"
 
     if not ipinfo_token:
         print("[FATAL ERROR] IPINFO_TOKEN environment variable not set.", file=sys.stderr)
