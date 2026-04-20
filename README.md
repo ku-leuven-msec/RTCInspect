@@ -14,13 +14,13 @@ It is designed for **security researchers, pentesters, and developers** to quick
 Pull the published image from Docker Hub:
 
 ```bash
-docker pull christoph0sanders/rtcinspect:1.0.0
+docker pull christoph0sanders/rtcinspect:1.0.1
 ```
 
 Run the container:
 
 ```bash
-docker run -d --name rtc-checker -p 5000:5000 christoph0sanders/rtcinspect:1.0.0
+docker run -d --name rtc-checker -p 5000:5000 christoph0sanders/rtcinspect:1.0.1
 ```
 
 Open the web interface at:
