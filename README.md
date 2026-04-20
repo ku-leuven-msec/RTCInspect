@@ -20,7 +20,7 @@ docker pull christoph0sanders/rtcinspect:1.0.2
 Run the container:
 
 ```bash
-docker run -d --name rtc-checker -p 5000:5000 christoph0sanders/rtcinspect:1.0.2
+docker run -d --name rtc-inspect -p 8080:8080 christoph0sanders/rtcinspect:1.0.2
 ```
 
 Open the web interface at:
